@@ -1,0 +1,1 @@
+./steamcmd +login anonymous +force_install_dir ./tf2_beta +app_update 229830 validate
