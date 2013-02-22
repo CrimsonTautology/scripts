@@ -7,7 +7,7 @@ SRCDS_USER="bill"
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # The path to the game you want to host. example = /home/newuser/dod
-DIR=/home/bill/servers/srcds/tf2_beta
+DIR=/home/bill/servers/srcds/tf2
 DAEMON=$DIR/srcds_run
 
 # Change all PARAMS to your needs.
