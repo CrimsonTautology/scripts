@@ -4,18 +4,18 @@
 
 #Settings, update these
 SOURCEMOD_DIR=addons/sourcemod/
-SRCDS_TF2=/home/bill/servers/srcds/tf2_beta/tf/$SOURCEMOD_DIR
+SRCDS_TF2=/home/bill/servers/srcds/tf2/tf/$SOURCEMOD_DIR
 DEV_DIR=~/current_work/sourcemod
 TMP_DIR=$DEV_DIR/.tmp
 
 mkdir -p $TMP_DIR
 cd $TMP_DIR
-wget -O smdrop14.html http://www.sourcemod.net/smdrop/1.4/
-FILE=`egrep '"sourcemod-1\.4\..*-hg.*-linux\.tar\.gz"' smdrop14.html | cut -d '"' -f 2 | tail -1`
+wget -O smdrop15.html http://www.sourcemod.net/smdrop/1.5/
+FILE=`egrep '"sourcemod-1\.5\..*-hg.*-linux\.tar\.gz"' smdrop15.html | cut -d '"' -f 2 | tail -1`
 if [ -n "$FILE" -a ! -f "$FILE" ] ; then
 
 	echo "Sourcemod is out of date, updating"
-	wget http://www.sourcemod.net/smdrop/1.4/$FILE
+	wget http://www.sourcemod.net/smdrop/1.5/$FILE
 	tar -xzf $FILE
 	cd $SOURCEMOD_DIR
 
@@ -26,4 +26,7 @@ if [ -n "$FILE" -a ! -f "$FILE" ] ; then
 	echo "Copying to development directory"
 	rm -R $DEV_DIR/scripting
 	cp -r scripting $DEV_DIR/
+
+	echo "Copying smlib"
+	cp -r ~/repo_dump/smlib/scripting/ $DEV_DIR/
 fi
