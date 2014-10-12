@@ -10,12 +10,12 @@ TMP_DIR=$DEV_DIR/.tmp
 
 mkdir -p $TMP_DIR
 cd $TMP_DIR
-wget -O smdrop15.html http://www.sourcemod.net/smdrop/1.5/
-FILE=`egrep '"sourcemod-1\.5\..*-hg.*-linux\.tar\.gz"' smdrop15.html | cut -d '"' -f 2 | tail -1`
+wget -O smdrop16.html http://www.sourcemod.net/smdrop/1.6/
+FILE=`egrep '"sourcemod-1\.6\..*-git.*-linux\.tar\.gz"' smdrop16.html | cut -d '"' -f 2 | tail -1`
 if [ -n "$FILE" -a ! -f "$FILE" ] ; then
 
 	echo "Sourcemod is out of date, updating"
-	wget http://www.sourcemod.net/smdrop/1.5/$FILE
+	wget http://www.sourcemod.net/smdrop/1.6/$FILE
 	tar -xzf $FILE
 	cd $SOURCEMOD_DIR
 
