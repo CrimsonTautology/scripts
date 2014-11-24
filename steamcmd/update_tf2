@@ -1,0 +1,3 @@
+#!/bin/sh
+./steamcmd.sh +runscript tf2_.txt
+./steamcmd.sh +runscript tf2_2.txt

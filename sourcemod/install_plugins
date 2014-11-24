@@ -1,0 +1,44 @@
+#!/bin/sh
+
+BUILD_DIR=/home/steam/sourcemod/
+PLUGIN_DIR=addons/sourcemod/plugins/
+
+build_server(){
+    local server=$1
+    SOURCEMOD_DEV_SERVER=$server
+    cd $BUILD_DIR
+}
+
+build(){
+    local dir=$1
+    cd $dir
+    rake clean
+    rake compile
+    rake install
+    cd $BUILD_DIR
+}
+
+remove_disabled(){
+    cd $SOURCEMOD_DEV_SERVER
+    cd $PLUGIN_DIR
+    for f in $(ls disabled) ; do
+        rm -f $f
+    done
+}
+
+#Jetpack Server #######################################
+build_server /home/steam/steamcmd/tf2_/tf/
+
+build plugin1
+build plugin2
+
+remove_disabled
+
+#Main Server #######################################
+build_server /home/steam/steamcmd/tf2_2/tf/
+
+build plugin1
+build plugin3
+build plugin4
+
+remove_disabled

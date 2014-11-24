@@ -1,0 +1,5 @@
+#!/bin/sh
+#https://github.com/bcserv/sourcemod-updater
+~/bin/sourcemod-updater/update.sh ~/sourcemod --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/steamcmd/tf2_jet/tf/ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/steamcmd/tf2_main/tf/ --snapshot-stable --dontask

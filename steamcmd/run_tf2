@@ -1,0 +1,3 @@
+#!/bin/sh
+#tf2_/srcds_run -game tf +map pl_badwater +maxplayers 32 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/tf2_.txt -port 27015
+tf2_2/srcds_run -game tf +map pl_badwater +maxplayers 24 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/tf2_2.txt -port 27025
