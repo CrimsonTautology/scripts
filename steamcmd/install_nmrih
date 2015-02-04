@@ -1,0 +1,4 @@
+#!/bin/sh
+./steamcmd.sh +runscript nmrih_main.txt
+tar -xzf ~/sourcemod/mmsource-1.10.4-git923-linux.tar.gz -C ~/steamcmd/nmrih_main/nmrih/
+~/bin/sourcemod-updater/update.sh ~/steamcmd/nmrih_main/nmrih/ --install --dontask

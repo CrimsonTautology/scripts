@@ -1,0 +1,6 @@
+@ShutdownOnFailedCommand 1 //set to 0 if updating multiple servers at once
+@NoPromptForPassword 1
+login anonymous
+force_install_dir ./nmrih_main
+app_update 317670 validate
+quit
