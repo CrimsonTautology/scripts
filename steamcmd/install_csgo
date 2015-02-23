@@ -1,0 +1,4 @@
+#!/bin/sh
+./steamcmd.sh +runscript csgo_main.txt
+tar -xzf ~/sourcemod/mmsource-1.10.4-git923-linux.tar.gz -C ~/steamcmd/csgo_main/csgo/
+~/bin/sourcemod-updater/update.sh ~/steamcmd/csgo_main/csgo/ --install --dontask
