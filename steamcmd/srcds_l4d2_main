@@ -11,7 +11,7 @@ DIR=/home/steam/steamcmd/l4d2_main
 DAEMON=$DIR/srcds_run
 
 # Change all PARAMS to your needs.
-PARAMS="-game left4dead -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/l4d2_main.txt -port 27055
+PARAMS="-game left4dead2 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/l4d2_main.txt -port 27055
 NAME=l4d2_main
 DESC="TEAM_BOUBALA [L4D2 Server]"
 
