@@ -11,7 +11,7 @@ DIR=/home/steam/steamcmd/csgo_main
 DAEMON=$DIR/srcds_run
 
 # Change all PARAMS to your needs.
-PARAMS="-game csgo -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/csgo_main.txt -port 27020 -console -usercon +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2"
+PARAMS="-game csgo -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/csgo_main.txt -port 27020 +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2"
 NAME=csgo_main
 DESC="TEAM_BOUBALA [CSGO Server]"
 

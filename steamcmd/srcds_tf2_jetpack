@@ -7,14 +7,13 @@ SRCDS_USER="steam"
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # The path to the game you want to host. example = /home/newuser/dod
-DIR=/home/steam/steamcmd/l4d2_main
+DIR=/home/steam/steamcmd/tf2_jet
 DAEMON=$DIR/srcds_run
 
 # Change all PARAMS to your needs.
-PARAMS="-game left4dead2 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/l4d2_main.txt -port 27055 +maxplayers 8 -secure"
-#PARAMS="-game left4dead2 -port 27055 +maxplayers 8 -secure"
-NAME=l4d2_main
-DESC="TEAM_BOUBALA [L4D2 Server]"
+PARAMS="-game tf +map plr_hightower +maxplayers 32 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/tf2_jet.txt -port 27015"
+NAME=tf2_jet
+DESC="TEAM_BOUBALA [Jetpack Server]"
 
 case "$1" in
 	start)

@@ -7,13 +7,13 @@ SRCDS_USER="steam"
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # The path to the game you want to host. example = /home/newuser/dod
-DIR=/home/steam/steamcmd/tf2_
+DIR=/home/steam/steamcmd/tf2_main
 DAEMON=$DIR/srcds_run
 
 # Change all PARAMS to your needs.
-PARAMS="-game tf +map plr_hightower +maxplayers 24 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/tf2_.txt -port 27015"
-NAME=tf2_
-DESC="SERVER NAME"
+PARAMS="-game tf +map koth_nucleus +maxplayers 24 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/tf2_main.txt -port 27025"
+NAME=tf2_main
+DESC="TEAM_BOUBALA [Main Server]"
 
 case "$1" in
 	start)

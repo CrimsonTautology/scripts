@@ -1,6 +1,6 @@
 @ShutdownOnFailedCommand 1 //set to 0 if updating multiple servers at once
 @NoPromptForPassword 1
 login anonymous
-force_install_dir ./tf2_
+force_install_dir ./tf2_main
 app_update 232250 validate
 quit

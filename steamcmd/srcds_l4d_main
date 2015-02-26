@@ -11,7 +11,7 @@ DIR=/home/steam/steamcmd/l4d_main
 DAEMON=$DIR/srcds_run
 
 # Change all PARAMS to your needs.
-PARAMS="-game left4dead -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/l4d_main.txt -port 27035"
+PARAMS="-game left4dead -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/l4d_main.txt -port 27035 +map l4d_hospital01_apartment +maxplayers 8"
 NAME=l4d_main
 DESC="TEAM_BOUBALA [L4D Server]"
 
