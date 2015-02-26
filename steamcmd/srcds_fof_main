@@ -1,0 +1,70 @@
+#!/bin/sh
+
+# replace <newuser> with the user you created above
+SRCDS_USER="steam"
+
+# Do not change this path
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
+
+# The path to the game you want to host. example = /home/newuser/dod
+DIR=/home/steam/steamcmd/fof_main
+DAEMON=$DIR/srcds_run
+
+STEAM_DIR=/home/steam/steamcmd
+STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/fof_main.txt
+PORT=27025
+
+# Change all PARAMS to your needs.
+PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +maxplayers 20 +map fof_fistful"
+NAME=fof_main
+DESC="TEAM_BOUBALA [Fists Full of Frags Server]"
+
+case "$1" in
+	start)
+		echo "Starting $DESC: $NAME"
+		if [ -e $DIR ]; then
+			cd $DIR
+			su $SRCDS_USER -l -c "screen -d -m -S $NAME $DAEMON $PARAMS"
+		else
+			echo "No such directory: $DIR!"
+		fi
+		;;
+
+	stop)
+		if su $SRCDS_USER -l -c "screen -ls" |grep $NAME; then
+			echo -n "Stopping $DESC: $NAME"
+			kill `su $SRCDS_USER -l -c "screen -ls" |grep $NAME |awk -F . '{print $1}'|awk '{print $1}'`
+			echo " ... done."
+		else
+			echo "Couldn't find a running $DESC"
+		fi
+		;;
+
+	restart)
+		if su $SRCDS_USER -l -c "screen -ls" |grep $NAME; then
+			echo -n "Stopping $DESC: $NAME"
+			kill `su $SRCDS_USER -l -c "screen -ls" |grep $NAME |awk -F . '{print $1}'|awk '{print $1}'`
+			echo " ... done."
+		else
+			echo "Couldn't find a running $DESC"
+		fi
+		echo -n "Starting $DESC: $NAME"
+		cd $DIR
+		su $SRCDS_USER -l -c "screen -d -m -S $NAME $DAEMON $PARAMS"
+		echo " ... done."
+		;;
+
+	status)
+		# Check whether there's a "srcds" process
+		ps aux | grep -v grep | grep srcds_r > /dev/null
+		CHECK=$?
+		[ $CHECK -eq 0 ] && echo "SRCDS is UP" || echo "SRCDS is DOWN"
+		;;
+
+	*)
+		echo "Usage: $0 {start|stop|status|restart}"
+		exit 1
+		;;
+esac
+
+exit 0
