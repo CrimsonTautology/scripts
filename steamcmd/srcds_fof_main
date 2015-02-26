@@ -12,7 +12,7 @@ DAEMON=$DIR/srcds_run
 
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/fof_main.txt
-PORT=27025
+PORT=27023
 
 # Change all PARAMS to your needs.
 PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +maxplayers 20 +map fof_fistful"

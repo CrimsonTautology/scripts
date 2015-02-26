@@ -12,7 +12,7 @@ DAEMON=$DIR/srcds_run
 
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/nmrih_main.txt
-PORT=27021
+PORT=27024
 
 # Change all PARAMS to your needs.
 PARAMS="-game nmrih -insecure +map nmo_broadway -maxplayers 8 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT"

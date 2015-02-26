@@ -12,7 +12,7 @@ DAEMON=$DIR/srcds_run
 
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/csgo_main.txt
-PORT=27025
+PORT=27020
 
 # Change all PARAMS to your needs.
 PARAMS="-game csgo -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2"
