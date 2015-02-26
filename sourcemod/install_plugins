@@ -7,13 +7,17 @@ build_server(){
     local server=$1
     SOURCEMOD_DEV_SERVER=$server
     cd $BUILD_DIR
+
+    echo "#########################"
+    echo "Building Server ($server)"
+    echo "#########################"
 }
 
 build(){
     local dir=$1
     cd $dir
     rake clean
-    rake compile
+    rake compile | egrep --color "warning|error"
     rake install
     cd $BUILD_DIR
 }
@@ -27,18 +31,115 @@ remove_disabled(){
 }
 
 #Jetpack Server #######################################
-build_server /home/steam/steamcmd/tf2_/tf/
+build_tf2_jet(){
+    build_server /home/steam/steamcmd/tf2_jet/tf/
 
-build plugin1
-build plugin2
+    build admin_support
+    build advanced_ads
+    build analytics
+    build autoupdater
+    build be_the_
+    build goomba
+    build hud_alerts
+    build huntsman_air
+    build iga
+    build jet
+    build nomgrep
+    build other
+    build rtd
+    build super_ff
 
-remove_disabled
+    remove_disabled
+}
 
 #Main Server #######################################
-build_server /home/steam/steamcmd/tf2_2/tf/
+build_tf2_main(){
+    build_server /home/steam/steamcmd/tf2_main/tf/
 
-build plugin1
-build plugin3
-build plugin4
+    build admin_support
+    build advanced_ads
+    build analytics
+    build autoupdater
+    build botmanager
+    build botnames
+    build goomba
+    build other
 
-remove_disabled
+    remove_disabled
+}
+
+#L4D Server #######################################
+build_l4d_main(){
+    build_server /home/steam/steamcmd/l4d_main/left4dead/
+
+    build admin_support
+    build autoupdater
+    build iga
+    build jet
+
+    remove_disabled
+}
+
+#L4D2 Server #######################################
+build_l4d2_main(){
+    build_server /home/steam/steamcmd/l4d2_main/left4dead2/
+
+    build admin_support
+    build autoupdater
+    build iga
+    build jet
+
+    remove_disabled
+}
+
+#NMRIH Server #######################################
+build_nmrih_main(){
+    build_server /home/steam/steamcmd/nmrih_main/nmrih/
+
+    build admin_support
+    build autoupdater
+    build iga
+    build nomgrep
+
+    remove_disabled
+}
+
+#CSGO Server #######################################
+build_csgo_main(){
+    build_server /home/steam/steamcmd/csgo_main/csgo/
+
+    build admin_support
+    build advanced_ads
+    build autoupdater
+    build iga
+    build jet
+
+    remove_disabled
+}
+
+#Fists Full of Frags Server #######################################
+build_fof_main(){
+    build_server /home/steam/steamcmd/fof_main/fof/
+
+    build admin_support
+    build advanced_ads
+    build autoupdater
+    build iga
+    build jet
+
+    remove_disabled
+}
+
+
+
+
+
+#Build list here###############
+
+build_tf2_jet
+#build_tf2_main
+#build_l4d_main
+#build_l4d2_main
+#build_nmrih_main
+#build_csgo_main
+build_fof_main
