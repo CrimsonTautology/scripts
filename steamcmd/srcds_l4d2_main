@@ -10,8 +10,12 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin
 DIR=/home/steam/steamcmd/l4d2_main
 DAEMON=$DIR/srcds_run
 
+STEAM_DIR=/home/steam/steamcmd
+STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/l4d2_main.txt
+PORT=27035
+
 # Change all PARAMS to your needs.
-PARAMS="-game left4dead2 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/l4d2_main.txt -port 27055 +maxplayers 8 -secure" #PARAMS="-game left4dead2 -port 27055 +maxplayers 8 -secure"
+PARAMS="-game left4dead2 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +maxplayers 8 -secure"
 NAME=l4d2_main
 DESC="TEAM_BOUBALA [L4D2 Server]"
 

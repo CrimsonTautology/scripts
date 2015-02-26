@@ -10,8 +10,12 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin
 DIR=/home/steam/steamcmd/tf2_main
 DAEMON=$DIR/srcds_run
 
+STEAM_DIR=/home/steam/steamcmd
+STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/tf2_main.txt
+PORT=27016
+
 # Change all PARAMS to your needs.
-PARAMS="-game tf +map koth_nucleus +maxplayers 24 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/tf2_main.txt -port 27025"
+PARAMS="-game tf +map koth_nucleus +maxplayers 24 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT"
 NAME=tf2_main
 DESC="TEAM_BOUBALA [Main Server]"
 

@@ -10,8 +10,12 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin
 DIR=/home/steam/steamcmd/nmrih_main
 DAEMON=$DIR/srcds_run
 
+STEAM_DIR=/home/steam/steamcmd
+STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/nmrih_main.txt
+PORT=27021
+
 # Change all PARAMS to your needs.
-PARAMS="-game nmrih -insecure +map nmo_broadway -maxplayers 8 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/nmrih_main.txt -port 27045"
+PARAMS="-game nmrih -insecure +map nmo_broadway -maxplayers 8 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT"
 NAME=nmrih_main
 DESC="TEAM_BOUBALA [No More Room In Hell Server]"
 

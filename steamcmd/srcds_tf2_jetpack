@@ -10,8 +10,12 @@ PATH=/bin:/usr/bin:/sbin:/usr/sbin
 DIR=/home/steam/steamcmd/tf2_jet
 DAEMON=$DIR/srcds_run
 
+STEAM_DIR=/home/steam/steamcmd
+STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/tf2_jet.txt
+PORT=27015
+
 # Change all PARAMS to your needs.
-PARAMS="-game tf +map plr_hightower +maxplayers 32 -autoupdate -steam_dir /home/steam/steamcmd -steamcmd_script /home/steam/steamcmd/tf2_jet.txt -port 27015"
+PARAMS="-game tf +map plr_hightower +maxplayers 32 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT"
 NAME=tf2_jet
 DESC="TEAM_BOUBALA [Jetpack Server]"
 
