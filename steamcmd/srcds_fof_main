@@ -17,7 +17,7 @@ PORT=27023
 # Change all PARAMS to your needs.
 PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +maxplayers 20 +map fof_fistful"
 NAME=fof_main
-DESC="TEAM_BOUBALA [Fists Full of Frags Server]"
+DESC="TEAM_BOUBALA [Fistful of Frags Server]"
 
 case "$1" in
 	start)
