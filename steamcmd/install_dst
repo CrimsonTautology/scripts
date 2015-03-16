@@ -1,0 +1,2 @@
+#!/bin/sh
+./steamcmd.sh +runscript dst_main.txt
