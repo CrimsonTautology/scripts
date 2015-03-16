@@ -47,6 +47,20 @@ iptables -A INPUT -p udp --destination-port 27015 -m length --length 0:32 -j DRO
 iptables -A INPUT -p udp --destination-port 27015 -m length --length 2521:65535 -j LOG --log-prefix "SRCDS-XLFRAG " --log-ip-options -m limit --limit 1/m --limit-burst 1
 iptables -A INPUT -p udp --destination-port 27015 -m length --length 2521:65535 -j DROP
 
+# Game Client Traffic + Matchmaking and HLTV
+iptables -A INPUT -p udp -m udp --dport 27000:27030 -j ACCEPT
+# Steam Downloads
+# Game Client Traffic + Matchmaking and HLTV
+iptables -A INPUT -p udp -m udp --dport 27000:27030 -j ACCEPT
+# Steam Downloads
+iptables -A INPUT -p tcp -m tcp --dport 27014:27050 -j ACCEPT
+# Other ports for Steam
+iptables -A INPUT -p udp -m udp --dport 4380 -j ACCEPT
+iptables -A INPUT -p udp -m udp --dport 3478 -j ACCEPT
+iptables -A INPUT -p udp -m udp --dport 4379 -j ACCEPT
+iptables -A INPUT -p udp -m udp --dport 4380 -j ACCEPT
+
+
 iptables -A INPUT -p udp -m state --state ESTABLISH -j ACCEPT
 
 iptables -A INPUT -p udp -m state --state NEW -m hashlimit --hashlimit-mode srcip,dstport --hashlimit-name StopDoS --hashlimit 1/s --hashlimit-burst 3 -j ACCEPT
