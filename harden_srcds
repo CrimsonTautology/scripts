@@ -1,55 +1,22 @@
 #!/bin/bash --
 #https://forums.alliedmods.net/showthread.php?t=219697
 LANG=C; LC_ALL=C; export LANG LC_ALL
-iptables -F; iptables -X
-
-# List policies first
-iptables -P INPUT DROP; iptables -P FORWARD DROP; iptables -P OUTPUT ACCEPT
-
-# Always allow loopback
-iptables -A INPUT -i lo -j ACCEPT
-
-# Performance-wise let this back in early:
-iptables -A INPUT -m state --state ESTABLISHED -j ACCEPT
-
-# Allow public services (SSH & game server, needs more ports if you require Source TV). If you require a range do something like --dport 27015:27100.
-iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 42 -j ACCEPT
-iptables -A INPUT -m state --state NEW -m udp -p udp --dport 27015 -j ACCEPT
-iptables -A INPUT -m state --state NEW -m udp -p udp --dport 27025 -j ACCEPT
-
-# Allow RCON only from certain IPs (Can be subnets or single IPs, useful for admin access to rcon).
-iptables -A INPUT -m state --state NEW -m tcp -p tcp -s 2.2.2.2/24 --dport 27015 -j ACCEPT
-iptables -A INPUT -m state --state NEW -m tcp -p tcp -s 1.1.1.1 --dport 27015 -j ACCEPT
-iptables -A INPUT -m state --state NEW -m tcp -p tcp -s 70.181.7.63 --dport 27015 -j ACCEPT
-
-# L4D2 anti DoS attack (Block incorrect length UDP packages which are never used for the game).
-
-iptables -I INPUT -p udp --dport 27015 -m length --length 0:32 -j DROP
-iptables -I INPUT -p udp --dport 27015 -m length --length 2521:65535 -j DROP
-iptables -A INPUT -p udp -j DROP
-
-# No traffic should reach this line (And log every traffic that's not allowed in the rules above).
-iptables -A INPUT -j LOG --log-prefix "IN_LEFTOVERS "
-iptables -A OUTPUT -j ACCEPT
-
-##################################
 iptables -F
 iptables -X
 iptables -P INPUT ACCEPT
 iptables -P OUTPUT ACCEPT
 iptables -P FORWARD ACCEPT
 
-iptables -A INPUT -p tcp --destination-port 27015 -j LOG --log-prefix "SRCDS-RCON " -m limit --limit 1/m --limit-burst 1
-iptables -A INPUT -p tcp --destination-port 27015 -j DROP
+iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
+iptables -A INPUT -p tcp -m tcp --dport 42 -j ACCEPT
 
-iptables -A INPUT -p udp --destination-port 27015 -m length --length 0:32 -j LOG --log-prefix "SRCDS-XSQUERY " --log-ip-options -m limit --limit 1/m --limit-burst 1
-iptables -A INPUT -p udp --destination-port 27015 -m length --length 0:32 -j DROP
-iptables -A INPUT -p udp --destination-port 27015 -m length --length 2521:65535 -j LOG --log-prefix "SRCDS-XLFRAG " --log-ip-options -m limit --limit 1/m --limit-burst 1
-iptables -A INPUT -p udp --destination-port 27015 -m length --length 2521:65535 -j DROP
+# Accept everything fromt he loopback device
+iptables -A INPUT -i lo -j ACCEPT
 
-# Game Client Traffic + Matchmaking and HLTV
-iptables -A INPUT -p udp -m udp --dport 27000:27030 -j ACCEPT
-# Steam Downloads
+# Accept stuff that has already been established or is related
+iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+
 # Game Client Traffic + Matchmaking and HLTV
 iptables -A INPUT -p udp -m udp --dport 27000:27030 -j ACCEPT
 # Steam Downloads
@@ -61,14 +28,9 @@ iptables -A INPUT -p udp -m udp --dport 4379 -j ACCEPT
 iptables -A INPUT -p udp -m udp --dport 4380 -j ACCEPT
 
 
-iptables -A INPUT -p udp -m state --state ESTABLISH -j ACCEPT
-
-iptables -A INPUT -p udp -m state --state NEW -m hashlimit --hashlimit-mode srcip,dstport --hashlimit-name StopDoS --hashlimit 1/s --hashlimit-burst 3 -j ACCEPT
-
-iptables -A INPUT -p udp --sport 123 -j DROP
-
-iptables -A INPUT -p udp -j LOG --log-prefix "UDP-SPAM " --log-ip-options -m limit --limit 1/m --limit-burst 1
-iptables -A INPUT -p udp -j DROP
+iptables -A INPUT -j DROP
+iptables -A OUTPUT -p tcp -m tcp --sport 22 -j ACCEPT
+iptables -A OUTPUT -p tcp -m tcp --sport 42 -j ACCEPT
 # Always end a script the right way
 exit 0
 
