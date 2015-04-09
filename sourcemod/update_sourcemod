@@ -1,5 +1,13 @@
 #!/bin/sh
 #https://github.com/bcserv/sourcemod-updater
-~/bin/sourcemod-updater/update.sh ~/sourcemod --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.7/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/tf2_jet/tf/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/tf2_main/tf/ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/steamcmd/l4d_main/left4dead/ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/steamcmd/l4d2_main/left4dead2/ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_main/fof/ --snapshot-stable --dontask
+
+#non-standard repos
+
+#~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.6/ "http://www.sourcemod.net/smdrop/1.6/sourcemod-1.6.0-git4525-linux.tar.gz" --install --dontask
+#~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.8/ --snapshot-dev --install --dontask
