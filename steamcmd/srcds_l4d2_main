@@ -12,6 +12,7 @@ DAEMON=$DIR/srcds_run
 
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/l4d2_main.txt
+IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
 PORT=27019
 CLIENTPORT=27009
 
@@ -19,7 +20,7 @@ CLIENTPORT=27009
 #PARAMS="-game left4dead2 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +maxplayers 8 -secure"
 #-strictportbind
 #https://forums.alliedmods.net/showthread.php?t=226351&highlight=port
-PARAMS="-game left4dead2 -port $PORT +ip 74.91.116.204 +maxplayers 8 -secure +map c8m1_apartment"
+PARAMS="-game left4dead2 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 8 +map c8m1_apartment"
 NAME=l4d2_main
 DESC="[L4D2 Server]"
 
