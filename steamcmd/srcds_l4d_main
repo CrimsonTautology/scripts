@@ -12,10 +12,11 @@ DAEMON=$DIR/srcds_run
 
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/l4d_main.txt
+IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
 PORT=27018
 
 # Change all PARAMS to your needs.
-PARAMS="-game left4dead -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +map l4d_hospital01_apartment +maxplayers 8"
+PARAMS="-game left4dead -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +map l4d_hospital01_apartment +maxplayers 8"
 NAME=l4d_main
 DESC="[L4D Server]"
 

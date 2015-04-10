@@ -12,10 +12,11 @@ DAEMON=$DIR/srcds_run
 
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/tf2_jet.txt
+IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
 PORT=27015
 
 # Change all PARAMS to your needs.
-PARAMS="-game tf +map plr_hightower +maxplayers 32 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT"
+PARAMS="-game tf +map plr_hightower +maxplayers 32 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP"
 NAME=tf2_jet
 DESC="[TF2 Jetpack Server]"
 
