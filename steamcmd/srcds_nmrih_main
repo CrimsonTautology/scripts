@@ -17,7 +17,7 @@ PORT=27024
 # Change all PARAMS to your needs.
 PARAMS="-game nmrih -insecure +map nmo_broadway -maxplayers 8 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT"
 NAME=nmrih_main
-DESC="TEAM_BOUBALA [No More Room In Hell Server]"
+DESC="[No More Room In Hell Server]"
 
 case "$1" in
 	start)

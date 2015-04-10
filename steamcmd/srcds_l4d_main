@@ -17,7 +17,7 @@ PORT=27018
 # Change all PARAMS to your needs.
 PARAMS="-game left4dead -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +map l4d_hospital01_apartment +maxplayers 8"
 NAME=l4d_main
-DESC="TEAM_BOUBALA [L4D Server]"
+DESC="[L4D Server]"
 
 case "$1" in
 	start)

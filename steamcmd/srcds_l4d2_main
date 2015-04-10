@@ -21,7 +21,7 @@ CLIENTPORT=27009
 #https://forums.alliedmods.net/showthread.php?t=226351&highlight=port
 PARAMS="-game left4dead2 -port $PORT +ip 74.91.116.204 +maxplayers 8 -secure +map c8m1_apartment"
 NAME=l4d2_main
-DESC="TEAM_BOUBALA [L4D2 Server]"
+DESC="[L4D2 Server]"
 
 case "$1" in
 	start)

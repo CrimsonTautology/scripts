@@ -17,7 +17,7 @@ PORT=27040
 # Change all PARAMS to your needs.
 PARAMS=""
 NAME=dst_main
-DESC="TEAM_BOUBALA [DST Server]"
+DESC="[DST Server]"
 
 case "$1" in
 	start)

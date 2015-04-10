@@ -17,7 +17,7 @@ PORT=27015
 # Change all PARAMS to your needs.
 PARAMS="-game tf +map plr_hightower +maxplayers 32 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT"
 NAME=tf2_jet
-DESC="TEAM_BOUBALA [Jetpack Server]"
+DESC="[TF2 Jetpack Server]"
 
 case "$1" in
 	start)
