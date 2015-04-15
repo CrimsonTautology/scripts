@@ -129,6 +129,7 @@ build_fof_main(){
 
     build admin_support
     build advanced_ads
+    build analytics
     build autoupdater
     build iga
     build jet

@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require 'fog'
+
+storage = Fog::Storage.new(provider: 'Google')
+directory = storage.directories.get('fastdl')
+
+mods = [ 'fof', 'tf' ]
+dirs = [ 'maps', 'materials' ]
+
+mods.each do |mod|
+  dirs.each do |dir|
+    Dir.glob("#{mod}/#{dir}/*.bz2").each do |file|
+      puts file
+      directory.files.create(key: file, body: File.open(file))
+      File.delete file
+    end
+  end
+end
+
+puts directory.files.table
