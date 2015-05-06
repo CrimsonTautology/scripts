@@ -16,7 +16,7 @@ IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)
 PORT=27015
 
 # Change all PARAMS to your needs.
-PARAMS="-game tf +map plr_hightower +maxplayers 32 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP"
+PARAMS="-game tf +map plr_hightower +maxplayers 24 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP"
 NAME=tf2_jet
 DESC="[TF2 Jetpack Server]"
 

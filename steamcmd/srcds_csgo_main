@@ -16,7 +16,7 @@ IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)
 PORT=27020
 
 # Change all PARAMS to your needs.
-PARAMS="-game csgo -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2"
+PARAMS="-game csgo -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +maxplayers 24 +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2"
 NAME=csgo_main
 DESC="[CSGO Server]"
 
