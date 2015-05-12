@@ -153,10 +153,10 @@ build_fof_main(){
 
 #Build list here###############
 
-build_tf2_jet
+#build_tf2_jet
 #build_tf2_main
 #build_l4d_main
 #build_l4d2_main
 #build_nmrih_main
-build_csgo_main
+#build_csgo_main
 build_fof_main

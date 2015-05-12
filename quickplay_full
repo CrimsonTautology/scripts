@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+require 'steam-condenser'
+
+quickplay_maps=[ "cp_dustbowl", "cp_egypt_final", "cp_gorge", "cp_gravelpit", "cp_junction_final", "cp_mountainlab", "cp_steel", "cp_5gorge", "cp_badlands", "cp_coldfront", "cp_fastlane", "cp_freight_final1", "cp_granary", "cp_well", "cp_yukon_final", "cp_foundry", "cp_gullywash_final1", "cp_process_final", "cp_standin_final", "cp_snakewater_final1", "ctf_2fort", "ctf_doublecross", "ctf_sawmill", "ctf_turbine", "ctf_well", "koth_badlands", "koth_harvest_final", "koth_lakeside_final", "koth_nucleus", "koth_sawmill", "koth_viaduct", "koth_king", "pl_badwater", "pl_frontier_final", "pl_goldrush", "pl_hoodoo_final", "pl_thundermountain", "pl_upward", "pl_barnblitz", "plr_hightower", "plr_pipeline", "plr_nightfall_final", "sd_doomsday" ] 
+
+master = MasterServer.new(*MasterServer::SOURCE_MASTER_SERVER);
+
+results = quickplay_maps.map do |m|
+  exist = master.servers(MasterServer::REGION_ALL, "\\gamedir\\tf\\gametype\\_registered\\map\\#{m}").count
+  not_empty = master.servers(MasterServer::REGION_ALL, "\\gamedir\\tf\\gametype\\_registered\\map\\#{m}\\empty\\1").count
+  [m , exist, not_empty, (not_empty / exist.to_f) * 100]
+end
+
+
+results.sort_by{|m,e,n,v|v}.reverse.each do |m,e,n,v|
+  puts "#{m} #{e} #{n} #{ (n / e.to_f) * 100}"
+end
