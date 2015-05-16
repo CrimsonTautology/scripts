@@ -132,6 +132,7 @@ build_fof_main(){
     build advanced_ads
     build analytics
     build autoupdater
+    #build custom_player_skins
     build death_chance_fof
     build dmr
     build iga
