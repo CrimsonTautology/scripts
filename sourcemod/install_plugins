@@ -141,6 +141,7 @@ build_fof_main(){
     build mapconfigs
     build navfile_blocker
     build near_map_end_fof
+    build randomize_teams_fof
     build resize_players
     build super_kick_fof
     build weapon_only_fof
