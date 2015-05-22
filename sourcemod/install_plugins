@@ -133,6 +133,7 @@ build_fof_main(){
     build analytics
     build autoupdater
     #build custom_player_skins
+    build boat
     build death_chance_fof
     build dmr
     build iga
@@ -156,7 +157,7 @@ build_fof_main(){
 
 #Build list here###############
 
-build_tf2_jet
+#build_tf2_jet
 #build_tf2_main
 #build_l4d_main
 #build_l4d2_main
