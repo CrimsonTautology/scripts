@@ -149,6 +149,32 @@ build_fof_main(){
     remove_disabled
 }
 
+#Fists Full of Frags Teamplay Server #######################################
+build_fof_tp(){
+    build_server /home/steam/steamcmd/fof_tp/fof/
+
+    build admin_support
+    build advanced_ads
+    build analytics
+    build autoupdater
+    build death_chance_fof
+    build dmr
+    build iga
+    build jet
+    build killer_info_display
+    build mapconfigs
+    build navfile_blocker
+    #build near_map_end_fof
+    build randomize_teams_fof
+    build resize_players
+    build super_kick_fof
+    build weapon_only_fof
+    build webshortcuts
+
+    remove_disabled
+}
+
+
 
 
 
@@ -162,3 +188,4 @@ build_fof_main(){
 #build_nmrih_main
 #build_csgo_main
 build_fof_main
+#build_fof_tp
