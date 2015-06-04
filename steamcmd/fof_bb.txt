@@ -1,0 +1,6 @@
+@ShutdownOnFailedCommand 1 //set to 0 if updating multiple servers at once
+@NoPromptForPassword 1
+login anonymous
+force_install_dir ./fof_bb
+app_update 295230 validate
+quit
