@@ -143,6 +143,7 @@ build_fof_main(){
     build randomize_teams_fof
     build resize_players
     build super_kick_fof
+    build weapon_mod
     build weapon_only_fof
     build webshortcuts
 
@@ -213,5 +214,5 @@ build_fof_bb(){
 #build_nmrih_main
 #build_csgo_main
 build_fof_main
-build_fof_tp
-build_fof_bb
+#build_fof_tp
+#build_fof_bb
