@@ -138,7 +138,6 @@ build_fof_main(){
     build jet
     build killer_info_display
     build mapconfigs
-    build mapdecals
     build navfile_blocker
     build near_map_end_fof
     build randomize_teams_fof
@@ -215,5 +214,5 @@ build_fof_bb(){
 #build_nmrih_main
 #build_csgo_main
 build_fof_main
-#build_fof_tp
-#build_fof_bb
+build_fof_tp
+build_fof_bb
