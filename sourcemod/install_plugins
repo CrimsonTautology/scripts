@@ -146,6 +146,7 @@ build_fof_main(){
     #build weapon_mod
     build weapon_only_fof
     build webshortcuts
+    build word_filter
 
     remove_disabled
 }
@@ -190,7 +191,7 @@ build_fof_bb(){
     build killer_info_display
     build mapconfigs
     build navfile_blocker
-    #build near_map_end_fof
+    build near_map_end_fof
     build randomize_teams_fof
     build resize_players
     build super_kick_fof

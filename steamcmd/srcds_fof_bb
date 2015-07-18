@@ -16,7 +16,7 @@ IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)
 PORT=27031
 
 # Change all PARAMS to your needs.
-PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 20 +map fof_fistful"
+PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 20 +map fof_mariokart_b1"
 NAME=fof_bb
 DESC="[Fistful of Frags Server (Break Bad)]"
 
