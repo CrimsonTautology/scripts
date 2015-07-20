@@ -172,13 +172,14 @@ build_fof_tp(){
     build super_kick_fof
     build weapon_only_fof
     build webshortcuts
+    build word_filter
 
     remove_disabled
 }
 
 #Fists Full of Frags Break Bad Server #######################################
-build_fof_bb(){
-    build_server /home/steam/steamcmd/fof_bb/fof/
+build_fof_mk(){
+    build_server /home/steam/steamcmd/fof_mk/fof/
 
     build admin_support
     build advanced_ads
@@ -197,6 +198,7 @@ build_fof_bb(){
     build super_kick_fof
     build weapon_only_fof
     build webshortcuts
+    build word_filter
 
     remove_disabled
 }
@@ -216,4 +218,4 @@ build_fof_bb(){
 #build_csgo_main
 build_fof_main
 build_fof_tp
-build_fof_bb
+build_fof_mk

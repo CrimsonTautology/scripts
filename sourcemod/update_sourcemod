@@ -7,7 +7,7 @@
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/l4d2_main/left4dead2/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_main/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_tp/fof/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_bb/fof/ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ --snapshot-stable --dontask
 
 #non-standard repos
 

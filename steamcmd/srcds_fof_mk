@@ -7,18 +7,18 @@ SRCDS_USER="steam"
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # The path to the game you want to host. example = /home/newuser/dod
-DIR=/home/steam/steamcmd/fof_bb
+DIR=/home/steam/steamcmd/fof_mk
 DAEMON=$DIR/srcds_run
 
 STEAM_DIR=/home/steam/steamcmd
-STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/fof_bb.txt
+STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/fof_mk.txt
 IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
 PORT=27031
 
 # Change all PARAMS to your needs.
 PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 20 +map fof_mariokart_b1"
-NAME=fof_bb
-DESC="[Fistful of Frags Server (Break Bad)]"
+NAME=fof_mk
+DESC="[Fistful of Frags Server (Mario Kart)]"
 
 case "$1" in
 	start)
