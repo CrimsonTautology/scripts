@@ -146,7 +146,6 @@ build_fof_main(){
     #build weapon_mod
     build weapon_only_fof
     build webshortcuts
-    build word_filter
 
     remove_disabled
 }
@@ -172,7 +171,6 @@ build_fof_tp(){
     build super_kick_fof
     build weapon_only_fof
     build webshortcuts
-    build word_filter
 
     remove_disabled
 }
@@ -198,7 +196,6 @@ build_fof_mk(){
     build super_kick_fof
     build weapon_only_fof
     build webshortcuts
-    build word_filter
 
     remove_disabled
 }
