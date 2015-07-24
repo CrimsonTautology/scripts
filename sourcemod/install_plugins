@@ -143,7 +143,7 @@ build_fof_main(){
     build randomize_teams_fof
     build resize_players
     build super_kick_fof
-    build voice_warning
+    build voice_warn
     #build weapon_mod
     build weapon_only_fof
     build webshortcuts
@@ -170,7 +170,7 @@ build_fof_tp(){
     build randomize_teams_fof
     build resize_players
     build super_kick_fof
-    build voice_warning
+    build voice_warn
     build weapon_only_fof
     build webshortcuts
 
@@ -196,7 +196,7 @@ build_fof_mk(){
     build randomize_teams_fof
     build resize_players
     build super_kick_fof
-    build voice_warning
+    build voice_warn
     build weapon_only_fof
     build webshortcuts
 
