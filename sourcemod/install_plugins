@@ -149,8 +149,6 @@ build_fof_main(){
     build webshortcuts
     build word_filter
 
-    build Custom-Player-Skins
-
     remove_disabled
 }
 
@@ -204,8 +202,6 @@ build_fof_mk(){
     build weapon_only_fof
     build webshortcuts
     build word_filter
-
-    build Custom-Player-Skins
 
     remove_disabled
 }
