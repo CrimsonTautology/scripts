@@ -117,9 +117,13 @@ build_csgo_main(){
 
     build admin_support
     build advanced_ads
+    build analytics
     build autoupdater
+    build dmr
     build iga
     build jet
+    build mapconfigs
+    build webshortcuts
 
     remove_disabled
 }
@@ -218,7 +222,7 @@ build_fof_mk(){
 #build_l4d_main
 #build_l4d2_main
 #build_nmrih_main
-#build_csgo_main
+build_csgo_main
 build_fof_main
 build_fof_tp
 build_fof_mk
