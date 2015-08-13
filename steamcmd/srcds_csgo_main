@@ -13,10 +13,10 @@ DAEMON=$DIR/srcds_run
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/csgo_main.txt
 IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
-PORT=27020
+PORT=27015
 
 # Change all PARAMS to your needs.
-PARAMS="-game csgo -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +maxplayers 24 +game_type 0 +game_mode 0 +mapgroup mg_active +map de_dust2"
+PARAMS="-game csgo -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 20 +game_type 0 +game_mode 0 +map de_dust2"
 NAME=csgo_main
 DESC="[CSGO Server]"
 

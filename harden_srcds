@@ -18,14 +18,16 @@ iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 
 # Game Client Traffic + Matchmaking and HLTV
-iptables -A INPUT -p udp -m udp --dport 27000:27030 -j ACCEPT
+iptables -A INPUT -p udp -m udp --dport 27000:27130 -j ACCEPT
 # Steam Downloads
-iptables -A INPUT -p tcp -m tcp --dport 27014:27050 -j ACCEPT
+iptables -A INPUT -p tcp -m tcp --dport 27014:27150 -j ACCEPT
 # Other ports for Steam
 iptables -A INPUT -p udp -m udp --dport 4380 -j ACCEPT
 iptables -A INPUT -p udp -m udp --dport 3478 -j ACCEPT
 iptables -A INPUT -p udp -m udp --dport 4379 -j ACCEPT
 iptables -A INPUT -p udp -m udp --dport 4380 -j ACCEPT
+iptables -A INPUT -p udp -m udp --dport 1200 -j ACCEPT
+
 
 
 iptables -A INPUT -j DROP
