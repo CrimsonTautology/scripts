@@ -40,6 +40,7 @@ build_tf2_jet(){
     build autoupdater
     build be_the_
     build dmr
+    build dhooks
     build goomba
     build hud_alerts
     build huntsman_air
@@ -49,6 +50,7 @@ build_tf2_jet(){
     build other
     build rtd
     build super_ff
+    build stt
     build webshortcuts
 
     remove_disabled
@@ -217,12 +219,12 @@ build_fof_mk(){
 
 #Build list here###############
 
-#build_tf2_jet
+build_tf2_jet
 #build_tf2_main
 #build_l4d_main
 #build_l4d2_main
 #build_nmrih_main
-build_csgo_main
-build_fof_main
-build_fof_tp
-build_fof_mk
+#build_csgo_main
+#build_fof_main
+#build_fof_tp
+#build_fof_mk
