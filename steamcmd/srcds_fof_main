@@ -16,7 +16,7 @@ IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)
 PORT=27023
 
 # Change all PARAMS to your needs.
-PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 20 +map fof_fistful"
+PARAMS="-game fof -debug -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 20 +map fof_fistful"
 NAME=fof_main
 DESC="[Fistful of Frags Server]"
 
