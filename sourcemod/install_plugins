@@ -71,7 +71,7 @@ build_tf2_stt(){
     build other
     build sendproxy
     build steamtools
-    build stt
+    #build stt
     build tf2items
     build webshortcuts
 
@@ -255,6 +255,6 @@ build_tf2_stt
 #build_l4d2_main
 #build_nmrih_main
 #build_csgo_main
-build_fof_main
-build_fof_tp
-build_fof_mk
+#build_fof_main
+#build_fof_tp
+#build_fof_mk
