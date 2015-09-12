@@ -1,4 +1,4 @@
 #!/bin/sh
 ./steamcmd.sh +runscript fof_main.txt
-tar -xzf ~/sourcemod/mmsource-1.10.4-git923-linux.tar.gz -C ~/steamcmd/fof_main/fof/
+tar -xzf ~/sourcemod/mmsource-1.10.6-git942-linux.tar.gz -C ~/steamcmd/fof_main/fof/
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_main/fof/ --install --dontask

@@ -1,4 +1,4 @@
 #!/bin/sh
 ./steamcmd.sh +runscript l4d2_main.txt
-tar -xzf ~/sourcemod/mmsource-1.10.4-git923-linux.tar.gz -C ~/steamcmd/l4d2_main/left4dead2/
+tar -xzf ~/sourcemod/mmsource-1.10.6-git942-linux.tar.gz  -C ~/steamcmd/l4d2_main/left4dead2/
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/l4d2_main/left4dead2/ --install --dontask

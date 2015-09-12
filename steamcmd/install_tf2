@@ -1,4 +1,4 @@
 #!/bin/sh
 ./steamcmd.sh +runscript tf2_.txt
-tar -xzf ~/sourcemod/mmsource-1.10.4-git923-linux.tar.gz -C ~/steamcmd/tf2_/tf/
+tar -xzf ~/sourcemod/mmsource-1.10.6-git942-linux.tar.gz -C ~/steamcmd/tf2_/tf/
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/tf2_main/tf/ --install --dontask
