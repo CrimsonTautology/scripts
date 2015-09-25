@@ -1,0 +1,4 @@
+#!/bin/sh
+./steamcmd.sh +runscript gmod_main.txt
+tar -xzf ~/sourcemod/mmsource-1.10.6-git942-linux.tar.gz -C ~/steamcmd/gmod_main/garrysmod/
+~/bin/sourcemod-updater/update.sh ~/steamcmd/gmod_main/garrysmod/ --install --dontask
