@@ -16,7 +16,7 @@ IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)
 PORT=27040
 
 # Change all PARAMS to your needs.
-PARAMS="-game garrysmod -debug -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 32 +map gm_construct"
+PARAMS="-game garrysmod -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 32 +map gm_construct"
 NAME=gmod_main
 DESC="[Garry's Mod Server]"
 
