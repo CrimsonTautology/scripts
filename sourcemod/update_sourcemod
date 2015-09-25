@@ -10,6 +10,7 @@
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_tp/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/csgo_main/csgo/ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/steamcmd/gmod_main/garrysmod/ --snapshot-stable --dontask
 
 #non-standard repos
 
