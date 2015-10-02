@@ -163,6 +163,7 @@ build_fof_main(){
     build death_chance_fof
     build dmr
     #build goomba_fof
+    #build gungame_fof
     build iga
     build jet
     build killer_info_display
@@ -252,11 +253,11 @@ build_fof_mk(){
 
 #build_tf2_jet
 #build_tf2_main
-build_tf2_stt
+#build_tf2_stt
 #build_l4d_main
 #build_l4d2_main
 #build_nmrih_main
 #build_csgo_main
 build_fof_main
-build_fof_tp
-build_fof_mk
+#build_fof_tp
+#build_fof_mk
