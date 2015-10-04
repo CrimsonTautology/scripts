@@ -195,12 +195,14 @@ build_fof_tp(){
     build autoupdater
     build death_chance_fof
     build dmr
+    build gungame_fof
     build iga
     build jet
     build killer_info_display
     build mapconfigs
     build navfile_blocker
     #build near_map_end_fof
+    build mapfix_fof
     build randomize_teams_fof
     build resize_players
     build super_kick_fof
@@ -224,7 +226,6 @@ build_fof_mk(){
     build autoupdater
     build death_chance_fof
     build dmr
-    build gungame_fof
     build iga
     build jet
     build killer_info_display
@@ -259,6 +260,6 @@ build_fof_mk(){
 #build_l4d2_main
 #build_nmrih_main
 #build_csgo_main
-#build_fof_main
-#build_fof_tp
+build_fof_main
+build_fof_tp
 build_fof_mk
