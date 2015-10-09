@@ -162,10 +162,8 @@ build_fof_main(){
     build autoupdater
     build death_chance_fof
     build dmr
-    #build goomba_fof
-    #build gungame_fof
     build iga
-    build jet
+    #build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
@@ -179,8 +177,6 @@ build_fof_main(){
     build weapon_only_fof
     build webshortcuts
     build word_filter
-
-    #build Custom-Player-Skins
 
     remove_disabled
 }
@@ -197,7 +193,7 @@ build_fof_tp(){
     build dmr
     build gungame_fof
     build iga
-    build jet
+    #build jet
     build killer_info_display
     build mapconfigs
     build navfile_blocker
@@ -207,11 +203,9 @@ build_fof_tp(){
     build resize_players
     build super_kick_fof
     build voice_warn
-    build weapon_only_fof
+    #build weapon_only_fof
     build webshortcuts
     build word_filter
-
-    #build Custom-Player-Skins
 
     remove_disabled
 }
@@ -227,7 +221,7 @@ build_fof_mk(){
     build death_chance_fof
     build dmr
     build iga
-    build jet
+    #build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
@@ -240,8 +234,6 @@ build_fof_mk(){
     build weapon_only_fof
     build webshortcuts
     build word_filter
-
-    #build Custom-Player-Skins
 
     remove_disabled
 }
