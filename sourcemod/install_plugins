@@ -162,8 +162,9 @@ build_fof_main(){
     build autoupdater
     build death_chance_fof
     build dmr
+    build drunk_fof
     build iga
-    #build jet
+    build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
@@ -191,9 +192,10 @@ build_fof_tp(){
     build autoupdater
     build death_chance_fof
     build dmr
+    build drunk_fof
     build gungame_fof
     build iga
-    #build jet
+    build jet
     build killer_info_display
     build mapconfigs
     build navfile_blocker
@@ -220,8 +222,9 @@ build_fof_mk(){
     build autoupdater
     build death_chance_fof
     build dmr
+    build drunk_fof
     build iga
-    #build jet
+    build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
@@ -253,5 +256,5 @@ build_fof_mk(){
 #build_nmrih_main
 #build_csgo_main
 build_fof_main
-build_fof_tp
-build_fof_mk
+#build_fof_tp
+#build_fof_mk
