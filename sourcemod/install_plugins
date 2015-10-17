@@ -256,5 +256,5 @@ build_fof_mk(){
 #build_nmrih_main
 #build_csgo_main
 build_fof_main
-#build_fof_tp
-#build_fof_mk
+build_fof_tp
+build_fof_mk
