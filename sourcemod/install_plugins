@@ -206,6 +206,7 @@ build_fof_tp(){
     build super_kick_fof
     build voice_warn
     #build weapon_only_fof
+    build weapon_mod
     build webshortcuts
     build word_filter
 
