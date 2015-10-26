@@ -206,7 +206,7 @@ build_fof_tp(){
     build super_kick_fof
     build voice_warn
     #build weapon_only_fof
-    build weapon_mod
+    #build weapon_mod
     build webshortcuts
     build word_filter
 
@@ -224,6 +224,7 @@ build_fof_mk(){
     build death_chance_fof
     build dmr
     build drunk_fof
+    #build gungame_fof
     build iga
     build jet
     build killer_info_display
