@@ -194,19 +194,17 @@ build_fof_tp(){
     build dmr
     build drunk_fof
     build gungame_fof
+    build fashion_fof
     build iga
     build jet
     build killer_info_display
     build mapconfigs
     build navfile_blocker
-    #build near_map_end_fof
     build mapfix_fof
     build randomize_teams_fof
     build resize_players
     build super_kick_fof
     build voice_warn
-    #build weapon_only_fof
-    #build weapon_mod
     build webshortcuts
     build word_filter
 
