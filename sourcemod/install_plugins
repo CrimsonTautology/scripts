@@ -165,7 +165,7 @@ build_fof_main(){
     build drunk_fof
     build iga
     build jet
-    #build killer_info_display
+    build killer_info_display
     build mapconfigs
     build mapfix_fof
     build navfile_blocker
@@ -196,7 +196,7 @@ build_fof_tp(){
     build gungame_fof
     build iga
     build jet
-    #build killer_info_display
+    build killer_info_display
     build mapconfigs
     build navfile_blocker
     build mapfix_fof
@@ -223,7 +223,7 @@ build_fof_mk(){
     build drunk_fof
     build iga
     build jet
-    #build killer_info_display
+    build killer_info_display
     build mapconfigs
     build mapfix_fof
     build navfile_blocker
