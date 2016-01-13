@@ -1,0 +1,4 @@
+#!/bin/sh
+./steamcmd.sh +runscript ins_main.txt
+tar -xzf ~/sourcemod/mmsource-1.10.7-git947-linux.tar.gz -C ~/steamcmd/ins_main/insurgency/
+~/bin/sourcemod-updater/update.sh ~/steamcmd/ins_main/insurgency/ --install --dontask
