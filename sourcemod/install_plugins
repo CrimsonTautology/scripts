@@ -261,7 +261,7 @@ build_ins_main(){
 #build_l4d2_main
 #build_nmrih_main
 #build_csgo_main
-#build_fof_main
+build_fof_main
 build_fof_tp
-#build_fof_mk
+build_fof_mk
 #build_ins_main
