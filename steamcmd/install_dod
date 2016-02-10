@@ -1,0 +1,4 @@
+#!/bin/sh
+./steamcmd.sh +runscript dod_main.txt
+tar -xzf ~/sourcemod/mmsource-1.10.7-git947-linux.tar.gz -C ~/steamcmd/dod_main/dod/
+~/bin/sourcemod-updater/update.sh ~/steamcmd/dod_main/dod/ --install --dontask
