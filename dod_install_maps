@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Install all .bsp files (maps) that are in the home directory and add them to
+#our fastdl server
+cp ~/*.bsp ~/shared/dod/maps/
+bzip2 ~/*.bsp
+mv ~/*.bz2 ~/fastdl/dod/maps/
+cd ~/fastdl/
+./sync_files
