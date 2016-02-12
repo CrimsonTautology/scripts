@@ -16,9 +16,9 @@ IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)
 PORT=27034
 
 # Change all PARAMS to your needs.
-PARAMS="-game dod -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT -ip $IP +maxplayers 24 +map dod_donner"
+PARAMS="-game dod -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT -ip $IP +maxplayers 32 +map dod_donner"
 NAME=dod_main
-DESC="[DayOfDefeat:Source Server]"
+DESC="[Day of Defeat:Source Server]"
 
 case "$1" in
 	start)

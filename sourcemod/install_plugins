@@ -256,12 +256,11 @@ build_dod_main(){
 
     build admin_support
     #build advanced_ads
-    #build analytics
+    build analytics
     build autoupdater
-    #build dmr
+    build dmr
     build iga
     build jet
-    #build killer_info_display
     build mapconfigs
     build navfile_blocker
     build resize_players
