@@ -172,6 +172,7 @@ build_fof_main(){
     build near_map_end_fof
     build randomize_teams_fof
     build resize_players
+    build sourcebans
     build super_kick_fof
     build voice_warn
     #build weapon_mod
@@ -203,6 +204,7 @@ build_fof_tp(){
     build mapfix_fof
     build randomize_teams_fof
     build resize_players
+    build sourcebans
     build super_kick_fof
     build voice_warn
     build webshortcuts
@@ -232,6 +234,7 @@ build_fof_mk(){
     build near_map_end_fof
     build randomize_teams_fof
     build resize_players
+    build sourcebans
     build super_kick_fof
     build voice_warn
     build weapon_only_fof
