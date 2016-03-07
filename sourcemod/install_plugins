@@ -184,9 +184,9 @@ build_fof_main(){
     remove_disabled
 }
 
-#Fists Full of Frags Teamplay Server #######################################
-build_fof_tp(){
-    build_server /home/steam/steamcmd/fof_tp/fof/
+#Fists Full of Frags Gun Game Server #######################################
+build_fof_gg(){
+    build_server /home/steam/steamcmd/fof_gg/fof/
 
     build admin_support
     build advanced_ads
@@ -213,6 +213,37 @@ build_fof_tp(){
 
     remove_disabled
 }
+
+#Fists Full of Frags Gun Game Server (12 man) #######################################
+build_fof_gg2(){
+    build_server /home/steam/steamcmd/fof_gg2/fof/
+
+    build admin_support
+    build advanced_ads
+    build analytics
+    build autoupdater
+    build death_chance_fof
+    build dmr
+    build drunk_fof
+    build fashion_fof
+    build gungame_fof
+    build iga
+    build jet
+    build killer_info_display
+    build mapconfigs
+    build navfile_blocker
+    build mapfix_fof
+    build randomize_teams_fof
+    build resize_players
+    build sourcebans
+    build super_kick_fof
+    build voice_warn
+    build webshortcuts
+    build word_filter
+
+    remove_disabled
+}
+
 
 #Fists Full of Frags Break Bad Server #######################################
 build_fof_mk(){
@@ -283,6 +314,7 @@ build_dod_main(){
 #build_l4d_main
 #build_l4d2_main
 build_fof_main
-build_fof_tp
+build_fof_gg
+build_fof_gg2
 build_fof_mk
 #build_dod_main

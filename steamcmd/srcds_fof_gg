@@ -7,18 +7,18 @@ SRCDS_USER="steam"
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # The path to the game you want to host. example = /home/newuser/dod
-DIR=/home/steam/steamcmd/dod_main
+DIR=/home/steam/steamcmd/fof_gg
 DAEMON=$DIR/srcds_run
 
 STEAM_DIR=/home/steam/steamcmd
-STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/dod_main.txt
+STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/fof_gg.txt
 IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
-PORT=27039
+PORT=27027
 
 # Change all PARAMS to your needs.
-PARAMS="-game dod -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT -ip $IP +maxplayers 32 +map dod_donner"
-NAME=dod_main
-DESC="[Day of Defeat:Source Server]"
+PARAMS="-game fof -debug -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 20 +map fof_desperados"
+NAME=fof_gg
+DESC="[Fistful of Frags Server (Gun Game)]"
 
 case "$1" in
 	start)
