@@ -17,7 +17,7 @@ PORT=27035
 
 # Change all PARAMS to your needs.
 PARAMS="-game fof -debug -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 12 +map fof_tramonto_12"
-NAME=fof_gg2
+NAME=fof_2gg
 DESC="[Fistful of Frags Server (Gun Game 12)]"
 
 case "$1" in
