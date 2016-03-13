@@ -245,6 +245,34 @@ build_fof_gg2(){
     remove_disabled
 }
 
+#Fists Full of Frags Fistful of Zombies Server #######################################
+build_fof_gg(){
+    build_server /home/steam/steamcmd/fof_gg/fof/
+
+    build admin_support
+    build advanced_ads
+    build analytics
+    build autoupdater
+    build death_chance_fof
+    build dmr
+    build drunk_fof
+    #build fashion_fof
+    build iga
+    build jet
+    build killer_info_display
+    build mapconfigs
+    build navfile_blocker
+    build mapfix_fof
+    build randomize_teams_fof
+    build sourcebans
+    build super_kick_fof
+    build voice_warn
+    build webshortcuts
+    build word_filter
+
+    remove_disabled
+}
+
 
 #Fists Full of Frags Break Bad Server #######################################
 build_fof_mk(){
@@ -318,4 +346,5 @@ build_fof_main
 build_fof_gg
 build_fof_gg2
 build_fof_mk
+build_fof_foz
 #build_dod_main
