@@ -238,6 +238,7 @@ build_fof_gg2(){
     build sourcebans
     build super_kick_fof
     build voice_warn
+    build weapon_only_fof
     build webshortcuts
     build word_filter
 
