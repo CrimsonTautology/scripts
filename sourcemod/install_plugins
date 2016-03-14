@@ -246,8 +246,8 @@ build_fof_gg2(){
 }
 
 #Fists Full of Frags Fistful of Zombies Server #######################################
-build_fof_gg(){
-    build_server /home/steam/steamcmd/fof_gg/fof/
+build_fof_foz(){
+    build_server /home/steam/steamcmd/fof_foz/fof/
 
     build admin_support
     build advanced_ads
