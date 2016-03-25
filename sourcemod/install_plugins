@@ -256,7 +256,7 @@ build_fof_foz(){
     build death_chance_fof
     build dmr
     build drunk_fof
-    #build fashion_fof
+    build fashion_fof
     build iga
     build jet
     build killer_info_display
