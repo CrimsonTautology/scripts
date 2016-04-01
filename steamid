@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-
-WebApi.api_key = ENV['STEAM_API_KEY']
-json = JSON.parse(WebApi.json "ISteamUser", "GetPlayerSummaries", 2, {steamids: steam_id.to_s})
-steam = json["response"]["players"][0]
-
-puts steam

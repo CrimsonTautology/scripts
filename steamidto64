@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'steam-condenser'
+
+puts SteamId.SteamId.steam_id_to_community_id ARGV[0]
