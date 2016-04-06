@@ -13,10 +13,12 @@ DAEMON=$DIR/srcds_run
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/ins_main.txt
 IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
-PORT=27050
+PORT=27150
+CLIENTPORT=$((PORT + 1))
+TVPORT=$((PORT + 2))
 
 # Change all PARAMS to your needs.
-PARAMS="-game insurgency -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT -ip $IP +maxplayers 24 +map ministry"
+PARAMS="-game insurgency -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT -ip $IP +maxplayers 24 +map ministry"
 NAME=ins_main
 DESC="[Insurgency Server]"
 

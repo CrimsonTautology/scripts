@@ -13,10 +13,12 @@ DAEMON=$DIR/srcds_run
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/gmod_main.txt
 IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
-PORT=27040
+PORT=27120
+CLIENTPORT=$((PORT + 1))
+TVPORT=$((PORT + 2))
 
 # Change all PARAMS to your needs.
-PARAMS="-game garrysmod -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +ip $IP +maxplayers 32 +map gm_construct"
+PARAMS="-game garrysmod -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers 32 +map gm_construct"
 NAME=gmod_main
 DESC="[Garry's Mod Server]"
 
