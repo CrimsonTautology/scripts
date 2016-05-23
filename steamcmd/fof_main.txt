@@ -2,5 +2,5 @@
 @NoPromptForPassword 1
 login anonymous
 force_install_dir ./fof_main
-app_update 295230 validate
+app_update 295230 -beta upcoming validate
 quit
