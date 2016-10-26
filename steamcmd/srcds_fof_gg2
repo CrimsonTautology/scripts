@@ -18,7 +18,7 @@ CLIENTPORT=$((PORT + 1))
 TVPORT=$((PORT + 2))
 
 # Change all PARAMS to your needs.
-PARAMS="-game fof -debug -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers 12 +map fof_tramonto_12"
+PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers 12 +map fof_tramonto_12"
 NAME=fof_2gg
 DESC="[Fistful of Frags Server (Gun Game 12)]"
 
