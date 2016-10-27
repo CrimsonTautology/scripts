@@ -86,11 +86,14 @@ build_tf2_main(){
     build advanced_ads
     build analytics
     build autoupdater
-    build botmanager
-    build botnames
-    build iga
     build goomba
+    build iga
+    build mapconfigs
+    build nomgrep
     build other
+    build sourcebans
+    build webshortcuts
+    build word_filter
 
     remove_disabled
 }
