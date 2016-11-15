@@ -91,16 +91,24 @@ elsif is_number?(steamid)
   #SteamId64
 
   steamid = steamid.to_i
-  #begin
+  begin
     user = SteamId.new steamid
     print_steam_user user
-  #rescue
-  #  steamid32 = SteamId.community_id_to_steam_id steamid
-  #  puts "steamID:#{BUFFER}#{steamid32}"
-  #  puts "steamID3:#{BUFFER}#{steamid32_to_usteamid steamid32}"
-  #  puts "steamID64:#{BUFFER}#{steamid}"
-  #end
+  rescue
+    steamid32 = SteamId.community_id_to_steam_id steamid
+    puts "steamID:#{BUFFER}#{steamid32}"
+    puts "steamID3:#{BUFFER}#{steamid32_to_usteamid steamid32}"
+    puts "steamID64:#{BUFFER}#{steamid}"
+  end
 
 else
-  STDERR.puts "\"#{steamid}\" Is not a valid SteamID."
+  #Use custom url name
+
+  begin
+    user = SteamId.new steamid
+    print_steam_user user
+  rescue SteamCondenserError
+    STDERR.puts "\"#{steamid}\" Is not a valid SteamID."
+  end
+
 end
