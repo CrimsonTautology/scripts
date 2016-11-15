@@ -1,0 +1,106 @@
+#!/usr/bin/env ruby
+require 'steam-condenser'
+
+BUFFER = "\t\t"
+
+def print_steam_user user
+  steamid32 = SteamId.community_id_to_steam_id user.steam_id64 
+  usteamid = steamid32_to_usteamid steamid32
+  puts "steamID:#{BUFFER}#{steamid32}"
+  puts "steamID3:#{BUFFER}#{usteamid}"
+  puts "steamID64:#{BUFFER}#{user.steam_id64}"
+  puts "customURL:#{BUFFER}#{user.custom_url}"
+  puts "nickname:#{BUFFER}\e[#{user.is_banned? ? 31 : 34}m#{user.nickname}\e[0m"
+  puts "profile state:#{BUFFER}#{user.state_message}"
+  puts "created:#{BUFFER}#{user.member_since}"
+  puts "profile:#{BUFFER}http://steamcommunity.com/profiles/#{user.steam_id64}"
+
+end
+
+def is_number? n
+  true if Integer(n) rescue false
+end
+
+def steamid32_to_usteamid steamid
+  steamid_split = steamid.split(':')
+  usteamid = []
+  usteamid << '[U:1:'
+
+  y = Integer(steamid_split[1])
+  z = Integer(steamid_split[2])
+
+  steamacct = z * 2 + y
+
+  usteamid << steamacct << ']'
+
+  usteamid.join
+end
+
+def usteamid_to_steamid32(usteamid)
+  usteamid.gsub('[', '').gsub(']', '')
+
+  usteamid_split = usteamid.split(':')
+  steamid = []
+  steamid << 'STEAM_0:'
+
+  z = Integer(usteamid_split[2])
+
+  if z % 2 == 0
+      steamid << '0:'
+  else
+      steamid << '1:'
+  end
+
+  steamacct = z / 2
+
+  steamid << steamacct
+
+  steamid.join
+end
+
+
+
+steamid = ARGV[0].strip
+
+if steamid.start_with? "STEAM_"
+
+  #SteamId32
+  begin
+    user = SteamId.new steamid
+    print_steam_user user
+  rescue
+    puts "steamID:#{BUFFER}#{steamid}"
+    puts "steamID3:#{BUFFER}#{steamid32_to_usteamid steamid}"
+    puts "steamID64:#{BUFFER}#{SteamId.steam_id_to_community_id steamid}"
+  end
+
+elsif steamid.start_with?("[U:") || steamid.start_with?("U:")
+  #SteamId3 or uSteamId
+
+  steamid32 = usteamid_to_steamid32 steamid
+  begin
+    user = SteamId.new steamid32
+    print_steam_user user
+  rescue
+    puts "steamID:#{BUFFER}#{steamid32}"
+    puts "steamID3:#{BUFFER}#{steamid}"
+    puts "steamID64:#{BUFFER}#{SteamId.steam_id_to_community_id steamid32}"
+  end
+
+elsif is_number?(steamid)
+  #SteamId64
+
+  steamid = steamid.to_i
+  #begin
+    user = SteamId.new steamid
+    print_steam_user user
+  #rescue
+  #  steamid32 = SteamId.community_id_to_steam_id steamid
+  #  puts "steamID:#{BUFFER}#{steamid32}"
+  #  puts "steamID3:#{BUFFER}#{steamid32_to_usteamid steamid32}"
+  #  puts "steamID64:#{BUFFER}#{steamid}"
+  #end
+
+else
+  STDERR.puts "\"#{steamid}\" Is not a valid SteamID."
+end

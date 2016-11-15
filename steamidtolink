@@ -1,4 +1,0 @@
-#!/usr/bin/env ruby
-require 'steam-condenser'
-
-puts "http://steamcommunity.com/profiles/#{SteamId.steam_id_to_community_id ARGV[0]}"
