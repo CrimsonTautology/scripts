@@ -37,7 +37,7 @@ def steamid32_to_usteamid steamid
 end
 
 def usteamid_to_steamid32(usteamid)
-  usteamid.gsub('[', '').gsub(']', '')
+  usteamid = usteamid.gsub('[', '').gsub(']', '')
 
   usteamid_split = usteamid.split(':')
   steamid = []
