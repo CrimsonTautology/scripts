@@ -14,6 +14,22 @@ def print_steam_user user
   puts "profile state:#{BUFFER}#{user.state_message}"
   puts "created:#{BUFFER}#{user.member_since}"
   puts "profile:#{BUFFER}http://steamcommunity.com/profiles/#{user.steam_id64}"
+  
+  puts "trade ban:#{BUFFER}#{user.trade_ban_state}"
+  puts "visibility:#{BUFFER}#{user.visibility_state}"
+  puts "privacy:#{BUFFER}#{user.privacy_state}"
+
+  puts "real name:#{BUFFER}#{user.real_name}" unless user.real_name.to_s.empty?
+  puts "location:#{BUFFER}#{user.location}" unless user.location.to_s.empty?
+  puts "head line:#{BUFFER}#{user.head_line}" unless user.head_line.to_s.empty?
+  puts "summary:#{BUFFER}#{user.summary}" unless user.summary.to_s.empty? || user.summary == "No information given."
+  unless user.links.empty?
+    puts "links:"
+    user.links.each do |k,v|
+      puts "#{BUFFER}#{k} => #{v}"
+    end
+  end
+
   puts "recent games:"
   user.most_played_games.each do |k,v|
     puts "#{BUFFER}#{k} => #{v}"
