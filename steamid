@@ -14,6 +14,10 @@ def print_steam_user user
   puts "profile state:#{BUFFER}#{user.state_message}"
   puts "created:#{BUFFER}#{user.member_since}"
   puts "profile:#{BUFFER}http://steamcommunity.com/profiles/#{user.steam_id64}"
+  puts "recent games:"
+  user.most_played_games.each do |k,v|
+    puts "#{BUFFER}#{k} => #{v}"
+  end
 
 end
 
