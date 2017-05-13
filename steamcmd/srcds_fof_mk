@@ -18,7 +18,8 @@ CLIENTPORT=$((PORT + 1))
 TVPORT=$((PORT + 2))
 
 # Change all PARAMS to your needs.
-PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers 20 +map fof_mariokart_b1"
+#PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers 20 +map fof_mariokart_b1"
+PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers 12 +map fof_masdm_b1"
 NAME=fof_mk
 DESC="[Fistful of Frags Server (Mario Kart)]"
 
