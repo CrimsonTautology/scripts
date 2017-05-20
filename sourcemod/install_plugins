@@ -286,6 +286,7 @@ build_fof_mk(){
     build advanced_ads
     build analytics
     build autoupdater
+    build bhop
     build death_chance_fof
     build dmr
     build drunk_fof
