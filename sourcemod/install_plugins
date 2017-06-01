@@ -164,8 +164,7 @@ build_fof_main(){
     build analytics
     build autoupdater
     build death_chance_fof
-    #build dmr
-    build nomgrep
+    build dmr
     build drunk_fof
     build fashion_fof
     build iga
