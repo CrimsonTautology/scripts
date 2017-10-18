@@ -13,12 +13,14 @@ DAEMON=$DIR/srcds_run
 STEAM_DIR=/home/steam/steamcmd
 STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/tf2_main.txt
 IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
-PORT=27019
+PORT=27015
 CLIENTPORT=$((PORT + 1))
 TVPORT=$((PORT + 2))
+MAXPLAYERS=32
+MAP=koth_nucleus
 
 # Change all PARAMS to your needs.
-PARAMS="-game tf +map koth_nucleus +maxplayers 24 -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP"
+PARAMS="-game tf -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers $MAXPLAYERS +map $MAP"
 NAME=tf2_main
 DESC="[TF2 Main Server]"
 
