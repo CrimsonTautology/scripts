@@ -21,6 +21,7 @@ MAP=koth_nucleus
 
 # Change all PARAMS to your needs.
 PARAMS="-game tf -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers $MAXPLAYERS +map $MAP"
+#PARAMS="-game tf -debug -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers $MAXPLAYERS +map $MAP"
 NAME=tf2_main
 DESC="[TF2 Main Server]"
 

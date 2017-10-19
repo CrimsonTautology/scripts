@@ -86,11 +86,12 @@ build_tf2_main(){
     #build advanced_ads
     build analytics
     build autoupdater
-    build goomba
     build dmr
+    build goomba
     build iga
     build jet
     build mapconfigs
+    build navfile_blocker
     build other
     build sourcebans
     build word_filter
