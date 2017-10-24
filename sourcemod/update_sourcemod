@@ -15,4 +15,5 @@
 #non-standard repos
 
 #~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.6/ "http://www.sourcemod.net/smdrop/1.6/sourcemod-1.6.0-git4525-linux.tar.gz" --install --dontask
-#~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.8/ --snapshot-dev --install --dontask
+#~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.8/ --snapshot-stable --install --dontask
+#~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.9/ --snapshot-dev --install --dontask

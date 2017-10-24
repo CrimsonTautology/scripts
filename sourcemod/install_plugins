@@ -357,17 +357,17 @@ build_dev(){
 #Build list here###############
 
 #build_tf2_jet
-build_tf2_main
+#build_tf2_main
 
 #build_l4d_main
 #build_l4d2_main
 
 #build_dod_main
 
-#build_fof_main
-#build_fof_gg
-#build_fof_gg2
-#build_fof_mk
-#build_fof_foz
+build_fof_main
+build_fof_gg
+build_fof_gg2
+build_fof_mk
+build_fof_foz
 
 #build_dev
