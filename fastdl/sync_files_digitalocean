@@ -1,20 +1,83 @@
 #!/usr/bin/env ruby
-require 'fog'
 
-storage = Fog::Storage.new(provider: 'Google')
-directory = storage.directories.get('fastdl')
+require 'net/ssh'
+require 'net/sftp'
+require 'yaml'
+
+
+config = YAML.load_file('/home/steam/.fastdl_digitalocean_config')
+ip = config["ip"]
+username =  config["username"]
+password =  config["password"]
+uuid = config["uuid"]
+remote_dir = config["remote_dir"]
+shared_dir = config["shared_dir"]
 
 mods = [ 'fof', 'tf', 'dod' ]
 dirs = [ 'maps', 'materials' ]
 
-mods.each do |mod|
-  dirs.each do |dir|
-    Dir.glob("#{mod}/#{dir}/*.bz2").each do |file|
-      puts file
-      directory.files.create(key: file, body: File.open(file), public: true)
-      File.delete file
-    end
-  end
+warnings = []
+
+
+Net::SFTP.start(ip, username, password: password) do |sftp|
+
+  mods.each do |mod|
+    dirs.each do |dir|
+      check_remote_dir = File.join(remote_dir, uuid, mod, dir)
+      check_local_dir =  File.join(shared_dir, mod, dir)
+
+      #check if the remote server has the corresponding directory
+      sftp.stat(check_remote_dir) do |response|
+        unless response.ok?
+          puts "\e[33mRemote directory '#{check_remote_dir} does not exist; skipping'\e[0m"
+          next
+        end
+
+        #for each mod for each subdirectory send bz2 files over
+        #Dir.glob("#{mod}/#{dir}/*.bz2").each do |file|
+        Dir.glob( File.join(mod, dir, "*.bz2") ).each do |file|
+          begin
+            send_dir = File.join(remote_dir, uuid, file)
+
+            puts "\e[34mSending #{file} to #{send_dir}\e[0m"
+            sftp.upload!(file, send_dir)
+
+            puts "\e[32mUploaded, now deleting #{file}\e[0m"
+            File.delete file
+
+            puts "\e[32mDeleted #{file}\e[0m"
+            puts "-------------------------"
+
+          rescue Exception => e
+            puts "\e[31mError: #{e.message}\e[0m"
+
+          end
+        end
+
+        # for each file in this mod subdirectory check if there is a corresponding file locally
+        sftp.dir.glob(File.join(remote_dir, uuid, mod, dir), "*.bz2") do |entry|
+          check_file = entry.name.sub(/\.bz2$/, "")
+
+          unless File.file?( File.join(check_local_dir, check_file) )
+            warnings << check_file
+          end
+
+        end
+
+      end # stat remote dir
+
+    end # each dir
+  end # each mod
+
 end
 
-puts directory.files.table
+puts ""
+
+if warnings.length > 0
+  puts "\e[33mWarning: the following files exist on the remote server BUT do not exist here\e[0m"
+  puts ""
+  warnings.each do |warning|
+    puts "\e[33m#{warning}\e[0m"
+  end
+  puts ""
+end
