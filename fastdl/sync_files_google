@@ -1,4 +1,9 @@
 #!/usr/bin/env ruby
+require 'fog'
+
+storage = Fog::Storage.new(provider: 'Google')
+directory = storage.directories.get('fastdl')
+
 
 mods = [ 'fof', 'tf', 'dod' ]
 dirs = [ 'maps', 'materials' ]
@@ -13,4 +18,4 @@ mods.each do |mod|
   end
 end
 
-#puts directory.files.table
+puts directory.files.table
