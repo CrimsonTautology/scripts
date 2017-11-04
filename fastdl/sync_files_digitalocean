@@ -13,10 +13,13 @@ uuid = config["uuid"]
 remote_dir = config["remote_dir"]
 shared_dir = config["shared_dir"]
 
+dmr_files = config["dmr_files"]
+
 mods = [ 'fof', 'tf', 'dod' ]
 dirs = [ 'maps', 'materials' ]
 
 warnings = []
+unused_maps = []
 
 
 Net::SFTP.start(ip, username, password: password) do |sftp|
@@ -56,7 +59,7 @@ Net::SFTP.start(ip, username, password: password) do |sftp|
 
         # for each file in this mod subdirectory check if there is a corresponding file locally
         sftp.dir.glob(File.join(remote_dir, uuid, mod, dir), "*.bz2") do |entry|
-          check_file = entry.name.sub(/\.bz2$/, "")
+          check_file = File.basename(entry.name, ".bz2")
 
           unless File.file?( File.join(check_local_dir, check_file) )
             warnings << check_file
@@ -78,6 +81,45 @@ if warnings.length > 0
   puts ""
   warnings.each do |warning|
     puts "\e[33m#{warning}\e[0m"
+  end
+  puts ""
+end
+
+
+# check for unused map files
+Dir.glob( File.join(shared_dir, "fof", "maps", "*.bsp") ).each do |file|
+  check_map  = File.basename(file, ".bsp")
+  found = false
+
+  #check our dmr_files for the map string
+  dmr_files.each do |dmr_path|
+    File.open(dmr_path) do |dmr_file|
+      dmr_file.each_line.detect do |line|
+
+        if line.include? check_map
+          found = true
+        end
+
+        break if found
+      end
+
+      break if found
+    end
+    
+    break if found
+  end
+
+  unless found
+    unused_maps << check_map
+  end
+end
+
+
+if unused_maps.length > 0
+  puts "\e[33mWarning: the following are never used in the dmr files\e[0m"
+  puts ""
+  unused_maps.each do |map|
+    puts "\e[33m#{map}\e[0m"
   end
   puts ""
 end
