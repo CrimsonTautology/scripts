@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+mods = [ 'fof', 'tf', 'dod' ]
+dirs = [ 'maps', 'materials' ]
+
+mods.each do |mod|
+  dirs.each do |dir|
+    Dir.glob("#{mod}/#{dir}/*.bz2").each do |file|
+      puts file
+      directory.files.create(key: file, body: File.open(file), public: true)
+      File.delete file
+    end
+  end
+end
+
+#puts directory.files.table
