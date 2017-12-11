@@ -1,0 +1,66 @@
+#!/usr/bin/env ruby
+require 'steam-condenser'
+
+BUFFER = "\t\t"
+
+def print_source_server_info server
+  i = server.server_info
+  puts "name:#{BUFFER}#{i[:server_name]}"
+  puts "map:#{BUFFER}#{i[:map_name]}"
+  puts "game:#{BUFFER}#{i[:game_description]}"
+  puts "directory:#{BUFFER}#{i[:game_directory]}"
+  puts "version:#{BUFFER}#{i[:game_version]}"
+  puts "players:#{BUFFER}#{i[:number_of_players]}(#{i[:number_of_bots]})/#{i[:max_players]}"
+  puts "tags:#{BUFFER}#{i[:server_tags]}"
+  puts "dedicated:#{BUFFER}#{i[:dedicated]}"
+  puts "os:#{BUFFER}#{i[:operating_system]}"
+  puts "password:#{BUFFER}#{i[:password_needed]}"
+  puts "secure:#{BUFFER}#{i[:secure]}"
+
+  puts "\n"
+end
+
+def print_source_server_players server
+  players = server.players
+
+  puts "\e[31mPLAYERS\e[0m"
+
+  players.each do |k,v|
+    puts "\e[34m#{k}\e[0m:#{BUFFER}#{humanize(v.connect_time)}#{BUFFER}#{v.score}"
+  end
+
+  puts "\n"
+end
+
+def print_source_server_rules server
+  rules = server.rules
+
+  puts "\e[31mRULES\e[0m"
+
+  rules.each do |k,v|
+    puts "\e[34m#{k}\e[0m:#{BUFFER}#{v}"
+  end
+
+  puts "\n"
+end
+
+def humanize secs
+  [[60, :seconds], [60, :minutes], [24, :hours], [1000, :days]].map{ |count, name|
+    if secs > 0
+      secs, n = secs.divmod(count)
+      "#{n.to_i} #{name}"
+    end
+  }.compact.reverse.join(' ')
+end
+
+serverip = ARGV[0].strip
+
+begin
+  server = SourceServer.new serverip
+  print_source_server_rules server
+  print_source_server_players server
+  print_source_server_info server
+rescue SteamCondenserError
+  STDERR.puts "\"#{serverip}\" Is not a valid Source Server IP."
+end
+
