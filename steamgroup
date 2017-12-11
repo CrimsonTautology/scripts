@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+require 'steam-condenser'
+
+BUFFER = "\t\t"
+
+def print_steam_group group
+  puts "name:#{BUFFER}#{group.name}"
+  puts "groupID64:#{BUFFER}#{group.group_id64}"
+  puts "customURL:#{BUFFER}#{group.custom_url}"
+  puts "url:#{BUFFER}#{group.base_url}"
+  puts "#members:#{BUFFER}#{group.member_count}"
+  puts "head line:#{BUFFER}#{group.headline}" unless group.headline.to_s.empty?
+  puts "summary:\n\n#{group.summary}" unless group.summary.to_s.empty? || group.summary == "No information given."
+  
+
+end
+
+groupid = ARGV[0].strip
+
+begin
+  group = SteamGroup.new groupid
+  print_steam_group group
+rescue SteamCondenserError
+  STDERR.puts "\"#{groupid}\" Is not a valid SteamGroupID."
+end
+
