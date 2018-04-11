@@ -93,7 +93,7 @@ build_tf2_main(){
     build mapconfigs
     build navfile_blocker
     build other
-    build sourcebans
+    build sourcebans-pp/game
     build word_filter
 
     remove_disabled
@@ -177,7 +177,7 @@ build_fof_main(){
     build near_map_end_fof
     build randomize_teams_fof
     build resize_players
-    build sourcebans
+    build sourcebans-pp/game
     build super_kick_fof
     build voice_warn
     #build weapon_mod
@@ -209,7 +209,7 @@ build_fof_gg(){
     build mapfix_fof
     build randomize_teams_fof
     build resize_players
-    build sourcebans
+    build sourcebans-pp/game
     build super_kick_fof
     build voice_warn
     build webshortcuts
@@ -239,7 +239,7 @@ build_fof_gg2(){
     build mapfix_fof
     build randomize_teams_fof
     build resize_players
-    build sourcebans
+    build sourcebans-pp/game
     build super_kick_fof
     build voice_warn
     build weapon_only_fof
@@ -269,7 +269,7 @@ build_fof_foz(){
     build navfile_blocker
     build mapfix_fof
     build randomize_teams_fof
-    build sourcebans
+    build sourcebans-pp/game
     build super_kick_fof
     build voice_warn
     build webshortcuts
@@ -301,7 +301,7 @@ build_fof_mk(){
     build near_map_end_fof
     build randomize_teams_fof
     build resize_players
-    build sourcebans
+    build sourcebans-pp/game
     build super_kick_fof
     build voice_warn
     build weapon_only_fof
