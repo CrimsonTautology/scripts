@@ -8,7 +8,7 @@
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_main/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_gg/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_gg2/fof/ --snapshot-stable --dontask
-#~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_foz/fof/ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_foz/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/dod_main/dod/ --snapshot-stable --dontask
 
