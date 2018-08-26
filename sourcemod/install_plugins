@@ -266,12 +266,14 @@ build_fof_foz(){
     build jet
     build killer_info_display
     build mapconfigs
-    build navfile_blocker
     build mapfix_fof
+    build navfile_blocker
     build randomize_teams_fof
     build sourcebans-pp/game
     build super_kick_fof
     build voice_warn
+    build weapon_mod
+    build weapon_only_fof
     build webshortcuts
     build word_filter
 
