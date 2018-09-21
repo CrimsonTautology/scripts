@@ -174,7 +174,7 @@ build_fof_main(){
     build mapconfigs
     build mapfix_fof
     build navfile_blocker
-    build near_map_end_fof
+    #build near_map_end_fof
     build randomize_teams_fof
     build resize_players
     build sourcebans-pp/game
