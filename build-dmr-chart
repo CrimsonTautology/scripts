@@ -1,0 +1,85 @@
+#!/usr/bin/env ruby
+
+require 'vdf4r'
+
+servers = [
+  {name: 'fof_foz', mod: 'fof'},
+  {name: 'fof_gg', mod: 'fof'},
+  {name: 'fof_gg2', mod: 'fof'},
+  {name: 'fof_main', mod: 'fof'},
+  {name: 'fof_mk', mod: 'fof'},
+]
+
+def path_to_dmr server
+  server[:dmr] ||= 'dmr.txt'
+  "/home/steam/steamcmd/#{server[:name]}/#{server[:mod]}/custom/server_settings/#{server[:dmr]}"
+end
+
+
+servers.each do |server|
+  empties = []
+  mids = []
+  highs = []
+
+  File.open(path_to_dmr(server)) do |file|
+    parser = VDF4R::Parser.new(file)
+    dmr = parser.parse
+
+    rotation = dmr["rotation"]
+
+    rotation.each do |node, v|
+      group = v["map"]
+      group = v["group"] if !group || group.empty?
+
+      if node =~ /\Aempty/
+        begin 
+          index = node.gsub(/[^0-9]/, '').to_i
+          empties[index] = group
+        rescue
+        end
+      end
+
+      if node =~ /\Amid/
+        begin 
+          index = node.gsub(/[^0-9]/, '').to_i
+          mids[index] = group
+        rescue
+        end
+      end
+
+      if node =~ /\Ahigh/
+        begin 
+          index = node.gsub(/[^0-9]/, '').to_i
+          highs[index] = group
+        rescue
+        end
+      end
+
+    end
+  end
+
+  puts server[:name]
+
+  #Empty
+  list = empties.compact.map do |s|
+    s[0..7].rjust(8)
+  end.join("  ")
+
+  puts "#{'Empty:'.ljust(10)}#{list}"
+
+  #Mid
+  list = mids.compact.map do |s|
+    s[0..7].rjust(8)
+  end.join("  ")
+
+  puts "#{'Mid:'.ljust(10)}#{list}"
+
+  #High
+  list = highs.compact.map do |s|
+    s[0..7].rjust(8)
+  end.join("  ")
+
+  puts "#{'High:'.ljust(10)}#{list}"
+  puts "\n\n"
+
+end
