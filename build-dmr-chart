@@ -2,6 +2,8 @@
 
 require 'vdf4r'
 
+SPACE = 8
+
 servers = [
   {name: 'fof_foz', mod: 'fof'},
   {name: 'fof_gg', mod: 'fof'},
@@ -31,6 +33,10 @@ servers.each do |server|
       group = v["map"]
       group = v["group"] if !group || group.empty?
 
+      if v["title"] && !v["title"].empty?
+        group = v["title"].downcase.gsub(/\W/,'')
+      end
+
       if node =~ /\Aempty/
         begin 
           index = node.gsub(/[^0-9]/, '').to_i
@@ -58,28 +64,35 @@ servers.each do |server|
     end
   end
 
-  puts server[:name]
-
-  #Empty
-  list = empties.compact.map do |s|
-    s[0..7].rjust(8)
+  empties_list = empties.compact.map do |s|
+    s[0..SPACE-1].rjust(SPACE)
   end.join("  ")
-
-  puts "#{'Empty:'.ljust(10)}#{list}"
 
   #Mid
-  list = mids.compact.map do |s|
-    s[0..7].rjust(8)
+  mids_list = mids.compact.map do |s|
+    s[0..SPACE-1].rjust(SPACE)
   end.join("  ")
-
-  puts "#{'Mid:'.ljust(10)}#{list}"
 
   #High
-  list = highs.compact.map do |s|
-    s[0..7].rjust(8)
+  highs_list = highs.compact.map do |s|
+    s[0..SPACE-1].rjust(SPACE)
   end.join("  ")
 
-  puts "#{'High:'.ljust(10)}#{list}"
+  largest_index = [
+    empties.compact.length,
+    mids.compact.length,
+    highs.compact.length,
+  ].max
+
+  index_list = (1..largest_index).map do |s|
+    "#{s}".rjust(SPACE)
+  end.join("  ")
+
+
+  puts "#{server[:name].ljust(SPACE+2)}#{index_list}"
+  puts "#{'Empty:'.ljust(SPACE+2)}#{empties_list}"
+  puts "#{'Mid:'.ljust(SPACE+2)}#{mids_list}"
+  puts "#{'High:'.ljust(SPACE+2)}#{highs_list}"
   puts "\n\n"
 
 end
