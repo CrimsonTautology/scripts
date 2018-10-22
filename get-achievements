@@ -1,0 +1,84 @@
+#!/usr/bin/env ruby
+
+require 'net/http'
+require 'json'
+require 'date'
+
+OUT_FILE = 'achievments.txt'
+STEAM_ID = ENV['STEAMID64']
+STEAM_API_KEY = ENV['SAK']
+
+def format_achievement game_name='', achievement
+  timestamp = Time.at(achievement['unlocktime']).to_datetime
+  name = achievement['name']
+  desc = achievement['description']
+  desc = " (#{desc})" unless  desc.empty?
+  "#{timestamp.strftime("%m/%d/%Y")}\tAchievement - #{game_name}:  #{name}#{desc} #{timestamp.strftime("%Y-%m-%d %I:%M:%S%p")}"
+end
+
+def get_owned_games_url key=STEAM_API_KEY, steamid=STEAM_ID
+  "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=#{key}&steamid=#{steamid}&format=json&include_played_free_games=1&include_played_free_games&l=en"
+end
+
+def get_player_achievments_url appid, key=STEAM_API_KEY, steamid=STEAM_ID
+  "http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=#{appid}&key=#{key}&steamid=#{steamid}&l=en"
+end
+
+def http_get_url_as_json url
+  uri = URI(url)
+  response = Net::HTTP.get(uri)
+  return JSON.parse(response)
+end
+
+def get_owned_games_app_ids key=STEAM_API_KEY, steamid=STEAM_ID
+  url = get_owned_games_url key, steamid
+  json = http_get_url_as_json url
+
+  response = json['response']
+  games = response['games']
+
+  return games.map{|m| m['appid']}
+end
+
+def get_unlocked_player_achievments_for_app_id appid, key=STEAM_API_KEY, steamid=STEAM_ID
+  url = get_player_achievments_url appid, key, steamid
+  json = http_get_url_as_json url
+
+  playerstats = json['playerstats']
+
+  return playerstats['error'], false unless playerstats['success']
+
+  achievements = playerstats['achievements']
+  game_name = playerstats['gameName']
+
+  return game_name, false if achievements.nil?
+
+  # filter out achievements that are not unlocked and were achieved before steam recorded unlock time
+  return game_name, achievements.select{|s| s['achieved'] == 1 && s['unlocktime'] > 0}
+end
+
+
+app_ids = get_owned_games_app_ids
+puts "#{app_ids.count} app ids"
+
+open(OUT_FILE, 'w') do |file|
+  app_ids.each do |app_id|
+    begin
+      game_name, achievements = get_unlocked_player_achievments_for_app_id app_id
+
+      unless achievements
+        puts "no achievements for app_id = #{app_id} (#{game_name})"
+        next
+      end
+
+      achievements.each do |achievement|
+        puts format_achievement game_name, achievement
+        file.puts format_achievement game_name, achievement
+      end
+
+    rescue => error
+      puts "failed to get app_id = #{app_id} (#{error})"
+
+    end
+  end
+end 
