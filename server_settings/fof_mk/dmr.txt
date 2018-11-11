@@ -1,0 +1,10 @@
+"rotation"
+{
+    "start" "mariokart"
+
+    "mariokart"
+    {
+        "map" "fof_mariokart_b1"
+        "default_nextnode" "mariokart"
+    }
+}
