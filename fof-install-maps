@@ -2,8 +2,9 @@
 
 #Install all .bsp files (maps) that are in the home directory and add them to
 #our fastdl server
-cp ~/*.bsp ~/shared/dod/maps/
+cp ~/*.bsp ~/shared/fof/maps/
+mv ~/*.nav ~/shared/fof/maps/
 bzip2 ~/*.bsp
-mv ~/*.bz2 ~/fastdl/dod/maps/
+mv ~/*.bz2 ~/fastdl/fof/maps/
 cd ~/fastdl/
-./sync_files
+./sync-files

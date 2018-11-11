@@ -5,7 +5,7 @@ require 'net/sftp'
 require 'yaml'
 
 
-config = YAML.load_file('/home/steam/.fastdl_digitalocean_config')
+config = YAML.load_file('/home/steam/.fastdl-digitalocean-config')
 ip = config["ip"]
 username =  config["username"]
 password =  config["password"]
