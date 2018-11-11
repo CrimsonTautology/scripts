@@ -1,0 +1,174 @@
+map_groups
+{
+    // maps that come with the game
+    stock
+    {
+        fof_cripplecreek {}
+        fof_depot {}
+        fof_desperados {}
+        fof_fistful {}
+        fof_overtop {}
+        fof_revenge {}
+        fof_robertlee {}
+        fof_sweetwater {}
+        fof_impact {}
+
+        fof_nest_12 {}
+        fof_sawmill_12 {}
+        fof_tramonto_12 {}
+    }
+
+    // good custom maps for this game mode
+    custom
+    {
+        fof_abandoned_a1 {}
+        fof_alamo_beta_v2 {}
+        fof_coastal {}
+        fof_doomsday_b8 {}
+        fof_forest_new1 {}
+        fof_fragyard {}
+        fof_old_tijuana {}
+        fof_pueblo_beta_v3 {}
+        fof_revenge_old1 {}
+        fof_riobravo_new0 {}
+        fof_riverrun_a42 {}
+        fof_sawmill_b6 {}
+        fof_slender_b3 {}
+        fof_tombstone_final {}
+        fof_westmart_b5 {}
+        fof_westwood_beta_v8 {}
+
+        fof_nest_final {}
+        fof_station_r2 {}
+        foz_twintowers_a3 {}
+        foz_undeadwood_b5 {}
+
+
+        fof_craftroom_c {}
+
+        fof_devruins_d {}
+        fof_hacienda_1_3 {}
+
+        fof_quaker_a6 {}
+        fof_grande_b2 {}
+
+        fof_masdm_b1 {}
+        fof_old_fistful_b2 {}
+        fof_westwood_2010_beta_v6 {}
+
+        foz_greenglacier_b2 {}
+
+        fof_want_fortdm {}
+
+        fof_rustic_hydro_dam_v2,1 {}
+
+        fof_crossfire {}
+        fof_oldvalley {}
+        fof_oldwest {}
+
+        fof_lumber_a2 {}
+        fof_deadheatver2 {}
+    }
+
+    // alternative versions of maps
+    alternative
+    {
+        fof_depot_final_night_fix {}
+        fof_desperados_halloween {}
+
+        fof_robertlee_12 {}
+        fof_sweetwater_12 {}
+        fof_natchez {}
+
+        fof_westmart_b5 {}
+        foz_twintowers_a3 {}
+        foz_undeadwood_b5 {}
+        fof_old_fistful_b2 {}
+        foz_greenglacier_b2 {}
+    }
+
+    // gimmick maps
+    suprisechip
+    {
+        aim_ag_texture2 {}
+        dm_ag_texture_v2 {}
+        fof_abstract_hallways_a1 {}
+        fof_bouncy_a15 {}
+        fof_castle_black_a2 {}
+        fof_deathtable_b1 {}
+        fof_final_destination_b1 {}
+        fof_infinity_war {}
+        fof_mxm {}
+        fof_quad {}
+        fof_rainbow_b1 {}
+        fof_spacejam_b1 {}
+        fof_whoaaaaaa_b2 {}
+        tp_soccer_b6 {}
+
+        fof_simpsons_village {}
+        fof_simpsons_x {}
+        fof_canyonero {}
+        fof_cyberpunk_b2 {}
+        fof_deathcano_v19 {}
+        fof_whiskeypass_07 {}
+    }
+
+    // maps that have issues that I'm considering pulling
+    suspect
+    {
+        fof_bar_a22 {}
+        fof_castle_night_b2 {}
+        fof_e1m1_b1 {}
+        fof_shafted_a5 {}
+        fof_winterlong {}
+        fof_creepycreek_halloween {}
+        fof_winterlong_halloween {}
+    }
+
+    // teamplay maps
+    teamplay
+    {
+
+        tp_abandoned {}
+        tp_aim_map {}
+        tp_assault {}
+        tp_barn {}
+        tp_coastal {}
+        tp_dust2_a1 {}
+        tp_eliminator {}
+        tp_forest {}
+        tp_loothill {}
+        tp_rebelyard_a8 {}
+        tp_riobravo {}
+        tp_snowy {}
+        tp_soccer_b6 {}
+        tp_station {}
+        tp_trainyard_a9 {}
+        tp_yosemite {}
+    }
+
+    // maps that are unplayable/broken/crash the server
+    pulled
+    {
+        fof_clifford_a11 {}
+        fof_cove {}
+        fof_loothill_a5 {}
+        fof_mariokart_b1 {}
+        fof_mc_downtown_a {}
+        fof_orange_2014 {}
+        fof_orange_night_2014 {}
+        fof_slimeday_a3 {}
+        fof_snowy_a4 {}
+        fof_tijuana_event {}
+        tp_orange_2014 {}
+        fof_aim_arena_revised {}  //has some serverpoint commands
+    }
+
+    halloween
+    {
+        gt_creepycreek{}
+        gt_winterlong {}
+        gt_desperados {}
+    }
+
+}

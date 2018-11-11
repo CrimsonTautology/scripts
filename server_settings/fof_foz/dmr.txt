@@ -1,0 +1,915 @@
+"rotation"
+{
+    "start" "empty1"
+
+    "empty1"
+    {
+        "group" "stock"
+        "default_nextnode" "empty2"
+        "mid2"
+        {
+            "players_gte" "8"
+        }
+        "high2"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid1"
+    {
+        "group" "stock"
+        "default_nextnode" "empty2"
+        "mid2"
+        {
+            "players_gte" "8"
+        }
+        "high2"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high1"
+    {
+        "group" "stock"
+        "default_nextnode" "empty2"
+        "mid2"
+        {
+            "players_gte" "8"
+        }
+        "high2"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty2"
+    {
+        "group" "stock"
+        "default_nextnode" "empty3"
+        "mid3"
+        {
+            "players_gte" "8"
+        }
+        "high3"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid2"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty3"
+        "mid3"
+        {
+            "players_gte" "8"
+        }
+        "high3"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high2"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty3"
+        "mid3"
+        {
+            "players_gte" "8"
+        }
+        "high3"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty3"
+    {
+        "group" "stock"
+        "default_nextnode" "empty4"
+        "mid4"
+        {
+            "players_gte" "8"
+        }
+        "high4"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid3"
+    {
+        "group" "stock"
+        "default_nextnode" "empty4"
+        "mid4"
+        {
+            "players_gte" "8"
+        }
+        "high4"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high3"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty4"
+        "mid4"
+        {
+            "players_gte" "8"
+        }
+        "high4"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty4"
+    {
+        "group" "stock"
+        "default_nextnode" "empty5"
+        "mid5"
+        {
+            "players_gte" "8"
+        }
+        "high5"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid4"
+    {
+        "group" "stock"
+        "default_nextnode" "empty5"
+        "mid5"
+        {
+            "players_gte" "8"
+        }
+        "high5"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high4"
+    {
+        "group" "stock"
+        "default_nextnode" "empty5"
+        "mid5"
+        {
+            "players_gte" "8"
+        }
+        "high5"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty5"
+    {
+        "group" "stock"
+        "default_nextnode" "empty6"
+        "mid6"
+        {
+            "players_gte" "8"
+        }
+        "high6"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid5"
+    {
+        "group" "stock"
+        "default_nextnode" "empty6"
+        "mid6"
+        {
+            "players_gte" "8"
+        }
+        "high6"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high5"
+    {
+        "group" "suspect"
+        "title" "HELL TIER"
+        "default_nextnode" "empty6"
+        "mid6"
+        {
+            "players_gte" "8"
+        }
+        "high6"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty6"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty7"
+        "mid7"
+        {
+            "players_gte" "8"
+        }
+        "high7"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid6"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "default_nextnode" "empty7"
+        "mid7"
+        {
+            "players_gte" "8"
+        }
+        "high7"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high6"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "default_nextnode" "empty7"
+        "mid7"
+        {
+            "players_gte" "8"
+        }
+        "high7"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty7"
+    {
+        "group" "stock"
+        "default_nextnode" "empty8"
+        "mid8"
+        {
+            "players_gte" "8"
+        }
+        "high8"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid7"
+    {
+        "group" "stock"
+        "default_nextnode" "empty8"
+        "mid8"
+        {
+            "players_gte" "8"
+        }
+        "high8"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high7"
+    {
+        "group" "stock"
+        "default_nextnode" "empty8"
+        "mid8"
+        {
+            "players_gte" "8"
+        }
+        "high8"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty8"
+    {
+        "group" "alternative"
+        "default_nextnode" "empty9"
+        "mid9"
+        {
+            "players_gte" "8"
+        }
+        "high9"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid8"
+    {
+        "group" "alternative"
+        "default_nextnode" "empty9"
+        "mid9"
+        {
+            "players_gte" "8"
+        }
+        "high9"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high8"
+    {
+        "group" "alternative"
+        "default_nextnode" "empty9"
+        "mid9"
+        {
+            "players_gte" "8"
+        }
+        "high9"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty9"
+    {
+        "group" "stock"
+        "default_nextnode" "empty10"
+        "mid10"
+        {
+            "players_gte" "8"
+        }
+        "high10"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid9"
+    {
+        "group" "suspect"
+        "title" "HELL TIER"
+        "default_nextnode" "empty10"
+        "mid10"
+        {
+            "players_gte" "8"
+        }
+        "high10"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high9"
+    {
+        "group" "suspect"
+        "title" "HELL TIER"
+        "default_nextnode" "empty10"
+        "mid10"
+        {
+            "players_gte" "8"
+        }
+        "high10"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty10"
+    {
+        "group" "stock"
+        "default_nextnode" "empty11"
+        "mid11"
+        {
+            "players_gte" "8"
+        }
+        "high11"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid10"
+    {
+        "group" "stock"
+        "default_nextnode" "empty11"
+        "mid11"
+        {
+            "players_gte" "8"
+        }
+        "high11"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high10"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty11"
+        "mid11"
+        {
+            "players_gte" "8"
+        }
+        "high11"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty11"
+    {
+        "group" "stock"
+        "default_nextnode" "empty12"
+        "mid12"
+        {
+            "players_gte" "8"
+        }
+        "high12"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid11"
+    {
+        "group" "stock"
+        "default_nextnode" "empty12"
+        "mid12"
+        {
+            "players_gte" "8"
+        }
+        "high12"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high11"
+    {
+        "group" "stock"
+        "default_nextnode" "empty12"
+        "mid12"
+        {
+            "players_gte" "8"
+        }
+        "high12"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty12"
+    {
+        "group" "stock"
+        "default_nextnode" "empty13"
+        "mid13"
+        {
+            "players_gte" "8"
+        }
+        "high13"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid12"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty13"
+        "mid13"
+        {
+            "players_gte" "8"
+        }
+        "high13"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high12"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty13"
+        "mid13"
+        {
+            "players_gte" "8"
+        }
+        "high13"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty13"
+    {
+        "group" "stock"
+        "default_nextnode" "empty14"
+        "mid14"
+        {
+            "players_gte" "8"
+        }
+        "high14"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid13"
+    {
+        "group" "stock"
+        "default_nextnode" "empty14"
+        "mid14"
+        {
+            "players_gte" "8"
+        }
+        "high14"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high13"
+    {
+        "group" "stock"
+        "default_nextnode" "empty14"
+        "mid14"
+        {
+            "players_gte" "8"
+        }
+        "high14"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty14"
+    {
+        "group" "suspect"
+        "title" "HELL TIER"
+        "default_nextnode" "empty15"
+        "mid15"
+        {
+            "players_gte" "8"
+        }
+        "high15"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid14"
+    {
+        "group" "suspect"
+        "title" "HELL TIER"
+        "default_nextnode" "empty15"
+        "mid15"
+        {
+            "players_gte" "8"
+        }
+        "high15"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high14"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "default_nextnode" "empty15"
+        "mid15"
+        {
+            "players_gte" "8"
+        }
+        "high15"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty15"
+    {
+        "group" "stock"
+        "default_nextnode" "empty16"
+        "mid16"
+        {
+            "players_gte" "8"
+        }
+        "high16"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid15"
+    {
+        "group" "stock"
+        "default_nextnode" "empty16"
+        "mid16"
+        {
+            "players_gte" "8"
+        }
+        "high16"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high15"
+    {
+        "group" "stock"
+        "default_nextnode" "empty16"
+        "mid16"
+        {
+            "players_gte" "8"
+        }
+        "high16"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty16"
+    {
+        "group" "stock"
+        "default_nextnode" "empty17"
+        "mid17"
+        {
+            "players_gte" "8"
+        }
+        "high17"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid16"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty17"
+        "mid17"
+        {
+            "players_gte" "8"
+        }
+        "high17"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high16"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty17"
+        "mid17"
+        {
+            "players_gte" "8"
+        }
+        "high17"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty17"
+    {
+        "group" "alternative"
+        "default_nextnode" "empty18"
+        "mid18"
+        {
+            "players_gte" "8"
+        }
+        "high18"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid17"
+    {
+        "group" "alternative"
+        "default_nextnode" "empty18"
+        "mid18"
+        {
+            "players_gte" "8"
+        }
+        "high18"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high17"
+    {
+        "group" "alternative"
+        "default_nextnode" "empty18"
+        "mid18"
+        {
+            "players_gte" "8"
+        }
+        "high18"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty18"
+    {
+        "group" "stock"
+        "default_nextnode" "empty19"
+        "mid19"
+        {
+            "players_gte" "8"
+        }
+        "high19"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid18"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty19"
+        "mid19"
+        {
+            "players_gte" "8"
+        }
+        "high19"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high18"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "default_nextnode" "empty19"
+        "mid19"
+        {
+            "players_gte" "8"
+        }
+        "high19"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty19"
+    {
+        "group" "stock"
+        "default_nextnode" "empty20"
+        "mid20"
+        {
+            "players_gte" "8"
+        }
+        "high20"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid19"
+    {
+        "group" "stock"
+        "default_nextnode" "empty20"
+        "mid20"
+        {
+            "players_gte" "8"
+        }
+        "high20"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high19"
+    {
+        "group" "stock"
+        "default_nextnode" "empty20"
+        "mid20"
+        {
+            "players_gte" "8"
+        }
+        "high20"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty20"
+    {
+        "group" "stock"
+        "default_nextnode" "empty21"
+        "mid21"
+        {
+            "players_gte" "8"
+        }
+        "high21"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid20"
+    {
+        "group" "stock"
+        "default_nextnode" "empty21"
+        "mid21"
+        {
+            "players_gte" "8"
+        }
+        "high21"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high20"
+    {
+        "group" "stock"
+        "default_nextnode" "empty21"
+        "mid21"
+        {
+            "players_gte" "8"
+        }
+        "high21"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "empty21"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "default_nextnode" "empty1"
+        "mid1"
+        {
+            "players_gte" "8"
+        }
+        "high1"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "mid21"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "default_nextnode" "empty1"
+        "mid1"
+        {
+            "players_gte" "8"
+        }
+        "high1"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "high21"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "default_nextnode" "empty1"
+        "mid1"
+        {
+            "players_gte" "8"
+        }
+        "high1"
+        {
+            "players_gte" "14"
+        }
+    }
+
+    "halloween"
+    {
+        "group" "halloween"
+        "default_nextnode" "halloween"
+    }
+
+}
