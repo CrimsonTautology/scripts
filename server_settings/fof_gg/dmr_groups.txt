@@ -1,0 +1,139 @@
+map_groups
+{
+    stock
+    {
+        fof_cripplecreek {}
+        fof_depot {}
+        fof_desperados {}
+        fof_fistful {}
+        fof_overtop {}
+        fof_revenge {}
+        fof_robertlee {}
+        fof_sweetwater {}
+        fof_winterlong {}
+        fof_impact {}
+    }
+
+    stocklow
+    {
+        fof_desperados {}
+        fof_fistful {}
+        fof_overtop {}
+        fof_revenge {}
+        fof_robertlee {}
+        fof_winterlong {}
+    }
+
+    custom
+    {
+        fof_coastal {}
+        fof_cove {}
+        fof_natchez {}
+        fof_old_tijuana {}
+        fof_revenge_old1 {}
+        fof_shafted_a5 {}
+        fof_slender_b3 {}
+        fof_tombstone_final {}
+
+        fof_creepycreek_halloween {}
+        fof_desperados_halloween {}
+        fof_winterlong_halloween {}
+
+        fof_station_r2 {}
+        fof_grande_b2 {}
+        fof_old_fistful_b2 {}
+
+        fof_lumber_a2 {}
+    }
+
+    pulled
+    {
+        aim_ag_texture2 {}
+        dm_ag_texture_v2 {}
+        fof_abandoned_a1 {}
+        fof_abstract_hallways_a1 {}
+        fof_aim_arena_revised {}
+        fof_bar_a22 {}
+        fof_canyonero {}
+        fof_castle_night_b2 {}
+        fof_deathtable_b1 {}
+        fof_doomsday_b8 {}
+        fof_e1m1_b1 {}
+        fof_fragyard {}
+        fof_infinity_war {}
+        fof_mc_downtown_a {}
+        fof_mxm {}
+        fof_quad {}
+        fof_quaker_a6 {}
+        fof_riobravo_new0 {}
+        fof_westmart_b5 {}
+        fof_westwood_2010_beta_v6 {}
+        fof_westwood_beta_v8 {}
+        fof_whiskeypass_07 {}
+        fof_whoaaaaaa_b2 {}
+
+        fof_alamo_beta_v2 {}
+        fof_craftroom_c {}
+        fof_cyberpunk_b2 {}
+        fof_forest_new1 {}
+        fof_hacienda_1_3 {}
+        fof_nest_final {}
+        fof_pueblo_beta_v3 {}
+        fof_riverrun_a42 {}
+        fof_sawmill_b6 {}
+        fof_spacejam_b1 {}
+
+        fof_masdm_b1 {}
+        fof_deadheatver2 {}
+    }
+
+    doubles
+    {
+        fof_desperados {}
+        fof_fistful {}
+        fof_revenge {}
+        fof_robertlee {}
+        fof_winterlong {}
+        fof_overtop {}
+        //fof_coastal {}
+        fof_cove {}
+        fof_e1m1_b1 {}
+        fof_forest_new1 {}
+        fof_fragyard {}
+        fof_old_tijuana {}
+        fof_revenge_old1 {}
+        fof_riobravo_new0 {}
+        fof_shafted_a5 {}
+        fof_tombstone_final {}
+    }
+
+    reverse
+    {
+        fof_desperados {}
+        fof_fistful {}
+        fof_revenge {}
+        fof_robertlee {}
+        fof_winterlong {}
+        fof_overtop {}
+        //fof_coastal {}
+        fof_cove {}
+        fof_e1m1_b1 {}
+        fof_forest_new1 {}
+        fof_fragyard {}
+        fof_old_tijuana {}
+        fof_revenge_old1 {}
+        fof_riobravo_new0 {}
+        fof_shafted_a5 {}
+        fof_tombstone_final {}
+    }
+
+    sniper
+    {
+        fof_abandoned_a1 {}
+        fof_cripplecreek {}
+        fof_depot {}
+        fof_abandoned_a1 {}
+        fof_infinity_war {}
+        fof_canyonero {}
+    }
+}
