@@ -1,0 +1,50 @@
+map_groups
+{
+    stock
+    {
+        fof_robertlee_12 {}
+        fof_sawmill_12 {}
+        fof_sweetwater_12 {}
+        fof_tramonto_12 {}
+        fof_nest_12 {}
+    }
+
+    custom
+    {
+        fof_doomsday_b8 {}
+        fof_e1m1_b1 {}
+        fof_westmart_b5 {}
+        fof_quaker_a6 {}
+        fof_masdm_b1 {}
+        fof_alamo_beta_v2 {}
+
+        fof_craftroom_c {}
+        fof_cyberpunk_b2 {}
+        fof_forest_new1 {}
+        fof_hacienda_1_3 {}
+        fof_pueblo_beta_v3 {}
+        fof_riverrun_a42 {}
+        fof_sawmill_b6 {}
+
+        fof_crossfire {}
+        fof_oldvalley {}
+        fof_oldwest {}
+    }
+
+    pulled
+    {
+        aim_ag_texture2 {}
+        dm_ag_texture_v2 {}
+        fof_abstract_hallways_a1 {}
+        fof_bouncy_a15 {}
+        fof_deathtable_b1 {}
+        fof_fragyard {}
+        fof_infinity_war {}
+        fof_mxm {}
+        fof_nest_final {}
+        fof_quad {}
+        fof_spacejam_b1 {}
+        fof_whiskeypass_07 {}
+    }
+
+}

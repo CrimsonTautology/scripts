@@ -1,0 +1,893 @@
+"rotation"
+{
+    "start" "empty1"
+
+    "emptyx"
+    {
+        "group" "stock"
+        "default_nextnode" "emptyx"
+    }
+
+    "empty1"
+    {
+        "group" "stock"
+        "default_nextnode" "empty2"
+        "mid2"
+        {
+            "players_gte" "4"
+        }
+        "high2"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid1"
+    {
+        "group" "stock"
+        "default_nextnode" "empty2"
+        "mid2"
+        {
+            "players_gte" "4"
+        }
+        "high2"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high1"
+    {
+        "group" "stock"
+        "default_nextnode" "empty2"
+        "mid2"
+        {
+            "players_gte" "4"
+        }
+        "high2"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty2"
+    {
+        "group" "stock"
+        "default_nextnode" "empty3"
+        "mid3"
+        {
+            "players_gte" "4"
+        }
+        "high3"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid2"
+    {
+        "group" "custom"
+        "default_nextnode" "empty3"
+        "mid3"
+        {
+            "players_gte" "4"
+        }
+        "high3"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high2"
+    {
+        "group" "custom"
+        "default_nextnode" "empty3"
+        "mid3"
+        {
+            "players_gte" "4"
+        }
+        "high3"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty3"
+    {
+        "group" "stock"
+        "default_nextnode" "empty4"
+        "mid4"
+        {
+            "players_gte" "4"
+        }
+        "high4"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid3"
+    {
+        "group" "stock"
+        "default_nextnode" "empty4"
+        "mid4"
+        {
+            "players_gte" "4"
+        }
+        "high4"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high3"
+    {
+        "group" "stock"
+        "default_nextnode" "empty4"
+        "mid4"
+        {
+            "players_gte" "4"
+        }
+        "high4"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty4"
+    {
+        "group" "stock"
+        "default_nextnode" "empty5"
+        "mid5"
+        {
+            "players_gte" "4"
+        }
+        "high5"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid4"
+    {
+        "group" "stock"
+        "default_nextnode" "empty5"
+        "mid5"
+        {
+            "players_gte" "4"
+        }
+        "high5"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high4"
+    {
+        "group" "custom"
+        "default_nextnode" "empty5"
+        "mid5"
+        {
+            "players_gte" "4"
+        }
+        "high5"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty5"
+    {
+        "group" "stock"
+        "default_nextnode" "empty6"
+        "mid6"
+        {
+            "players_gte" "4"
+        }
+        "high6"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid5"
+    {
+        "group" "stock"
+        "default_nextnode" "empty6"
+        "mid6"
+        {
+            "players_gte" "4"
+        }
+        "high6"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high5"
+    {
+        "group" "custom"
+        "default_nextnode" "empty6"
+        "mid6"
+        {
+            "players_gte" "4"
+        }
+        "high6"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty6"
+    {
+        "group" "stock"
+        "default_nextnode" "empty7"
+        "mid7"
+        {
+            "players_gte" "4"
+        }
+        "high7"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid6"
+    {
+        "group" "stock"
+        "default_nextnode" "empty7"
+        "mid7"
+        {
+            "players_gte" "4"
+        }
+        "high7"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high6"
+    {
+        "group" "stock"
+        "default_nextnode" "empty7"
+        "mid7"
+        {
+            "players_gte" "4"
+        }
+        "high7"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty7"
+    {
+        "group" "stock"
+        "default_nextnode" "empty8"
+        "mid8"
+        {
+            "players_gte" "4"
+        }
+        "high8"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid7"
+    {
+        "group" "stock"
+        "default_nextnode" "empty8"
+        "mid8"
+        {
+            "players_gte" "4"
+        }
+        "high8"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high7"
+    {
+        "group" "stock"
+        "default_nextnode" "empty8"
+        "mid8"
+        {
+            "players_gte" "4"
+        }
+        "high8"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty8"
+    {
+        "group" "custom"
+        "default_nextnode" "empty9"
+        "mid9"
+        {
+            "players_gte" "4"
+        }
+        "high9"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid8"
+    {
+        "group" "custom"
+        "default_nextnode" "empty9"
+        "mid9"
+        {
+            "players_gte" "4"
+        }
+        "high9"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high8"
+    {
+        "group" "custom"
+        "default_nextnode" "empty9"
+        "mid9"
+        {
+            "players_gte" "4"
+        }
+        "high9"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty9"
+    {
+        "group" "stock"
+        "default_nextnode" "empty10"
+        "mid10"
+        {
+            "players_gte" "4"
+        }
+        "high10"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid9"
+    {
+        "group" "stock"
+        "default_nextnode" "empty10"
+        "mid10"
+        {
+            "players_gte" "4"
+        }
+        "high10"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high9"
+    {
+        "group" "stock"
+        "default_nextnode" "empty10"
+        "mid10"
+        {
+            "players_gte" "4"
+        }
+        "high10"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty10"
+    {
+        "group" "stock"
+        "default_nextnode" "empty11"
+        "mid11"
+        {
+            "players_gte" "4"
+        }
+        "high11"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid10"
+    {
+        "group" "stock"
+        "default_nextnode" "empty11"
+        "mid11"
+        {
+            "players_gte" "4"
+        }
+        "high11"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high10"
+    {
+        "group" "custom"
+        "default_nextnode" "empty11"
+        "mid11"
+        {
+            "players_gte" "4"
+        }
+        "high11"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty11"
+    {
+        "group" "stock"
+        "default_nextnode" "empty12"
+        "mid12"
+        {
+            "players_gte" "4"
+        }
+        "high12"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid11"
+    {
+        "group" "stock"
+        "default_nextnode" "empty12"
+        "mid12"
+        {
+            "players_gte" "4"
+        }
+        "high12"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high11"
+    {
+        "group" "stock"
+        "default_nextnode" "empty12"
+        "mid12"
+        {
+            "players_gte" "4"
+        }
+        "high12"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty12"
+    {
+        "group" "stock"
+        "default_nextnode" "empty13"
+        "mid13"
+        {
+            "players_gte" "4"
+        }
+        "high13"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid12"
+    {
+        "group" "custom"
+        "default_nextnode" "empty13"
+        "mid13"
+        {
+            "players_gte" "4"
+        }
+        "high13"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high12"
+    {
+        "group" "custom"
+        "default_nextnode" "empty13"
+        "mid13"
+        {
+            "players_gte" "4"
+        }
+        "high13"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty13"
+    {
+        "group" "stock"
+        "default_nextnode" "empty14"
+        "mid14"
+        {
+            "players_gte" "4"
+        }
+        "high14"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid13"
+    {
+        "group" "stock"
+        "default_nextnode" "empty14"
+        "mid14"
+        {
+            "players_gte" "4"
+        }
+        "high14"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high13"
+    {
+        "group" "custom"
+        "default_nextnode" "empty14"
+        "mid14"
+        {
+            "players_gte" "4"
+        }
+        "high14"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty14"
+    {
+        "group" "stock"
+        "default_nextnode" "empty15"
+        "mid15"
+        {
+            "players_gte" "4"
+        }
+        "high15"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid14"
+    {
+        "group" "stock"
+        "default_nextnode" "empty15"
+        "mid15"
+        {
+            "players_gte" "4"
+        }
+        "high15"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high14"
+    {
+        "group" "stock"
+        "default_nextnode" "empty15"
+        "mid15"
+        {
+            "players_gte" "4"
+        }
+        "high15"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty15"
+    {
+        "group" "stock"
+        "default_nextnode" "empty16"
+        "mid16"
+        {
+            "players_gte" "4"
+        }
+        "high16"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid15"
+    {
+        "group" "custom"
+        "default_nextnode" "empty16"
+        "mid16"
+        {
+            "players_gte" "4"
+        }
+        "high16"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high15"
+    {
+        "group" "stock"
+        "default_nextnode" "empty16"
+        "mid16"
+        {
+            "players_gte" "4"
+        }
+        "high16"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty16"
+    {
+        "group" "stock"
+        "default_nextnode" "empty17"
+        "mid17"
+        {
+            "players_gte" "4"
+        }
+        "high17"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid16"
+    {
+        "group" "stock"
+        "default_nextnode" "empty17"
+        "mid17"
+        {
+            "players_gte" "4"
+        }
+        "high17"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high16"
+    {
+        "group" "custom"
+        "default_nextnode" "empty17"
+        "mid17"
+        {
+            "players_gte" "4"
+        }
+        "high17"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty17"
+    {
+        "group" "stock"
+        "default_nextnode" "empty18"
+        "mid18"
+        {
+            "players_gte" "4"
+        }
+        "high18"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid17"
+    {
+        "group" "stock"
+        "default_nextnode" "empty18"
+        "mid18"
+        {
+            "players_gte" "4"
+        }
+        "high18"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high17"
+    {
+        "group" "stock"
+        "default_nextnode" "empty18"
+        "mid18"
+        {
+            "players_gte" "4"
+        }
+        "high18"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty18"
+    {
+        "group" "custom"
+        "default_nextnode" "empty19"
+        "mid19"
+        {
+            "players_gte" "4"
+        }
+        "high19"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid18"
+    {
+        "group" "custom"
+        "default_nextnode" "empty19"
+        "mid19"
+        {
+            "players_gte" "4"
+        }
+        "high19"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high18"
+    {
+        "group" "custom"
+        "default_nextnode" "empty19"
+        "mid19"
+        {
+            "players_gte" "4"
+        }
+        "high19"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty19"
+    {
+        "group" "stock"
+        "default_nextnode" "empty20"
+        "mid20"
+        {
+            "players_gte" "4"
+        }
+        "high20"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid19"
+    {
+        "group" "stock"
+        "default_nextnode" "empty20"
+        "mid20"
+        {
+            "players_gte" "4"
+        }
+        "high20"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high19"
+    {
+        "group" "stock"
+        "default_nextnode" "empty20"
+        "mid20"
+        {
+            "players_gte" "4"
+        }
+        "high20"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty20"
+    {
+        "group" "stock"
+        "default_nextnode" "empty21"
+        "mid21"
+        {
+            "players_gte" "4"
+        }
+        "high21"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid20"
+    {
+        "group" "stock"
+        "default_nextnode" "empty21"
+        "mid21"
+        {
+            "players_gte" "4"
+        }
+        "high21"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high20"
+    {
+        "group" "stock"
+        "default_nextnode" "empty21"
+        "mid21"
+        {
+            "players_gte" "4"
+        }
+        "high21"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "empty21"
+    {
+        "group" "stock"
+        "default_nextnode" "empty1"
+        "mid1"
+        {
+            "players_gte" "4"
+        }
+        "high1"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "mid21"
+    {
+        "group" "stock"
+        "default_nextnode" "empty1"
+        "mid1"
+        {
+            "players_gte" "4"
+        }
+        "high1"
+        {
+            "players_gte" "8"
+        }
+    }
+
+    "high21"
+    {
+        "group" "custom"
+        "default_nextnode" "empty1"
+        "mid1"
+        {
+            "players_gte" "4"
+        }
+        "high1"
+        {
+            "players_gte" "8"
+        }
+    }
+
+}
