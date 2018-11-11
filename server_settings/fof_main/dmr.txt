@@ -1,0 +1,953 @@
+"rotation"
+{
+    "start" "empty1"
+
+    "empty1"
+    {
+        "group" "stock"
+        "default_nextnode" "empty2"
+        "mid2"
+        {
+            "players_gte" "6"
+        }
+        "high2"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid1"
+    {
+        "group" "stock"
+        "default_nextnode" "empty2"
+        "mid2"
+        {
+            "players_gte" "6"
+        }
+        "high2"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high1"
+    {
+        "group" "stock"
+        "default_nextnode" "empty2"
+        "mid2"
+        {
+            "players_gte" "6"
+        }
+        "high2"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty2"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty3"
+        "mid3"
+        {
+            "players_gte" "6"
+        }
+        "high3"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid2"
+    {
+        "group" "stock"
+        "default_nextnode" "empty3"
+        "mid3"
+        {
+            "players_gte" "6"
+        }
+        "high3"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high2"
+    {
+        "group" "stock"
+        "default_nextnode" "empty3"
+        "mid3"
+        {
+            "players_gte" "6"
+        }
+        "high3"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty3"
+    {
+        "group" "stock_low"
+        "default_nextnode" "empty4"
+        "mid4"
+        {
+            "players_gte" "6"
+        }
+        "high4"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid3"
+    {
+        "group" "stock"
+        "default_nextnode" "empty4"
+        "mid4"
+        {
+            "players_gte" "6"
+        }
+        "high4"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high3"
+    {
+        "group" "stock"
+        "default_nextnode" "empty4"
+        "mid4"
+        {
+            "players_gte" "6"
+        }
+        "high4"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty4"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty5"
+        "mid5"
+        {
+            "players_gte" "6"
+        }
+        "high5"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid4"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty5"
+        "mid5"
+        {
+            "players_gte" "6"
+        }
+        "high5"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high4"
+    {
+        "group" "stock"
+        "default_nextnode" "empty5"
+        "mid5"
+        {
+            "players_gte" "6"
+        }
+        "high5"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty5"
+    {
+        "group" "stock"
+        "default_nextnode" "empty6"
+        "mid6"
+        {
+            "players_gte" "6"
+        }
+        "high6"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid5"
+    {
+        "group" "stock"
+        "default_nextnode" "empty6"
+        "mid6"
+        {
+            "players_gte" "6"
+        }
+        "high6"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high5"
+    {
+        "group" "stock"
+        "default_nextnode" "empty6"
+        "mid6"
+        {
+            "players_gte" "6"
+        }
+        "high6"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty6"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty7"
+        "mid7"
+        {
+            "players_gte" "6"
+        }
+        "high7"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid6"
+    {
+        "group" "stock"
+        "default_nextnode" "empty7"
+        "mid7"
+        {
+            "players_gte" "6"
+        }
+        "high7"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high6"
+    {
+        "group" "stock"
+        "default_nextnode" "empty7"
+        "mid7"
+        {
+            "players_gte" "6"
+        }
+        "high7"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty7"
+    {
+        "group" "stock_low"
+        "default_nextnode" "empty8"
+        "mid8"
+        {
+            "players_gte" "6"
+        }
+        "high8"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid7"
+    {
+        "group" "highlight"
+        "title" "Showcase"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty8"
+        "mid8"
+        {
+            "players_gte" "6"
+        }
+        "high8"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high7"
+    {
+        "group" "highlight"
+        "title" "Showcase"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty8"
+        "mid8"
+        {
+            "players_gte" "6"
+        }
+        "high8"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty8"
+    {
+        "group" "highlight"
+        "title" "Showcase"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty9"
+        "mid9"
+        {
+            "players_gte" "6"
+        }
+        "high9"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid8"
+    {
+        "group" "stock"
+        "default_nextnode" "empty9"
+        "mid9"
+        {
+            "players_gte" "6"
+        }
+        "high9"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high8"
+    {
+        "group" "stock"
+        "default_nextnode" "empty9"
+        "mid9"
+        {
+            "players_gte" "6"
+        }
+        "high9"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty9"
+    {
+        "group" "stock"
+        "default_nextnode" "empty10"
+        "mid10"
+        {
+            "players_gte" "6"
+        }
+        "high10"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid9"
+    {
+        "group" "stock"
+        "default_nextnode" "empty10"
+        "mid10"
+        {
+            "players_gte" "6"
+        }
+        "high10"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high9"
+    {
+        "group" "stock"
+        "default_nextnode" "empty10"
+        "mid10"
+        {
+            "players_gte" "6"
+        }
+        "high10"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty10"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty11"
+        "mid11"
+        {
+            "players_gte" "6"
+        }
+        "high11"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid10"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty11"
+        "mid11"
+        {
+            "players_gte" "6"
+        }
+        "high11"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high10"
+    {
+        "group" "stock"
+        "default_nextnode" "empty11"
+        "mid11"
+        {
+            "players_gte" "6"
+        }
+        "high11"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty11"
+    {
+        "group" "stock_low"
+        "default_nextnode" "empty12"
+        "mid12"
+        {
+            "players_gte" "6"
+        }
+        "high12"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid11"
+    {
+        "group" "stock"
+        "default_nextnode" "empty12"
+        "mid12"
+        {
+            "players_gte" "6"
+        }
+        "high12"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high11"
+    {
+        "group" "stock"
+        "default_nextnode" "empty12"
+        "mid12"
+        {
+            "players_gte" "6"
+        }
+        "high12"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty12"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty13"
+        "mid13"
+        {
+            "players_gte" "6"
+        }
+        "high13"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid12"
+    {
+        "group" "stock"
+        "default_nextnode" "empty13"
+        "mid13"
+        {
+            "players_gte" "6"
+        }
+        "high13"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high12"
+    {
+        "group" "stock"
+        "default_nextnode" "empty13"
+        "mid13"
+        {
+            "players_gte" "6"
+        }
+        "high13"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty13"
+    {
+        "group" "stock"
+        "default_nextnode" "empty14"
+        "mid14"
+        {
+            "players_gte" "6"
+        }
+        "high14"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid13"
+    {
+        "group" "stock"
+        "default_nextnode" "empty14"
+        "mid14"
+        {
+            "players_gte" "6"
+        }
+        "high14"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high13"
+    {
+        "group" "stock"
+        "default_nextnode" "empty14"
+        "mid14"
+        {
+            "players_gte" "6"
+        }
+        "high14"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty14"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty15"
+        "mid15"
+        {
+            "players_gte" "6"
+        }
+        "high15"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid14"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty15"
+        "mid15"
+        {
+            "players_gte" "6"
+        }
+        "high15"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high14"
+    {
+        "group" "highlight"
+        "title" "Showcase"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty15"
+        "mid15"
+        {
+            "players_gte" "6"
+        }
+        "high15"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty15"
+    {
+        "group" "stock_low"
+        "default_nextnode" "empty16"
+        "mid16"
+        {
+            "players_gte" "6"
+        }
+        "high16"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid15"
+    {
+        "group" "stock"
+        "default_nextnode" "empty16"
+        "mid16"
+        {
+            "players_gte" "6"
+        }
+        "high16"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high15"
+    {
+        "group" "stock"
+        "default_nextnode" "empty16"
+        "mid16"
+        {
+            "players_gte" "6"
+        }
+        "high16"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty16"
+    {
+        "group" "highlight"
+        "title" "Showcase"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty17"
+        "mid17"
+        {
+            "players_gte" "6"
+        }
+        "high17"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid16"
+    {
+        "group" "stock"
+        "default_nextnode" "empty17"
+        "mid17"
+        {
+            "players_gte" "6"
+        }
+        "high17"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high16"
+    {
+        "group" "stock"
+        "default_nextnode" "empty17"
+        "mid17"
+        {
+            "players_gte" "6"
+        }
+        "high17"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty17"
+    {
+        "group" "stock"
+        "default_nextnode" "empty18"
+        "mid18"
+        {
+            "players_gte" "6"
+        }
+        "high18"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid17"
+    {
+        "group" "stock"
+        "default_nextnode" "empty18"
+        "mid18"
+        {
+            "players_gte" "6"
+        }
+        "high18"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high17"
+    {
+        "group" "stock"
+        "default_nextnode" "empty18"
+        "mid18"
+        {
+            "players_gte" "6"
+        }
+        "high18"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty18"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty19"
+        "mid19"
+        {
+            "players_gte" "6"
+        }
+        "high19"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid18"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty19"
+        "mid19"
+        {
+            "players_gte" "6"
+        }
+        "high19"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high18"
+    {
+        "group" "stock"
+        "default_nextnode" "empty19"
+        "mid19"
+        {
+            "players_gte" "6"
+        }
+        "high19"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty19"
+    {
+        "group" "stock_low"
+        "default_nextnode" "empty20"
+        "mid20"
+        {
+            "players_gte" "6"
+        }
+        "high20"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid19"
+    {
+        "group" "stock"
+        "default_nextnode" "empty20"
+        "mid20"
+        {
+            "players_gte" "6"
+        }
+        "high20"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high19"
+    {
+        "group" "stock"
+        "default_nextnode" "empty20"
+        "mid20"
+        {
+            "players_gte" "6"
+        }
+        "high20"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty20"
+    {
+        "group" "custom"
+        "title" "Custom"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty21"
+        "mid21"
+        {
+            "players_gte" "6"
+        }
+        "high21"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid20"
+    {
+        "group" "stock"
+        "default_nextnode" "empty21"
+        "mid21"
+        {
+            "players_gte" "6"
+        }
+        "high21"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high20"
+    {
+        "group" "stock"
+        "default_nextnode" "empty21"
+        "mid21"
+        {
+            "players_gte" "6"
+        }
+        "high21"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "empty21"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty1"
+        "versus1"
+        {
+            "time_gte" "10:00"
+            "time_lte" "17:00"
+        }
+        "mid1"
+        {
+            "players_gte" "6"
+        }
+        "high1"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "mid21"
+    {
+        "group" "suprisechip"
+        "title" "Suprise-Chip"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty1"
+        "versus1"
+        {
+            "time_gte" "10:00"
+            "time_lte" "17:00"
+        }
+        "mid1"
+        {
+            "players_gte" "6"
+        }
+        "high1"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "high21"
+    {
+        "group" "highlight"
+        "title" "Showcase"
+        "pre_command" "exec teams_two"
+        "default_nextnode" "empty1"
+        "mid1"
+        {
+            "players_gte" "6"
+        }
+        "high1"
+        {
+            "players_gte" "18"
+        }
+    }
+
+    "versus1"
+    {
+        "group" "versus"
+        "title" "Versus Power Hour"
+        "pre_command" "exec versus"
+        "default_nextnode" "empty1"
+        "mid1"
+        {
+            "players_gte" "8"
+        }
+        "high1"
+        {
+            "players_gte" "18"
+        }
+
+    }
+}

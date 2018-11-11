@@ -1,0 +1,281 @@
+map_groups
+{
+    stock_low
+    {
+        // low population stock maps
+        fof_sawmill_12 {}
+        fof_tramonto_12 {}
+        fof_sweetwater_12 {}
+        fof_robertlee_12 {}
+        fof_nest_12 {}
+    }
+
+    stock
+    {
+        fof_cripplecreek {}
+        fof_fistful {}
+        fof_desperados {}
+        fof_robertlee {}
+        fof_revenge {}
+        fof_depot {}
+        fof_winterlong {}
+        fof_sweetwater {}
+        fof_overtop {}
+        fof_impact {}
+    }
+
+    suprisechip
+    {
+        aim_ag_texture2 {}
+        dm_ag_texture_v2 {}
+        fof_abstract_hallways_a1 {}
+        fof_castle_black_a2 {}
+        fof_castle_night_b2 {}
+        fof_craftroom_c {}
+        fof_cyberpunk_b2 {}
+        fof_deathtable_b1 {}
+        fof_devruins_d {}
+        fof_e1m1_b1 {}
+        fof_fragyard {}
+        fof_infinity_war {}
+        fof_mc_downtown_a {}
+        fof_mxm {}
+        fof_orange_night_2014 {}
+        fof_quad {}
+        fof_rainbow_b1 {}
+        fof_simpsons_village {}
+        fof_simpsons_x {}
+        fof_slender_b3 {}
+        fof_spacejam_b1 {}
+    }
+
+    custom
+    {
+        fof_abandoned_a1 {}
+        fof_alamo_beta_v2 {}
+        fof_bar_a22 {}
+        fof_canyonero {}
+        fof_coastal {}
+        fof_cove {}
+        fof_crossfire {}
+        fof_deadheatver2 {}
+        fof_doomsday_b8 {}
+        fof_forest_new1 {}
+        fof_grande_b2 {}
+        fof_hacienda_1_3 {}
+        fof_lumber_a2 {}
+        fof_masdm_b2 {}
+        fof_natchez {}
+        fof_nest_final {}
+        fof_old_fistful_b2 {}
+        fof_old_tijuana {}
+        fof_oldvalley {}
+        fof_oldwest {}
+        fof_orange_2014 {}
+        fof_pueblo_beta_v3 {}
+        fof_quaker_a6 {}
+        fof_revenge_old1 {}
+        fof_riobravo_new0 {}
+        fof_riverrun_a42 {}
+        fof_rustic_hydro_dam_v2,1 {}
+        fof_sawmill_b6 {}
+        fof_shafted_a5 {}
+        fof_station_r2 {}
+        fof_tombstone_final {}
+        fof_want_fortdm {}
+        fof_westmart_b5 {}
+        fof_westwood_2010_beta_v6 {}
+        fof_westwood_beta_v8 {}
+        fof_whiskeypass_07 {}
+    }
+
+    highlight
+    {
+        fof_coastal {}
+        fof_deadheatver2 {}
+        fof_forest_new1 {}
+        fof_hacienda_1_3 {}
+        fof_masdm_b2 {}
+        fof_natchez {}
+        fof_nest_final {}
+        fof_old_fistful_b2 {}
+        fof_old_tijuana {}
+        fof_riobravo_new0 {}
+        fof_rustic_hydro_dam_v2,1 {}
+        fof_station_r2 {}
+        fof_tombstone_final {}
+    }
+
+    versus
+    {
+        vs_desert {}
+        vs_forest {}
+        vs_river {}
+    }
+
+    // ****************
+    // vvvv unused vvvv
+    // ****************
+
+    teamplay
+    {
+        tp_abandoned {}
+        tp_assault {}
+        tp_coastal {}
+        tp_eliminator {}
+        tp_forest {}
+        tp_loothill {}
+        tp_riobravo {}
+        tp_snowy {}
+        tp_station {}
+        tp_yosemite {}
+
+        tp_dust2_a1 {}
+        tp_rebelyard_a8 {}
+        tp_trainyard_a9 {}
+
+        tp_dust_b12 {}
+        tp_discriminator_b6 {}
+        tp_greenglacier_b7 {}
+    }
+
+    arena
+    {
+        // TP maps that are like arena mode from TF2
+        tp_fuck {}
+        tp_axepig_a {}
+        tp_billyking_b {}
+        tp_bombofadmin_b {}
+        tp_barn {}
+        tp_aim_map {}
+    }
+
+    skull
+    {
+        // capture the skull mode
+        tp_cts_classic_a6 {}
+        tp_cts_falls_a1 {}
+        tp_cts_oasis_a3 {}
+        tp_soccer_b6 {}
+    }
+
+    breakbad
+    {
+        fof_cripplecreek {}
+        fof_depot {}
+        fof_desperados {}
+        fof_fistful {}
+        fof_overtop {}
+        fof_revenge {}
+        fof_robertlee {}
+        fof_sweetwater {}
+        fof_winterlong {}
+    }
+
+    breakbad_custom
+    {
+        fof_abandoned_a1 {}
+        fof_alamo_beta_v2 {}
+        fof_bar_a22 {}
+        fof_canyonero {}
+        fof_coastal {}
+        fof_cove {}
+        fof_cyberpunk_b2 {}
+        fof_depot_final_night_fix {}
+        fof_e1m1_b1 {}
+        fof_forest_new1 {}
+        fof_grande_b2 {}
+        fof_masdm_b2 {}
+        fof_natchez {}
+        fof_old_fistful_b2 {}
+        fof_pueblo_beta_v3 {}
+        fof_revenge {}
+        fof_revenge_old1 {}
+        fof_riobravo_new0 {}
+        fof_riverrun_a42 {}
+        fof_shafted_a5 {}
+        fof_slender_b3 {}
+        fof_spacejam_b1 {}
+        fof_tijuana_event {}
+        fof_tombstone_final {}
+        fof_westwood_beta_v8 {}
+    }
+
+    elimination
+    {
+        fof_depot {}
+        fof_desperados {}
+        fof_fistful {}
+        fof_overtop {}
+        fof_revenge {}
+        fof_robertlee {}
+        fof_sweetwater {}
+        fof_winterlong {}
+    }
+
+    gungame
+    {
+        fof_alamo_beta_v2 {}
+        fof_coastal {}
+        fof_depot {}
+        fof_desperados {}
+        fof_fistful {}
+        fof_forest_new1 {}
+        fof_masdm_b2 {}
+        fof_revenge {}
+        fof_station_r2 {}
+        fof_tombstone_final {}
+    }
+
+    ghost
+    {
+        gt_creepycreek {}
+        gt_desperados {}
+        gt_overtop {}
+        gt_nest {}
+    }
+
+    spooky
+    {
+        fof_abstract_hallways_a1 {}
+        fof_castle_night_b2 {}
+        fof_creepycreek_halloween {}
+        fof_desperados_halloween {}
+        fof_slender_b3 {}
+        fof_winterlong_halloween {}
+    }
+
+    xmas
+    {
+        fof_tijuana_event {}
+        fof_snowy_a4 {}
+    }
+
+    pulled
+    {
+        fof_tijuana_event {}
+        fof_bouncy_a15 {}
+        fof_snowy_a4 {}
+        fof_deathcano_v19 {}
+        fof_loothill_a5 {}
+        fof_mariokart_b1 {}
+        fof_clifford_a11 {}
+        fof_slimeday_a3 {}
+
+        //gt_creepycreek {}
+        //gt_desperados {}
+        //gt_winterlong {}
+
+        fof_creepycreek_halloween {}
+        fof_desperados_halloween {}
+        fof_winterlong_halloween {}
+
+        tp_orange_2014 {}
+
+        fof_aim_arena_revised {} // runs server commands
+        fof_final_destination_b1 {}
+        fof_whoaaaaaa_b2 {}
+
+    }
+
+}
