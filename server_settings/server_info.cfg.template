@@ -1,0 +1,14 @@
+hostname ""
+rcon_password ""
+sv_contact ""
+sv_password ""
+
+//sv_downloadurl ""
+sv_downloadurl ""
+sv_allowdownload 1
+sv_allowupload 1
+
+sm_iga_url ""
+sm_iga_api_key ""
+
+sv_steamgroup ""
