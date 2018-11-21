@@ -1,0 +1,71 @@
+#!/usr/bin/env ruby
+
+require 'net/http'
+require 'json'
+require 'date'
+
+OUT_FILE = 'friends.txt'
+STEAM_ID = ENV['STEAMID64']
+STEAM_API_KEY = ENV['SAK']
+
+def format_friend friend, friend_summary
+  timestamp = Time.at(friend['friend_since']).to_datetime
+  name = friend_summary['personaname']
+  steamid = friend_summary['steamid']
+  "#{timestamp.strftime("%m/%d/%Y")}\tSteamFriend - #{name}(#{steamid}): #{timestamp.strftime("%Y-%m-%d %I:%M:%S%p")}"
+end
+
+def get_friend_list_url key=STEAM_API_KEY, steamid=STEAM_ID
+  "http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=#{key}&steamid=#{steamid}&relationship=friend"
+end
+
+def get_player_summaries_url steamid, key=STEAM_API_KEY
+  "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=#{key}&steamids=#{steamid}"
+end
+
+def http_get_url_as_json url
+  uri = URI(url)
+  response = Net::HTTP.get(uri)
+  return JSON.parse(response)
+end
+
+def get_friend_list key=STEAM_API_KEY, steamid=STEAM_ID
+  url = get_friend_list_url key, steamid
+  json = http_get_url_as_json url
+
+  friendslist = json['friendslist']
+  friends = friendslist['friends']
+
+  return friends
+end
+
+def get_player_summaries steamid=STEAM_ID, key=STEAM_API_KEY
+  url = get_player_summaries_url steamid, key
+  json = http_get_url_as_json url
+
+  response = json['response']
+  player = response['players'][0]
+
+  return player
+end
+
+friends = get_friend_list
+puts "#{friends.count} friends"
+
+open(OUT_FILE, 'w') do |file|
+  friends.each do |friend|
+    next unless friend['friend_since'] > 0
+
+    friendid = friend["steamid"]
+    begin
+      friend_summary = get_player_summaries friendid
+
+      puts format_friend friend, friend_summary
+      file.puts format_friend friend, friend_summary
+
+    rescue => error
+      puts "failed to get friend = #{friendid} (#{error})"
+
+    end
+  end
+end 
