@@ -121,7 +121,6 @@ map_groups
         fof_e1m1_b1 {}
         fof_shafted_a5 {}
         fof_winterlong {}
-        fof_creepycreek_halloween {}
         fof_winterlong_halloween {}
     }
 
@@ -162,6 +161,7 @@ map_groups
         fof_tijuana_event {}
         tp_orange_2014 {}
         fof_aim_arena_revised {}  //has some serverpoint commands
+        fof_creepycreek_halloween {}
     }
 
     halloween
