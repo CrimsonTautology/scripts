@@ -67,7 +67,7 @@ map_groups
         fof_oldwest {}
 
         fof_lumber_a2 {}
-        fof_deadheatver2 {}
+        fof_deadheat {}
     }
 
     // alternative versions of maps
@@ -162,13 +162,14 @@ map_groups
         tp_orange_2014 {}
         fof_aim_arena_revised {}  //has some serverpoint commands
         fof_creepycreek_halloween {}
+        fof_deadheatver2 {} //easy to get out of map; reverting to older version
     }
 
     halloween
     {
-        gt_creepycreek{}
-        gt_winterlong {}
-        gt_desperados {}
+        //gt_creepycreek{}
+        //gt_winterlong {}
+        //gt_desperados {}
     }
 
 }
