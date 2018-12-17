@@ -256,7 +256,7 @@ build_fof_foz(){
     build admin_support
     build advanced_ads
     build analytics
-    build autoupdater
+    #build autoupdater
     build death_chance_fof
     build dmr
     build drunk_fof
