@@ -68,6 +68,8 @@ map_groups
 
         fof_lumber_a2 {}
         fof_deadheat {}
+
+        fof_museum_r1 {}
     }
 
     // alternative versions of maps

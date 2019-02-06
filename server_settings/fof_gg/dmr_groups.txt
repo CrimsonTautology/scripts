@@ -44,6 +44,8 @@ map_groups
         fof_old_fistful_b2 {}
 
         fof_lumber_a2 {}
+
+        fof_museum_r1 {}
     }
 
     pulled
