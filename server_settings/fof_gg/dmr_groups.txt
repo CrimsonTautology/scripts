@@ -45,7 +45,7 @@ map_groups
 
         fof_lumber_a2 {}
 
-        fof_museum_r1 {}
+        fof_museum_r2 {}
     }
 
     pulled
