@@ -107,7 +107,7 @@ map_groups
         fof_station_r2 {}
         fof_tombstone_final {}
 
-        fof_museum_r2 {}
+        fof_museum_r3 {}
     }
 
     versus
