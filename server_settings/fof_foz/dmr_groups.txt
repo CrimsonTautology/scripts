@@ -106,6 +106,7 @@ map_groups
         fof_spacejam_b1 {}
         fof_whoaaaaaa_b2 {}
         tp_soccer_b6 {}
+        tp_bf_riverbed {}
 
         fof_simpsons_village {}
         fof_simpsons_x {}
