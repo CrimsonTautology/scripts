@@ -88,7 +88,8 @@ map_groups
         fof_westwood_beta_v8 {}
         fof_whiskeypass_07 {}
 
-        fof_museum_r1 {}
+        fof_museum_r3 {}
+        fof_dust2 {}
     }
 
     highlight
@@ -108,6 +109,7 @@ map_groups
         fof_tombstone_final {}
 
         fof_museum_r3 {}
+        fof_dust2 {}
     }
 
     versus

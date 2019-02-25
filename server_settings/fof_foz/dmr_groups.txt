@@ -70,6 +70,7 @@ map_groups
         fof_deadheat {}
 
         fof_museum_r3 {}
+        fof_dust2 {}
     }
 
     // alternative versions of maps

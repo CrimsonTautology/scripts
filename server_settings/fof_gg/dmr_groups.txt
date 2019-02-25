@@ -46,6 +46,7 @@ map_groups
         fof_lumber_a2 {}
 
         fof_museum_r3 {}
+        fof_dust2 {}
     }
 
     pulled
