@@ -47,7 +47,6 @@ map_groups
         fof_simpsons_x {}
         fof_slender_b3 {}
         fof_spacejam_b1 {}
-        tp_bf_riverbed {}
     }
 
     custom
@@ -111,7 +110,6 @@ map_groups
 
         fof_museum_r3 {}
         fof_dust2 {}
-        tp_bf_riverbed {}
     }
 
     versus
