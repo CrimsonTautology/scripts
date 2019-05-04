@@ -1,17 +1,17 @@
 #!/bin/sh
 
 # replace <newuser> with the user you created above
-SRCDS_USER="steam"
+SRCDS_USER="deploy"
 
 # Do not change this path
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # The path to the game you want to host. example = /home/newuser/dod
-DIR=/home/steam/steamcmd/gmod_main
+DIR=$HOME/steamcmd/gmod_main
 DAEMON=$DIR/srcds_run
 
-STEAM_DIR=/home/steam/steamcmd
-STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/gmod_main.txt
+STEAM_DIR=$HOME/steamcmd
+STEAMCMD_SCRIPT=$HOME/scripts/steamcmd/gmod_main.txt
 IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
 PORT=27120
 CLIENTPORT=$((PORT + 1))

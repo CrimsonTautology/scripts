@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BUILD_DIR=/home/steam/sourcemod/
+BUILD_DIR=$HOME/sourcemod/
 PLUGIN_DIR=addons/sourcemod/plugins/
 
 build_server(){
@@ -32,7 +32,7 @@ remove_disabled(){
 
 #Jetpack Server #######################################
 build_tf2_jet(){
-    build_server /home/steam/steamcmd/tf2_jet/tf/
+    build_server $HOME/steamcmd/tf2_jet/tf/
 
     build admin_support
     build advanced_ads
@@ -56,7 +56,7 @@ build_tf2_jet(){
 
 #Stop That Tank Server #######################################
 build_tf2_stt(){
-    build_server /home/steam/steamcmd/tf2_stt/tf/
+    build_server $HOME/steamcmd/tf2_stt/tf/
 
     build admin_support
     build advanced_ads
@@ -80,7 +80,7 @@ build_tf2_stt(){
 
 #Main Server #######################################
 build_tf2_main(){
-    build_server /home/steam/steamcmd/tf2_main/tf/
+    build_server $HOME/steamcmd/tf2_main/tf/
 
     build admin_support
     #build advanced_ads
@@ -101,7 +101,7 @@ build_tf2_main(){
 
 #L4D Server #######################################
 build_l4d_main(){
-    build_server /home/steam/steamcmd/l4d_main/left4dead/
+    build_server $HOME/steamcmd/l4d_main/left4dead/
 
     build admin_support
     build autoupdater
@@ -113,7 +113,7 @@ build_l4d_main(){
 
 #L4D2 Server #######################################
 build_l4d2_main(){
-    build_server /home/steam/steamcmd/l4d2_main/left4dead2/
+    build_server $HOME/steamcmd/l4d2_main/left4dead2/
 
     build admin_support
     build autoupdater
@@ -129,7 +129,7 @@ build_l4d2_main(){
 
 #NMRIH Server #######################################
 build_nmrih_main(){
-    build_server /home/steam/steamcmd/nmrih_main/nmrih/
+    build_server $HOME/steamcmd/nmrih_main/nmrih/
 
     build admin_support
     build autoupdater
@@ -141,7 +141,7 @@ build_nmrih_main(){
 
 #CSGO Server #######################################
 build_csgo_main(){
-    build_server /home/steam/steamcmd/csgo_main/csgo/
+    build_server $HOME/steamcmd/csgo_main/csgo/
 
     build admin_support
     build advanced_ads
@@ -158,7 +158,7 @@ build_csgo_main(){
 
 #Fists Full of Frags Server #######################################
 build_fof_main(){
-    build_server /home/steam/steamcmd/fof_main/fof/
+    build_server $HOME/steamcmd/fof_main/fof/
 
     build admin_support
     build advanced_ads
@@ -190,7 +190,7 @@ build_fof_main(){
 
 #Fists Full of Frags Gun Game Server #######################################
 build_fof_gg(){
-    build_server /home/steam/steamcmd/fof_gg/fof/
+    build_server $HOME/steamcmd/fof_gg/fof/
 
     build admin_support
     build advanced_ads
@@ -220,7 +220,7 @@ build_fof_gg(){
 
 #Fists Full of Frags Gun Game Server (12 man) #######################################
 build_fof_gg2(){
-    build_server /home/steam/steamcmd/fof_gg2/fof/
+    build_server $HOME/steamcmd/fof_gg2/fof/
 
     build admin_support
     build advanced_ads
@@ -251,7 +251,7 @@ build_fof_gg2(){
 
 #Fists Full of Frags Fistful of Zombies Server #######################################
 build_fof_foz(){
-    build_server /home/steam/steamcmd/fof_foz/fof/
+    build_server $HOME/steamcmd/fof_foz/fof/
 
     build admin_support
     build advanced_ads
@@ -283,7 +283,7 @@ build_fof_foz(){
 
 #Fists Full of Frags Break Bad Server #######################################
 build_fof_mk(){
-    build_server /home/steam/steamcmd/fof_mk/fof/
+    build_server $HOME/steamcmd/fof_mk/fof/
 
     build admin_support
     build advanced_ads
@@ -315,7 +315,7 @@ build_fof_mk(){
 
 # ###########################
 build_ins_main(){
-    build_server /home/steam/steamcmd/ins_main/insurgency/
+    build_server $HOME/steamcmd/ins_main/insurgency/
 
     build admin_support
 
@@ -324,7 +324,7 @@ build_ins_main(){
 
 # ###########################
 build_dod_main(){
-    build_server /home/steam/steamcmd/dod_main/dod/
+    build_server $HOME/steamcmd/dod_main/dod/
 
     build admin_support
     #build advanced_ads
@@ -344,7 +344,7 @@ build_dod_main(){
 
 build_dev(){
     #Build steps for developing plugins
-    build_server /home/steam/steamcmd/fof_foz/fof/
+    build_server $HOME/steamcmd/fof_foz/fof/
 
     build foz
 

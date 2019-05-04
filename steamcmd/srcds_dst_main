@@ -1,17 +1,17 @@
 #!/bin/sh
 
 # replace <newuser> with the user you created above
-SRCDS_USER="steam"
+SRCDS_USER="deploy"
 
 # Do not change this path
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # The path to the game you want to host. example = /home/newuser/dod
-DIR=/home/steam/steamcmd/dst_main
+DIR=$HOME/steamcmd/dst_main
 DAEMON=$DIR/bin/dontstarve_dedicated_server_nullrenderer
 
-STEAM_DIR=/home/steam/steamcmd
-STEAMCMD_SCRIPT=/home/steam/scripts/steamcmd/dst_main.txt
+STEAM_DIR=$HOME/steamcmd
+STEAMCMD_SCRIPT=$HOME/scripts/steamcmd/dst_main.txt
 PORT=27040
 
 # Change all PARAMS to your needs.
