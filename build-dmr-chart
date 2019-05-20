@@ -14,7 +14,7 @@ servers = [
 
 def path_to_dmr server
   server[:dmr] ||= 'dmr.txt'
-  "/home/steam/steamcmd/#{server[:name]}/#{server[:mod]}/custom/server_settings/#{server[:dmr]}"
+  "#{ENV['HOME']}/steamcmd/#{server[:name]}/#{server[:mod]}/custom/server_settings/#{server[:dmr]}"
 end
 
 
