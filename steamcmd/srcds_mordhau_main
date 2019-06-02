@@ -1,0 +1,78 @@
+#!/bin/sh
+
+# replace <newuser> with the user you created above
+SRCDS_USER="deploy"
+
+# Do not change this path
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
+
+# The path to the game you want to host. example = /home/newuser/dod
+DIR=$HOME/steamcmd/mordhau_main
+DAEMON=$DIR/MordhauServer.sh
+
+STEAM_DIR=$HOME/steamcmd
+STEAMCMD=$STEAM_DIR/steamcmd.sh
+STEAMCMD_SCRIPT=$HOME/scripts/steamcmd/mordhau_main.txt
+STEAMCMD_PARAMS="+login anonymous +runscript $STEAMCMD_SCRIPT"
+
+IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)"
+PORT=27050
+QUERY_PORT=$((PORT + 1))
+BEACON_PORT=$((PORT + 2))
+GAMEINI=
+ENGINEINI=
+
+# Change all PARAMS to your needs.
+PARAMS="-Port=$PORT -QueryPort=$QUERY_PORT -Beaconport=$BEACON_PORT"
+NAME=mordhau_main
+DESC="[Mordhau Main Server]"
+
+case "$1" in
+	start)
+		echo "Starting $DESC: $NAME"
+		if [ -e $DIR ]; then
+			cd $DIR
+			su $SRCDS_USER -l -c "screen -d -m -S $NAME $DAEMON $PARAMS"
+		else
+			echo "No such directory: $DIR!"
+		fi
+		;;
+
+	stop)
+		if su $SRCDS_USER -l -c "screen -ls" |grep $NAME; then
+			echo -n "Stopping $DESC: $NAME"
+			kill `su $SRCDS_USER -l -c "screen -ls" |grep $NAME |awk -F . '{print $1}'|awk '{print $1}'`
+			echo " ... done."
+		else
+			echo "Couldn't find a running $DESC"
+		fi
+		;;
+
+	restart)
+		if su $SRCDS_USER -l -c "screen -ls" |grep $NAME; then
+			echo -n "Stopping $DESC: $NAME"
+			kill `su $SRCDS_USER -l -c "screen -ls" |grep $NAME |awk -F . '{print $1}'|awk '{print $1}'`
+			echo " ... done."
+		else
+			echo "Couldn't find a running $DESC"
+		fi
+		echo -n "Starting $DESC: $NAME"
+		cd $DIR
+		su $SRCDS_USER -l -c "screen -d -m -S $NAME $DAEMON $PARAMS"
+		echo " ... done."
+		;;
+
+	status)
+		# Check whether there's a "srcds" process
+		ps aux | grep -v grep | grep srcds_r > /dev/null
+		CHECK=$?
+		[ $CHECK -eq 0 ] && echo "SRCDS is UP" || echo "SRCDS is DOWN"
+		;;
+
+	*)
+		echo "Usage: $0 {start|stop|status|restart}"
+		exit 1
+		;;
+esac
+
+exit 0
