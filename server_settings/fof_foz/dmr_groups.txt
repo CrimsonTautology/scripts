@@ -71,6 +71,9 @@ map_groups
 
         fof_museum_r3 {}
         fof_dust2 {}
+
+        fof_floodrock {}
+        fof_hualapai {}
     }
 
     // alternative versions of maps
@@ -115,6 +118,8 @@ map_groups
         fof_cyberpunk_b2 {}
         fof_deathcano_v19 {}
         fof_whiskeypass_07 {}
+
+        fof_presidio {}
     }
 
     // maps that have issues that I'm considering pulling
