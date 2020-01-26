@@ -43,7 +43,7 @@ build_tf2_jet(){
     build goomba
     build hud_alerts
     build huntsman_air
-    build iga
+    #build iga
     build jet
     build nomgrep
     build other
@@ -66,7 +66,7 @@ build_tf2_stt(){
     build dhooks
     build goomba
     build hud_alerts
-    build iga
+    #build iga
     build jet
     build other
     build sendproxy
@@ -88,7 +88,7 @@ build_tf2_main(){
     build autoupdater
     build dmr
     build goomba
-    build iga
+    #build iga
     build jet
     build mapconfigs
     build navfile_blocker
@@ -105,7 +105,7 @@ build_l4d_main(){
 
     build admin_support
     build autoupdater
-    build iga
+    #build iga
     build jet
 
     remove_disabled
@@ -118,7 +118,7 @@ build_l4d2_main(){
     build admin_support
     build autoupdater
     build crawling_l4d2
-    build iga
+    #build iga
     build jet
     build jockey_jump_l4d2
     build weapon_unlock_l4d2
@@ -133,7 +133,7 @@ build_nmrih_main(){
 
     build admin_support
     build autoupdater
-    build iga
+    #build iga
     build nomgrep
 
     remove_disabled
@@ -148,7 +148,7 @@ build_csgo_main(){
     build analytics
     build autoupdater
     build dmr
-    build iga
+    #build iga
     build jet
     build mapconfigs
     build webshortcuts
@@ -168,8 +168,8 @@ build_fof_main(){
     build dmr
     build drunk_fof
     build fashion_fof
-    build iga
-    build jet
+    #build iga
+    #build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
@@ -201,8 +201,8 @@ build_fof_gg(){
     build drunk_fof
     build fashion_fof
     build gungame_fof
-    build iga
-    build jet
+    #build iga
+    #build jet
     build killer_info_display
     build mapconfigs
     build navfile_blocker
@@ -231,8 +231,8 @@ build_fof_gg2(){
     build drunk_fof
     build fashion_fof
     build gungame_fof
-    build iga
-    build jet
+    #build iga
+    #build jet
     build killer_info_display
     build mapconfigs
     build navfile_blocker
@@ -262,8 +262,8 @@ build_fof_foz(){
     build drunk_fof
     build fashion_fof
     build foz
-    build iga
-    build jet
+    #build iga
+    #build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
@@ -294,8 +294,8 @@ build_fof_mk(){
     build dmr
     build drunk_fof
     build fashion_fof
-    build iga
-    build jet
+    #build iga
+    #build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
@@ -331,7 +331,7 @@ build_dod_main(){
     build analytics
     build autoupdater
     build dmr
-    build iga
+    #build iga
     build jet
     build mapconfigs
     build navfile_blocker
