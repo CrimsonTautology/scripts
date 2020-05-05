@@ -1,32 +1,27 @@
-"rotation"
+rotation
 {
-    "start" "orange_day"
+    start mariokart
 
-    "mariokart"
+    mariokart
     {
-        "map" "fof_mariokart_b1"
-        "default_nextnode" "mariokart"
+        map fof_mariokart_b1
+        default_nextnode orange_day
+        orange_night
+        {
+            time_gte 17:00
+            time_lte 05:00
+        }
     }
 
     orange_day
     {
         map fof_orange_2014
-        default_nextnode orange_day
-        orange_night
-        {
-            time_gte 17:00
-            time_lte 05:00
-        }
+        default_nextnode mariokart
     }
 
     orange_night
     {
         map fof_orange_night_2014
-        default_nextnode orange_day
-        orange_night
-        {
-            time_gte 17:00
-            time_lte 05:00
-        }
+        default_nextnode mariokart
     }
 }
