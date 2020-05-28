@@ -72,8 +72,10 @@ map_groups
         fof_museum_r3 {}
         fof_dust2 {}
 
-        fof_floodrock {}
+        fof_floodrock_1-41 {}
         fof_hualapai {}
+        fof_derrick {}
+        fof_loothill {}
     }
 
     // alternative versions of maps
