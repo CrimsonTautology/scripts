@@ -76,6 +76,7 @@ map_groups
         fof_hualapai {}
         fof_derrick {}
         fof_loothill {}
+        tp_dropdown_1_2 {}
     }
 
     // alternative versions of maps
