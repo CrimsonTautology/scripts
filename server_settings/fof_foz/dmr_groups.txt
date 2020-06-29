@@ -37,46 +37,35 @@ map_groups
         fof_tombstone_final {}
         fof_westmart_b5 {}
         fof_westwood_beta_v8 {}
-
         fof_nest_final {}
         fof_station_r2 {}
         foz_twintowers_a3 {}
         foz_undeadwood_b5 {}
-
-
         fof_craftroom_c {}
-
         fof_devruins_d {}
         fof_hacienda_1_3 {}
-
         fof_quaker_a6 {}
         fof_grande_b2 {}
-
         fof_masdm_b1 {}
         fof_old_fistful_b2 {}
         fof_westwood_2010_beta_v6 {}
-
         foz_greenglacier_b2 {}
-
         fof_want_fortdm {}
-
         fof_rustic_hydro_dam_v2,1 {}
-
         fof_crossfire {}
         fof_oldvalley {}
         fof_oldwest {}
-
         fof_lumber_a2 {}
         fof_deadheat {}
-
         fof_museum_r3 {}
         fof_dust2 {}
-
         fof_floodrock_1_5 {}
         fof_hualapai {}
         fof_derrick {}
         fof_loothill {}
         tp_dropdown_1_2 {}
+
+        fof_tortuga_r1 {}
     }
 
     // alternative versions of maps

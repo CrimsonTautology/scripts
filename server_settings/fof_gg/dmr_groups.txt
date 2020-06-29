@@ -34,22 +34,19 @@ map_groups
         fof_shafted_a5 {}
         fof_slender_b3 {}
         fof_tombstone_final {}
-
         fof_creepycreek_halloween {}
         fof_desperados_halloween {}
         fof_winterlong_halloween {}
-
         fof_station_r2 {}
         fof_grande_b2 {}
         fof_old_fistful_b2 {}
-
         fof_lumber_a2 {}
-
         fof_museum_r3 {}
         fof_dust2 {}
-
         fof_floodrock_1_5 {}
         fof_loothill {}
+
+        fof_tortuga_r1 {}
     }
 
     pulled
