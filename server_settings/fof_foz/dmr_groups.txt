@@ -16,6 +16,8 @@ map_groups
         fof_nest_12 {}
         fof_sawmill_12 {}
         fof_tramonto_12 {}
+
+        fof_tortuga {}
     }
 
     // good custom maps for this game mode
@@ -64,8 +66,6 @@ map_groups
         fof_derrick {}
         fof_loothill {}
         tp_dropdown_1_2 {}
-
-        fof_tortuga_r1 {}
     }
 
     // alternative versions of maps

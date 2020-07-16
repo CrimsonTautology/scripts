@@ -22,6 +22,7 @@ map_groups
         fof_sweetwater {}
         fof_overtop {}
         fof_impact {}
+        fof_tortuga {}
     }
 
     suprisechip
@@ -92,8 +93,6 @@ map_groups
         fof_floodrock_1_5 {}
         fof_derrick {}
         fof_loothill {}
-
-        fof_tortuga_r1 {}
     }
 
     highlight
@@ -117,8 +116,6 @@ map_groups
 
         fof_floodrock_1_5 {}
         fof_derrick {}
-
-        fof_tortuga_r1 {}
     }
 
     versus
