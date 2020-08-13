@@ -66,6 +66,7 @@ map_groups
         fof_derrick {}
         fof_loothill {}
         tp_dropdown_1_2 {}
+        fof_gabcustom_megachurch_VB1 {}
     }
 
     // alternative versions of maps
@@ -122,7 +123,6 @@ map_groups
         fof_e1m1_b1 {}
         fof_shafted_a5 {}
         fof_winterlong {}
-        fof_winterlong_halloween {}
     }
 
     // teamplay maps

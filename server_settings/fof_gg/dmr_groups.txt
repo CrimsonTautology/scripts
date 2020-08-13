@@ -37,7 +37,6 @@ map_groups
         fof_tombstone_final {}
         fof_creepycreek_halloween {}
         fof_desperados_halloween {}
-        fof_winterlong_halloween {}
         fof_station_r2 {}
         fof_grande_b2 {}
         fof_old_fistful_b2 {}

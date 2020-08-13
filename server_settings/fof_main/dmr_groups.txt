@@ -93,6 +93,7 @@ map_groups
         fof_floodrock_1_5 {}
         fof_derrick {}
         fof_loothill {}
+        fof_gabcustom_megachurch_VB1 {}
     }
 
     highlight
@@ -116,6 +117,8 @@ map_groups
 
         fof_floodrock_1_5 {}
         fof_derrick {}
+
+        fof_gabcustom_megachurch_VB1 {}
     }
 
     versus
@@ -254,7 +257,6 @@ map_groups
         fof_creepycreek_halloween {}
         fof_desperados_halloween {}
         fof_slender_b3 {}
-        fof_winterlong_halloween {}
     }
 
     xmas
@@ -280,7 +282,6 @@ map_groups
 
         fof_creepycreek_halloween {}
         fof_desperados_halloween {}
-        fof_winterlong_halloween {}
 
         tp_orange_2014 {}
 
