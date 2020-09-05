@@ -94,6 +94,8 @@ map_groups
         fof_derrick {}
         fof_loothill {}
         fof_gabcustom_megachurch_VB1 {}
+        fof_colt {}
+        ew_hudsonferry {}
     }
 
     highlight

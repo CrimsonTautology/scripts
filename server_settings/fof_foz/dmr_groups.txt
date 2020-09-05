@@ -67,6 +67,8 @@ map_groups
         fof_loothill {}
         tp_dropdown_1_2 {}
         fof_gabcustom_megachurch_VB1 {}
+        fof_colt {}
+        ew_hudsonferry {}
     }
 
     // alternative versions of maps

@@ -45,6 +45,8 @@ map_groups
         fof_dust2 {}
         fof_floodrock_1_5 {}
         fof_loothill {}
+        fof_colt {}
+        ew_hudsonferry {}
     }
 
     pulled
