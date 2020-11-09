@@ -69,6 +69,7 @@ map_groups
         fof_gabcustom_megachurch_VB1 {}
         fof_colt {}
         ew_hudsonferry {}
+        fof_complex {}
     }
 
     // alternative versions of maps

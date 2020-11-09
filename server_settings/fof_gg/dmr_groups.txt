@@ -47,6 +47,7 @@ map_groups
         fof_loothill {}
         fof_colt {}
         ew_hudsonferry {}
+        fof_complex {}
     }
 
     pulled
