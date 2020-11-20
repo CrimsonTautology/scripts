@@ -46,7 +46,6 @@ map_groups
         fof_floodrock_1_5 {}
         fof_loothill {}
         fof_colt {}
-        ew_hudsonferry {}
         fof_complex {}
     }
 
@@ -89,6 +88,8 @@ map_groups
 
         fof_masdm_b1 {}
         fof_deadheatver2 {}
+
+        ew_hudsonferry {}
     }
 
     doubles
