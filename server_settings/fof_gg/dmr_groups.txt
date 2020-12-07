@@ -90,6 +90,7 @@ map_groups
         fof_deadheatver2 {}
 
         ew_hudsonferry {}
+        fof_cliff_bridge {}
     }
 
     doubles

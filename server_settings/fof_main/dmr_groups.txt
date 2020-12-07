@@ -97,6 +97,7 @@ map_groups
         fof_colt {}
         ew_hudsonferry {}
         fof_complex {}
+        fof_cliff_bridge {}
     }
 
     highlight
