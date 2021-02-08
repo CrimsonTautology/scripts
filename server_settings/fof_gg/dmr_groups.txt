@@ -13,6 +13,7 @@ map_groups
         fof_winterlong {}
         fof_impact {}
         fof_tortuga {}
+        fof_nest {}
     }
 
     stocklow

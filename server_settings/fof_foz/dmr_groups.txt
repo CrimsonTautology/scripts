@@ -12,12 +12,12 @@ map_groups
         fof_robertlee {}
         fof_sweetwater {}
         fof_impact {}
+        fof_tortuga {}
+        fof_nest {}
 
         fof_nest_12 {}
         fof_sawmill_12 {}
         fof_tramonto_12 {}
-
-        fof_tortuga {}
     }
 
     // good custom maps for this game mode

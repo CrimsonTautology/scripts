@@ -23,6 +23,7 @@ map_groups
         fof_overtop {}
         fof_impact {}
         fof_tortuga {}
+        fof_nest {}
     }
 
     suprisechip
