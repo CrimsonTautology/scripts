@@ -125,7 +125,6 @@ map_groups
         fof_bar_a22 {}
         fof_castle_night_b2 {}
         fof_e1m1_b1 {}
-        fof_shafted_a5 {}
         fof_winterlong {}
     }
 
@@ -168,6 +167,7 @@ map_groups
         fof_aim_arena_revised {}  //has some serverpoint commands
         fof_creepycreek_halloween {}
         fof_deadheatver2 {} //easy to get out of map; reverting to older version
+        fof_shafted_a5 {}
     }
 
     halloween
