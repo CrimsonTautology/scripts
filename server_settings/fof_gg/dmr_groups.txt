@@ -48,6 +48,7 @@ map_groups
         fof_loothill {}
         fof_colt {}
         fof_complex {}
+        fof_rialto {}
     }
 
     pulled

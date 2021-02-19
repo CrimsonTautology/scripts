@@ -71,6 +71,7 @@ map_groups
         ew_hudsonferry {}
         fof_complex {}
         fof_cliff_bridge {}
+        fof_rialto {}
     }
 
     // alternative versions of maps
