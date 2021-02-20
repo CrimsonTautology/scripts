@@ -30,133 +30,7 @@ remove_disabled(){
     done
 }
 
-#Jetpack Server #######################################
-build_tf2_jet(){
-    build_server $HOME/steamcmd/tf2_jet/tf/
-
-    build admin_support
-    build advanced_ads
-    build analytics
-    build autoupdater
-    build be_the_
-    build dmr
-    build goomba
-    build hud_alerts
-    build huntsman_air
-    #build iga
-    build jet
-    build nomgrep
-    build other
-    build rtd
-    build super_ff
-    build webshortcuts
-
-    remove_disabled
-}
-
-#Stop That Tank Server #######################################
-build_tf2_stt(){
-    build_server $HOME/steamcmd/tf2_stt/tf/
-
-    build admin_support
-    build advanced_ads
-    build analytics
-    build autoupdater
-    build dmr
-    build dhooks
-    build goomba
-    build hud_alerts
-    #build iga
-    build jet
-    build other
-    build sendproxy
-    build steamtools
-    build stt
-    build tf2items
-    build webshortcuts
-
-    remove_disabled
-}
-
-#Main Server #######################################
-build_tf2_main(){
-    build_server $HOME/steamcmd/tf2_main/tf/
-
-    build admin_support
-    #build advanced_ads
-    build analytics
-    build autoupdater
-    build dmr
-    build goomba
-    #build iga
-    build jet
-    build mapconfigs
-    build navfile_blocker
-    build other
-    build sourcebans-pp/game
-    build word_filter
-
-    remove_disabled
-}
-
-#L4D Server #######################################
-build_l4d_main(){
-    build_server $HOME/steamcmd/l4d_main/left4dead/
-
-    build admin_support
-    build autoupdater
-    #build iga
-    build jet
-
-    remove_disabled
-}
-
-#L4D2 Server #######################################
-build_l4d2_main(){
-    build_server $HOME/steamcmd/l4d2_main/left4dead2/
-
-    build admin_support
-    build autoupdater
-    build crawling_l4d2
-    #build iga
-    build jet
-    build jockey_jump_l4d2
-    build weapon_unlock_l4d2
-    build zcs_l4d2
-
-    remove_disabled
-}
-
-#NMRIH Server #######################################
-build_nmrih_main(){
-    build_server $HOME/steamcmd/nmrih_main/nmrih/
-
-    build admin_support
-    build autoupdater
-    #build iga
-    build nomgrep
-
-    remove_disabled
-}
-
-#CSGO Server #######################################
-build_csgo_main(){
-    build_server $HOME/steamcmd/csgo_main/csgo/
-
-    build admin_support
-    build advanced_ads
-    build analytics
-    build autoupdater
-    build dmr
-    #build iga
-    build jet
-    build mapconfigs
-    build webshortcuts
-
-    remove_disabled
-}
-
-#Fists Full of Frags Server #######################################
+# fistful of frags - main
 build_fof_main(){
     build_server $HOME/steamcmd/fof_main/fof/
 
@@ -168,19 +42,15 @@ build_fof_main(){
     build dmr
     build drunk_fof
     build fashion_fof
-    #build iga
-    #build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
     build navfile_blocker
-    #build near_map_end_fof
     build randomize_teams_fof
     build resize_players
     build sourcebans-pp/game
     build super_kick_fof
     build voice_warn
-    #build weapon_mod
     build weapon_only_fof
     build webshortcuts
     build word_filter
@@ -188,7 +58,7 @@ build_fof_main(){
     remove_disabled
 }
 
-#Fists Full of Frags Gun Game Server #######################################
+# fistful of frags - gun game
 build_fof_gg(){
     build_server $HOME/steamcmd/fof_gg/fof/
 
@@ -201,8 +71,6 @@ build_fof_gg(){
     build drunk_fof
     build fashion_fof
     build gungame_fof
-    #build iga
-    #build jet
     build killer_info_display
     build mapconfigs
     build navfile_blocker
@@ -218,7 +86,7 @@ build_fof_gg(){
     remove_disabled
 }
 
-#Fists Full of Frags Gun Game Server (12 man) #######################################
+# fistful of frags - gun game (12 man)
 build_fof_gg2(){
     build_server $HOME/steamcmd/fof_gg2/fof/
 
@@ -231,8 +99,6 @@ build_fof_gg2(){
     build drunk_fof
     build fashion_fof
     build gungame_fof
-    #build iga
-    #build jet
     build killer_info_display
     build mapconfigs
     build navfile_blocker
@@ -249,21 +115,18 @@ build_fof_gg2(){
     remove_disabled
 }
 
-#Fists Full of Frags Fistful of Zombies Server #######################################
+# fistful of frags - zombies
 build_fof_foz(){
     build_server $HOME/steamcmd/fof_foz/fof/
 
     build admin_support
     build advanced_ads
     build analytics
-    #build autoupdater
     build death_chance_fof
     build dmr
     build drunk_fof
     build fashion_fof
     build foz
-    #build iga
-    #build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
@@ -281,7 +144,7 @@ build_fof_foz(){
 }
 
 
-#Fists Full of Frags Break Bad Server #######################################
+# fistful of frags - mario kart
 build_fof_mk(){
     build_server $HOME/steamcmd/fof_mk/fof/
 
@@ -289,13 +152,10 @@ build_fof_mk(){
     build advanced_ads
     build analytics
     build autoupdater
-    #build bhop
     build death_chance_fof
     build dmr
     build drunk_fof
     build fashion_fof
-    #build iga
-    #build jet
     build killer_info_display
     build mapconfigs
     build mapfix_fof
@@ -313,62 +173,10 @@ build_fof_mk(){
     remove_disabled
 }
 
-# ###########################
-build_ins_main(){
-    build_server $HOME/steamcmd/ins_main/insurgency/
-
-    build admin_support
-
-    remove_disabled
-}
-
-# ###########################
-build_dod_main(){
-    build_server $HOME/steamcmd/dod_main/dod/
-
-    build admin_support
-    #build advanced_ads
-    build analytics
-    build autoupdater
-    build dmr
-    #build iga
-    build jet
-    build mapconfigs
-    build navfile_blocker
-    build resize_players
-    build webshortcuts
-    build word_filter
-
-    remove_disabled
-}
-
-build_dev(){
-    #Build steps for developing plugins
-    build_server $HOME/steamcmd/fof_foz/fof/
-
-    build foz
-
-    remove_disabled
-
-}
-
-
-
-
-#Build list here###############
-
-#build_tf2_jet
-#build_tf2_main
-
-#build_l4d_main
-#build_l4d2_main
-
-#build_dod_main
+# build plugins for servers
 
 build_fof_main
 build_fof_gg
 build_fof_gg2
 build_fof_mk
 build_fof_foz
-
-#build_dev

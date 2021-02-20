@@ -20,7 +20,7 @@ MAXPLAYERS=20
 MAP=fof_desperados
 
 # Change all PARAMS to your needs.
-PARAMS="-game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers $MAXPLAYERS +map $MAP"
+PARAMS="-debug -game fof -autoupdate -steam_dir $STEAM_DIR -steamcmd_script $STEAMCMD_SCRIPT -port $PORT +clientport $CLIENTPORT +tv_port $TVPORT +ip $IP +maxplayers $MAXPLAYERS +map $MAP"
 NAME=fof_gg
 DESC="[Fistful of Frags Server (Gun Game)]"
 
