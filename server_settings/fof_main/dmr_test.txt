@@ -1,0 +1,94 @@
+rotation
+{
+    start node_elimination
+
+    node_breakbad
+    {
+        group breakbad
+        title "Break Bad"
+        pre_command "exec gamemode_breakbad"
+
+        default_nextnode node_breakbad
+    }
+
+    node_elimination
+    {
+        group elimination
+        title "Grand Elimination"
+        pre_command "exec gamemode_elimination"
+
+        default_nextnode node_elimination
+    }
+
+    node_versus
+    {
+        group versus
+        title "Versus Power Hour"
+        pre_command "exec gamemode_versus"
+
+        default_nextnode node_versus
+    }
+
+    node_ghosttown
+    {
+        group ghosttown
+        title "Ghost Town"
+        pre_command "exec gamemode_ghosttown"
+
+        default_nextnode node_ghosttown
+    }
+
+    node_shootout_none
+    {
+        group stock
+        title "Shootout None"
+        pre_command "exec gamemode_shootout_none"
+
+        default_nextnode node_shootout_none
+    }
+
+    node_shootout_two
+    {
+        group custom
+        title "Shootout 2"
+        pre_command "exec gamemode_shootout_two"
+
+        default_nextnode node_shootout_two
+    }
+
+    node_shootout_three
+    {
+        group stock
+        title "Shootout Three"
+        pre_command "exec gamemode_shootout_three"
+
+        default_nextnode node_shootout_three
+    }
+
+    node_shootout_four
+    {
+        group stock
+        title "Shootout Four"
+        pre_command "exec gamemode_shootout_four"
+
+        default_nextnode node_shootout_four
+    }
+
+    node_teamplay
+    {
+        group teamplay
+        title "Teamplay"
+        pre_command "exec gamemode_teamplay"
+
+        default_nextnode node_teamplay
+    }
+
+    node_gungame
+    {
+        group gungame
+        title "Gungame"
+        pre_command "exec gamemode_gungame"
+
+        default_nextnode node_gungame
+    }
+}

@@ -134,6 +134,31 @@ map_groups
         vs_river {}
     }
 
+    breakbad
+    {
+      fof_cripplecreek {}
+      fof_fistful {}
+      fof_nest {}
+      fof_desperados {}
+      fof_winterlong {}
+      fof_sweetwater {}
+      fof_robertlee {}
+      fof_overtop {}
+      fof_tortuga {}
+    }
+
+    elimination
+    {
+      fof_cripplecreek {}
+      fof_desperados {}
+      fof_nest_12 {}
+      fof_fistful {}
+      fof_depot {}
+      fof_sawmill_12 {}
+      fof_robertlee {}
+      fof_winterlong {}
+    }
+
     // ****************
     // vvvv unused vvvv
     // ****************
@@ -180,60 +205,6 @@ map_groups
         tp_soccer_b6 {}
     }
 
-    breakbad
-    {
-        fof_cripplecreek {}
-        fof_depot {}
-        fof_desperados {}
-        fof_fistful {}
-        fof_overtop {}
-        fof_revenge {}
-        fof_robertlee {}
-        fof_sweetwater {}
-        fof_winterlong {}
-    }
-
-    breakbad_custom
-    {
-        fof_abandoned_a1 {}
-        fof_alamo_beta_v2 {}
-        fof_bar_a22 {}
-        fof_canyonero {}
-        fof_coastal {}
-        fof_cove {}
-        fof_cyberpunk_b2 {}
-        fof_depot_final_night_fix {}
-        fof_e1m1_b1 {}
-        fof_forest_new1 {}
-        fof_grande_b2 {}
-        fof_masdm_b2 {}
-        fof_natchez {}
-        fof_old_fistful_b2 {}
-        fof_pueblo_beta_v3 {}
-        fof_revenge {}
-        fof_revenge_old1 {}
-        fof_riobravo_new0 {}
-        fof_riverrun_a42 {}
-        fof_shafted_a5 {}
-        fof_slender_b3 {}
-        fof_spacejam_b1 {}
-        fof_tijuana_event {}
-        fof_tombstone_final {}
-        fof_westwood_beta_v8 {}
-    }
-
-    elimination
-    {
-        fof_depot {}
-        fof_desperados {}
-        fof_fistful {}
-        fof_overtop {}
-        fof_revenge {}
-        fof_robertlee {}
-        fof_sweetwater {}
-        fof_winterlong {}
-    }
-
     gungame
     {
         fof_alamo_beta_v2 {}
@@ -248,7 +219,7 @@ map_groups
         fof_tombstone_final {}
     }
 
-    ghost
+    ghosttown
     {
         gt_creepycreek {}
         gt_desperados {}
