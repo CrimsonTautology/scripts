@@ -1,893 +1,886 @@
-"rotation"
+rotation
 {
-    "start" "empty1"
+    start empty1
 
-    "empty1"
+    empty1
     {
-        "group" "stock"
-        "default_nextnode" "empty2"
-        "mid2"
+        group stock
+        default_nextnode empty2
+        mid2
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high2"
+        high2
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid1"
+    mid1
     {
-        "group" "stock"
-        "default_nextnode" "empty2"
-        "mid2"
+        group stock
+        default_nextnode empty2
+        mid2
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high2"
+        high2
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high1"
+    high1
     {
-        "group" "stock"
-        "default_nextnode" "empty2"
-        "mid2"
+        group stock
+        default_nextnode empty2
+        mid2
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high2"
+        high2
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty2"
+    empty2
     {
-        "group" "stock"
-        "default_nextnode" "empty3"
-        "mid3"
+        group stock
+        default_nextnode empty3
+        mid3
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high3"
+        high3
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid2"
+    mid2
     {
-        "group" "custom"
-        "default_nextnode" "empty3"
-        "mid3"
+        group custom
+        default_nextnode empty3
+        mid3
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high3"
+        high3
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high2"
+    high2
     {
-        "group" "custom"
-        "default_nextnode" "empty3"
-        "mid3"
+        group custom
+        default_nextnode empty3
+        mid3
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high3"
+        high3
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty3"
+    empty3
     {
-        "group" "stock"
-        "default_nextnode" "empty4"
-        "mid4"
+        group stock
+        default_nextnode empty4
+        mid4
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high4"
+        high4
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid3"
+    mid3
     {
-        "group" "stock"
-        "default_nextnode" "empty4"
-        "mid4"
+        group stock
+        default_nextnode empty4
+        mid4
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high4"
+        high4
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high3"
+    high3
     {
-        "group" "stock"
-        "default_nextnode" "empty4"
-        "mid4"
+        group stock
+        default_nextnode empty4
+        mid4
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high4"
+        high4
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty4"
+    empty4
     {
-        "group" "stock"
-        "default_nextnode" "empty5"
-        "mid5"
+        group stock
+        default_nextnode empty5
+        mid5
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high5"
+        high5
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid4"
+    mid4
     {
-        "group" "stock"
-        "default_nextnode" "empty5"
-        "mid5"
+        group stock
+        default_nextnode empty5
+        mid5
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high5"
+        high5
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high4"
+    high4
     {
-        "group" "custom"
-        "default_nextnode" "empty5"
-        "mid5"
+        group custom
+        default_nextnode empty5
+        mid5
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high5"
+        high5
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty5"
+    empty5
     {
-        "group" "stock"
-        "default_nextnode" "empty6"
-        "mid6"
+        group stock
+        default_nextnode empty6
+        mid6
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high6"
+        high6
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid5"
+    mid5
     {
-        "group" "stock"
-        "default_nextnode" "empty6"
-        "mid6"
+        group stock
+        default_nextnode empty6
+        mid6
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high6"
+        high6
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high5"
+    high5
     {
-        "group" "custom"
-        "default_nextnode" "empty6"
-        "mid6"
+        group custom
+        default_nextnode empty6
+        mid6
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high6"
+        high6
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty6"
+    empty6
     {
-        "group" "stock"
-        "default_nextnode" "empty7"
-        "mid7"
+        group stock
+        default_nextnode empty7
+        mid7
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high7"
+        high7
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid6"
+    mid6
     {
-        "group" "stock"
-        "default_nextnode" "empty7"
-        "mid7"
+        group stock
+        default_nextnode empty7
+        mid7
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high7"
+        high7
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high6"
+    high6
     {
-        "group" "stock"
-        "default_nextnode" "empty7"
-        "mid7"
+        group stock
+        default_nextnode empty7
+        mid7
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high7"
+        high7
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty7"
+    empty7
     {
-        "group" "stock"
-        "default_nextnode" "empty8"
-        "mid8"
+        group stock
+        default_nextnode empty8
+        mid8
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high8"
+        high8
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid7"
+    mid7
     {
-        "group" "stock"
-        "default_nextnode" "empty8"
-        "mid8"
+        group stock
+        default_nextnode empty8
+        mid8
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high8"
+        high8
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high7"
+    high7
     {
-        "group" "stock"
-        "default_nextnode" "empty8"
-        "mid8"
+        group stock
+        default_nextnode empty8
+        mid8
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high8"
+        high8
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty8"
+    empty8
     {
-        "group" "custom"
-        "default_nextnode" "empty9"
-        "mid9"
+        group custom
+        default_nextnode empty9
+        mid9
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high9"
+        high9
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid8"
+    mid8
     {
-        "group" "custom"
-        "default_nextnode" "empty9"
-        "mid9"
+        group custom
+        default_nextnode empty9
+        mid9
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high9"
+        high9
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high8"
+    high8
     {
-        "group" "custom"
-        "default_nextnode" "empty9"
-        "mid9"
+        group custom
+        default_nextnode empty9
+        mid9
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high9"
+        high9
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty9"
+    empty9
     {
-        "group" "stock"
-        "default_nextnode" "empty10"
-        "mid10"
+        group stock
+        default_nextnode empty10
+        mid10
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high10"
+        high10
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid9"
+    mid9
     {
-        "group" "stock"
-        "default_nextnode" "empty10"
-        "mid10"
+        group stock
+        default_nextnode empty10
+        mid10
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high10"
+        high10
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high9"
+    high9
     {
-        "group" "stock"
-        "default_nextnode" "empty10"
-        "mid10"
+        group stock
+        default_nextnode empty10
+        mid10
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high10"
+        high10
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty10"
+    empty10
     {
-        "group" "stock"
-        "default_nextnode" "empty11"
-        "mid11"
+        group stock
+        default_nextnode empty11
+        mid11
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high11"
+        high11
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid10"
+    mid10
     {
-        "group" "stock"
-        "default_nextnode" "empty11"
-        "mid11"
+        group stock
+        default_nextnode empty11
+        mid11
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high11"
+        high11
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high10"
+    high10
     {
-        "group" "custom"
-        "default_nextnode" "empty11"
-        "mid11"
+        group custom
+        default_nextnode empty11
+        mid11
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high11"
+        high11
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty11"
+    empty11
     {
-        "group" "stock"
-        "default_nextnode" "empty12"
-        "mid12"
+        group stock
+        default_nextnode empty12
+        mid12
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high12"
+        high12
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid11"
+    mid11
     {
-        "group" "stock"
-        "default_nextnode" "empty12"
-        "mid12"
+        group stock
+        default_nextnode empty12
+        mid12
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high12"
+        high12
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high11"
+    high11
     {
-        "group" "stock"
-        "default_nextnode" "empty12"
-        "mid12"
+        group stock
+        default_nextnode empty12
+        mid12
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high12"
+        high12
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty12"
+    empty12
     {
-        "group" "stock"
-        "default_nextnode" "empty13"
-        "mid13"
+        group stock
+        default_nextnode empty13
+        mid13
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high13"
+        high13
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid12"
+    mid12
     {
-        "group" "custom"
-        "default_nextnode" "empty13"
-        "mid13"
+        group custom
+        default_nextnode empty13
+        mid13
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high13"
+        high13
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high12"
+    high12
     {
-        "group" "custom"
-        "default_nextnode" "empty13"
-        "mid13"
+        group custom
+        default_nextnode empty13
+        mid13
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high13"
+        high13
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty13"
+    empty13
     {
-        "group" "stock"
-        "default_nextnode" "empty14"
-        "mid14"
+        group stock
+        default_nextnode empty14
+        mid14
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high14"
+        high14
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid13"
+    mid13
     {
-        "group" "stock"
-        "default_nextnode" "empty14"
-        "mid14"
+        group stock
+        default_nextnode empty14
+        mid14
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high14"
+        high14
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high13"
+    high13
     {
-        "group" "custom"
-        "default_nextnode" "empty14"
-        "mid14"
+        group custom
+        default_nextnode empty14
+        mid14
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high14"
+        high14
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty14"
+    empty14
     {
-        "group" "stock"
-        "default_nextnode" "empty15"
-        "mid15"
+        group stock
+        default_nextnode empty15
+        mid15
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high15"
+        high15
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid14"
+    mid14
     {
-        "group" "stock"
-        "default_nextnode" "empty15"
-        "mid15"
+        group stock
+        default_nextnode empty15
+        mid15
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high15"
+        high15
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high14"
+    high14
     {
-        "group" "stock"
-        "default_nextnode" "empty15"
-        "mid15"
+        group stock
+        default_nextnode empty15
+        mid15
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high15"
+        high15
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty15"
+    empty15
     {
-        "group" "stock"
-        "default_nextnode" "empty16"
-        "mid16"
+        group stock
+        default_nextnode empty16
+        mid16
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high16"
+        high16
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid15"
+    mid15
     {
-        "group" "custom"
-        "default_nextnode" "empty16"
-        "mid16"
+        group custom
+        default_nextnode empty16
+        mid16
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high16"
+        high16
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high15"
+    high15
     {
-        "group" "stock"
-        "default_nextnode" "empty16"
-        "mid16"
+        group stock
+        default_nextnode empty16
+        mid16
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high16"
+        high16
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty16"
+    empty16
     {
-        "group" "stock"
-        "default_nextnode" "empty17"
-        "mid17"
+        group stock
+        default_nextnode empty17
+        mid17
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high17"
+        high17
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid16"
+    mid16
     {
-        "group" "stock"
-        "default_nextnode" "empty17"
-        "mid17"
+        group stock
+        default_nextnode empty17
+        mid17
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high17"
+        high17
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high16"
+    high16
     {
-        "group" "custom"
-        "default_nextnode" "empty17"
-        "mid17"
+        group custom
+        default_nextnode empty17
+        mid17
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high17"
+        high17
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty17"
+    empty17
     {
-        "group" "stock"
-        "default_nextnode" "empty18"
-        "mid18"
+        group stock
+        default_nextnode empty18
+        mid18
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high18"
+        high18
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid17"
+    mid17
     {
-        "group" "stock"
-        "default_nextnode" "empty18"
-        "mid18"
+        group stock
+        default_nextnode empty18
+        mid18
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high18"
+        high18
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high17"
+    high17
     {
-        "group" "stock"
-        "default_nextnode" "empty18"
-        "mid18"
+        group stock
+        default_nextnode empty18
+        mid18
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high18"
+        high18
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty18"
+    empty18
     {
-        "group" "custom"
-        "default_nextnode" "empty19"
-        "mid19"
+        group custom
+        default_nextnode empty19
+        mid19
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high19"
+        high19
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid18"
+    mid18
     {
-        "group" "custom"
-        "default_nextnode" "empty19"
-        "mid19"
+        group custom
+        default_nextnode empty19
+        mid19
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high19"
+        high19
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high18"
+    high18
     {
-        "group" "custom"
-        "default_nextnode" "empty19"
-        "mid19"
+        group custom
+        default_nextnode empty19
+        mid19
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high19"
+        high19
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty19"
+    empty19
     {
-        "group" "stock"
-        "default_nextnode" "empty20"
-        "mid20"
+        group stock
+        default_nextnode empty20
+        mid20
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high20"
+        high20
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid19"
+    mid19
     {
-        "group" "stock"
-        "default_nextnode" "empty20"
-        "mid20"
+        group stock
+        default_nextnode empty20
+        mid20
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high20"
+        high20
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high19"
+    high19
     {
-        "group" "stock"
-        "default_nextnode" "empty20"
-        "mid20"
+        group stock
+        default_nextnode empty20
+        mid20
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high20"
+        high20
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty20"
+    empty20
     {
-        "group" "stock"
-        "default_nextnode" "empty21"
-        "mid21"
+        group stock
+        default_nextnode empty21
+        mid21
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high21"
+        high21
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid20"
+    mid20
     {
-        "group" "stock"
-        "default_nextnode" "empty21"
-        "mid21"
+        group stock
+        default_nextnode empty21
+        mid21
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high21"
+        high21
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high20"
+    high20
     {
-        "group" "stock"
-        "default_nextnode" "empty21"
-        "mid21"
+        group stock
+        default_nextnode empty21
+        mid21
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high21"
+        high21
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "empty21"
+    empty21
     {
-        "group" "stock"
-        "default_nextnode" "empty1"
-        "mid1"
+        group stock
+        default_nextnode empty1
+        mid1
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high1"
+        high1
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "mid21"
+    mid21
     {
-        "group" "stock"
-        "default_nextnode" "empty1"
-        "mid1"
+        group stock
+        default_nextnode empty1
+        mid1
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high1"
+        high1
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
 
-    "high21"
+    high21
     {
-        "group" "custom"
-        "default_nextnode" "empty1"
-        "mid1"
+        group custom
+        default_nextnode empty1
+        mid1
         {
-            "players_gte" "6"
+            players_gte 6
         }
-        "high1"
+        high1
         {
-            "players_gte" "12"
+            players_gte 12
         }
     }
-
-    "spacejam"
-    {
-        "map" "fof_spacejam_b1"
-        "default_nextnode" "spacejam"
-    }
-
 }

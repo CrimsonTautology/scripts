@@ -9,6 +9,9 @@ rotation
         orange_night
         {
             time_gte 17:00
+        }
+        orange_night
+        {
             time_lte 05:00
         }
     }
