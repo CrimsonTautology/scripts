@@ -90,7 +90,7 @@ rotation
 
     empty3
     {
-        group stock_low
+        group stock
         default_nextnode empty4
         mid4
         {
@@ -264,7 +264,7 @@ rotation
 
     empty7
     {
-        group stock_low
+        group stock
         default_nextnode empty8
         mid8
         {
@@ -442,7 +442,7 @@ rotation
 
     empty11
     {
-        group stock_low
+        group stock
         default_nextnode empty12
         mid12
         {
@@ -618,7 +618,7 @@ rotation
 
     empty15
     {
-        group stock_low
+        group stock
         default_nextnode empty16
         mid16
         {
@@ -792,7 +792,7 @@ rotation
 
     empty19
     {
-        group stock_low
+        group stock
         default_nextnode empty20
         mid20
         {
