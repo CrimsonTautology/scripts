@@ -1,22 +1,16 @@
 #!/bin/sh
-#https://github.com/bcserv/sourcemod-updater
-~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.7/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/tf2_main/tf/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/tf2_jet/tf/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/l4d_main/left4dead/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/l4d2_main/left4dead2/ --snapshot-stable --dontask
+# https://github.com/bcserv/sourcemod-updater
+
+# dev repos
+~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.8/ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.9/ --snapshot-dev --install --dontask
+
+# game servers
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_main/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_gg/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_gg2/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_foz/fof/ --snapshot-stable --dontask
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/dod_main/dod/ --snapshot-stable --dontask
 
-#non-standard repos
-
-#~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.6/ "http://www.sourcemod.net/smdrop/1.6/sourcemod-1.6.0-git4525-linux.tar.gz" --install --dontask
-#~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.8/ --snapshot-stable --install --dontask
-#~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.9/ --snapshot-dev --install --dontask
-
-#NOTE to update manually to a specific version use:
-#~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_foz/fof/ "http://www.sourcemod.net/smdrop/1.8/sourcemod-1.8.0-git6044-linux.tar.gz"
+# NOTE to update manually to a specific version use:
+# ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_foz/fof/ "http://www.sourcemod.net/smdrop/1.8/sourcemod-1.8.0-git6044-linux.tar.gz"
