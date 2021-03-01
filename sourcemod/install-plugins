@@ -2,10 +2,11 @@
 
 BUILD_DIR=$HOME/sourcemod/
 PLUGIN_DIR=addons/sourcemod/plugins/
+SPCOMP=$SOURCEMOD_DIR/scripting/spcomp
+#SPCOMP=$SOURCEMOD_DIR_1_10/scripting/spcomp
 
 build_server(){
     local server=$1
-    SOURCEMOD_DEV_SERVER=$server
     cd $BUILD_DIR
 
     echo "#########################"
@@ -15,16 +16,16 @@ build_server(){
 
 build(){
     local dir=$1
-    cd $dir
-    rake clean
-    rake compile | egrep --color "warning|error"
-    rake install
+    local srcds=$2
+    make -C$dir SPCOMP=$SPCOMP | grep --color "warning\|error"
+    # make -C$dir install
     cd $BUILD_DIR
 }
 
 remove_disabled(){
-    cd $SOURCEMOD_DEV_SERVER
-    cd $PLUGIN_DIR
+    local srcds=$1
+
+    cd $srcds/$PLUGIN_DIR
     for f in $(ls disabled) ; do
         rm -f $f
     done
@@ -32,151 +33,146 @@ remove_disabled(){
 
 # fistful of frags - main
 build_fof_main(){
-    build_server $HOME/steamcmd/fof_main/fof/
+    local srcds=$HOME/steamcmd/fof_main/fof/
+    build_server $srcds
 
-    build admin_support
-    build advanced_ads
-    build analytics
-    build autoupdater
-    build death_chance_fof
-    build dmr
-    build drunk_fof
-    build fashion_fof
-    build killer_info_display
-    build mapconfigs
-    build mapfix_fof
-    build navfile_blocker
-    build randomize_teams_fof
-    build resize_players
-    build sourcebans-pp/game
-    build super_kick_fof
-    build voice_warn
-    build weapon_only_fof
-    build webshortcuts
-    build word_filter
+    build admin_support $srcds
+    build advanced_ads $srcds
+    build analytics $srcds
+    build autoupdater $srcds
+    build death_chance_fof $srcds
+    build dmr $srcds
+    build fashion_fof $srcds
+    build killer_info_display $srcds
+    build mapconfigs $srcds
+    build mapfix_fof $srcds
+    build navfile_blocker $srcds
+    build randomize_teams_fof $srcds
+    build resize_players $srcds
+    build sourcebans-pp/game $srcds
+    build super_kick_fof $srcds
+    build voice_warn $srcds
+    build weapon_only_fof $srcds
+    build word_filter $srcds
 
-    remove_disabled
+    remove_disabled $srcds
 }
 
 # fistful of frags - gun game
 build_fof_gg(){
-    build_server $HOME/steamcmd/fof_gg/fof/
+    local srcds=$HOME/steamcmd/fof_gg/fof/
+    build_server $srcds
 
-    build admin_support
-    build advanced_ads
-    build analytics
-    build autoupdater
-    build death_chance_fof
-    build dmr
-    build drunk_fof
-    build fashion_fof
-    build gungame_fof
-    build killer_info_display
-    build mapconfigs
-    build navfile_blocker
-    build mapfix_fof
-    build randomize_teams_fof
-    build resize_players
-    build sourcebans-pp/game
-    build super_kick_fof
-    build voice_warn
-    build webshortcuts
-    build word_filter
+    build admin_support $srcds
+    build advanced_ads $srcds
+    build analytics $srcds
+    build autoupdater $srcds
+    build death_chance_fof $srcds
+    build dmr $srcds
+    build fashion_fof $srcds
+    build gungame_fof $srcds
+    build killer_info_display $srcds
+    build mapconfigs $srcds
+    build navfile_blocker $srcds
+    build mapfix_fof $srcds
+    build randomize_teams_fof $srcds
+    build resize_players $srcds
+    build sourcebans-pp/game $srcds
+    build super_kick_fof $srcds
+    build voice_warn $srcds
+    build word_filter $srcds
 
-    remove_disabled
+    remove_disabled $srcds
 }
 
 # fistful of frags - gun game (12 man)
 build_fof_gg2(){
-    build_server $HOME/steamcmd/fof_gg2/fof/
+    local srcds=$HOME/steamcmd/fof_gg2/fof/
+    build_server $srcds
 
-    build admin_support
-    build advanced_ads
-    build analytics
-    build autoupdater
-    build death_chance_fof
-    build dmr
-    build drunk_fof
-    build fashion_fof
-    build gungame_fof
-    build killer_info_display
-    build mapconfigs
-    build navfile_blocker
-    build mapfix_fof
-    build randomize_teams_fof
-    build resize_players
-    build sourcebans-pp/game
-    build super_kick_fof
-    build voice_warn
-    build weapon_only_fof
-    build webshortcuts
-    build word_filter
+    build admin_support $srcds
+    build advanced_ads $srcds
+    build analytics $srcds
+    build autoupdater $srcds
+    build death_chance_fof $srcds
+    build dmr $srcds
+    build fashion_fof $srcds
+    build gungame_fof $srcds
+    build killer_info_display $srcds
+    build mapconfigs $srcds
+    build navfile_blocker $srcds
+    build mapfix_fof $srcds
+    build randomize_teams_fof $srcds
+    build resize_players $srcds
+    build sourcebans-pp/game $srcds
+    build super_kick_fof $srcds
+    build voice_warn $srcds
+    build weapon_only_fof $srcds
+    build word_filter $srcds
 
-    remove_disabled
+    remove_disabled $srcds
 }
 
 # fistful of frags - zombies
 build_fof_foz(){
-    build_server $HOME/steamcmd/fof_foz/fof/
+    local srcds=$HOME/steamcmd/fof_foz/fof/
+    build_server $srcds
 
-    build admin_support
-    build advanced_ads
-    build analytics
-    build death_chance_fof
-    build dmr
-    build drunk_fof
-    build fashion_fof
-    build foz
-    build killer_info_display
-    build mapconfigs
-    build mapfix_fof
-    build navfile_blocker
-    build randomize_teams_fof
-    build sourcebans-pp/game
-    build super_kick_fof
-    build voice_warn
-    build weapon_mod
-    build weapon_only_fof
-    build webshortcuts
-    build word_filter
+    build admin_support $srcds
+    build advanced_ads $srcds
+    build analytics $srcds
+    build death_chance_fof $srcds
+    build dmr $srcds
+    build fashion_fof $srcds
+    build foz $srcds
+    build killer_info_display $srcds
+    build mapconfigs $srcds
+    build mapfix_fof $srcds
+    build navfile_blocker $srcds
+    build randomize_teams_fof $srcds
+    build sourcebans-pp/game $srcds
+    build super_kick_fof $srcds
+    build voice_warn $srcds
+    build weapon_mod $srcds
+    build weapon_only_fof $srcds
+    build word_filter $srcds
 
-    remove_disabled
+    remove_disabled $srcds
 }
 
 
 # fistful of frags - mario kart
 build_fof_mk(){
-    build_server $HOME/steamcmd/fof_mk/fof/
+    local srcds=$HOME/steamcmd/fof_mk/fof/
+    build_server $srcds
 
-    build admin_support
-    build advanced_ads
-    build analytics
-    build autoupdater
-    build death_chance_fof
-    build dmr
-    build drunk_fof
-    build fashion_fof
-    build killer_info_display
-    build mapconfigs
-    build mapfix_fof
-    build navfile_blocker
-    build near_map_end_fof
-    build randomize_teams_fof
-    build resize_players
-    build sourcebans-pp/game
-    build super_kick_fof
-    build voice_warn
-    build weapon_only_fof
-    build webshortcuts
-    build word_filter
+    build admin_support $srcds
+    build advanced_ads $srcds
+    build analytics $srcds
+    build autoupdater $srcds
+    build death_chance_fof $srcds
+    build dmr $srcds
+    build fashion_fof $srcds
+    build killer_info_display $srcds
+    build mapconfigs $srcds
+    build mapfix_fof $srcds
+    build navfile_blocker $srcds
+    build near_map_end_fof $srcds
+    build randomize_teams_fof $srcds
+    build resize_players $srcds
+    build sourcebans-pp/game $srcds
+    build super_kick_fof $srcds
+    build voice_warn $srcds
+    build weapon_only_fof $srcds
+    build word_filter $srcds
 
-    remove_disabled
+    remove_disabled $srcds
 }
 
 # build plugins for servers
 
-#build_fof_main
-#build_fof_gg
-#build_fof_gg2
+build_fof_main
+build_fof_gg
+build_fof_gg2
 build_fof_mk
-#build_fof_foz
+build_fof_foz
