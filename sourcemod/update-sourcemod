@@ -13,4 +13,5 @@
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ --snapshot-stable --dontask
 
 # NOTE to update manually to a specific version use:
-# ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_foz/fof/ "http://www.sourcemod.net/smdrop/1.8/sourcemod-1.8.0-git6044-linux.tar.gz"
+# ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ "http://www.sourcemod.net/smdrop/1.10/sourcemod-1.10.0-git6502-linux.tar.gz"
+# ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ "http://www.sourcemod.net/smdrop/1.8/sourcemod-1.8.0-git6050-linux.tar.gz"
