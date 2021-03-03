@@ -1,13 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
-BUILD_DIR=$HOME/sourcemod/
-PLUGIN_DIR=addons/sourcemod/plugins/
-SPCOMP=$SOURCEMOD_DIR/scripting/spcomp
-#SPCOMP=$SOURCEMOD_DIR_1_10/scripting/spcomp
+spcomp=$SOURCEMOD_DIR/scripting/spcomp
+failed=()
 
 build_server(){
     local server=$1
-    cd $BUILD_DIR
 
     echo "#########################"
     echo "Building Server ($server)"
@@ -17,23 +14,36 @@ build_server(){
 build(){
     local dir=$1
     local srcds=$2
-    make -C$dir SPCOMP=$SPCOMP | grep --color "warning\|error"
-    # make -C$dir install
-    cd $BUILD_DIR
+
+    echo "building $dir for $srcds"
+
+    make all install -C$dir SPCOMP=$spcomp SPFLAGS="-v0" SRCDS=$srcds
+
+    # use this instead for a dry run to find errors/warnings
+    # make all -C$dir SPCOMP=$spcomp SPFLAGS="-v0 -E" SRCDS=$srcds
+
+    if [ $? -eq 0 ]; then
+      echo -e "\e[0;32mfinished $dir\e[0m";
+    else
+      echo -e "\e[1;31mfailed to build $dir\e[0m";
+      failed+=($dir);
+    fi
+    echo ""
 }
 
 remove_disabled(){
     local srcds=$1
+    local plugin_dir=$srcds/addons/sourcemod/plugins
 
-    cd $srcds/$PLUGIN_DIR
-    for f in $(ls disabled) ; do
+    for f in $(ls $plugin_dir/disabled) ; do
+        echo "removing $f from $plugin_dir"
         rm -f $f
     done
 }
 
 # fistful of frags - main
 build_fof_main(){
-    local srcds=$HOME/steamcmd/fof_main/fof/
+    local srcds=$HOME/steamcmd/fof_main/fof
     build_server $srcds
 
     build admin_support $srcds
@@ -60,7 +70,7 @@ build_fof_main(){
 
 # fistful of frags - gun game
 build_fof_gg(){
-    local srcds=$HOME/steamcmd/fof_gg/fof/
+    local srcds=$HOME/steamcmd/fof_gg/fof
     build_server $srcds
 
     build admin_support $srcds
@@ -87,7 +97,7 @@ build_fof_gg(){
 
 # fistful of frags - gun game (12 man)
 build_fof_gg2(){
-    local srcds=$HOME/steamcmd/fof_gg2/fof/
+    local srcds=$HOME/steamcmd/fof_gg2/fof
     build_server $srcds
 
     build admin_support $srcds
@@ -115,7 +125,7 @@ build_fof_gg2(){
 
 # fistful of frags - zombies
 build_fof_foz(){
-    local srcds=$HOME/steamcmd/fof_foz/fof/
+    local srcds=$HOME/steamcmd/fof_foz/fof
     build_server $srcds
 
     build admin_support $srcds
@@ -143,7 +153,7 @@ build_fof_foz(){
 
 # fistful of frags - mario kart
 build_fof_mk(){
-    local srcds=$HOME/steamcmd/fof_mk/fof/
+    local srcds=$HOME/steamcmd/fof_mk/fof
     build_server $srcds
 
     build admin_support $srcds
@@ -171,8 +181,18 @@ build_fof_mk(){
 
 # build plugins for servers
 
-#build_fof_main
-#build_fof_gg
-#build_fof_gg2
+build_fof_main
+build_fof_gg
+build_fof_gg2
 build_fof_mk
-#build_fof_foz
+build_fof_foz
+
+echo ""
+echo "install complete"
+
+if [ ${#failed[@]} -eq 0 ]; then
+  echo -e "\e[0;32mno plugins failed to build\e[0m";
+else
+  failed=($(echo "${failed[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '));
+  echo -e "failed to build:\e[1;31m ${failed[@]}\e[0m";
+fi

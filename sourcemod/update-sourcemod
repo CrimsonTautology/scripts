@@ -2,8 +2,8 @@
 # https://github.com/bcserv/sourcemod-updater
 
 # dev repos
-~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.8/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.9/ --snapshot-dev --install --dontask
+~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.10/ --install --dontask --snapshot-stable
+~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.11/ --install --dontask --snapshot-dev
 
 # game servers
 ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_main/fof/ --snapshot-stable --dontask
