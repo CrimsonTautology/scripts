@@ -46,24 +46,24 @@ build_fof_main(){
     local srcds=$HOME/steamcmd/fof_main/fof
     build_server $srcds
 
-    build admin_support $srcds
-    build advanced_ads $srcds
+    build admin-support $srcds
+    build advanced-ads $srcds
     build analytics $srcds
     build autoupdater $srcds
-    build death_chance_fof $srcds
+    build death-chance-fof $srcds
     build dmr $srcds
-    build fashion_fof $srcds
-    build killer_info_display $srcds
+    build fashion-fof $srcds
+    build killer-info-display $srcds
     build mapconfigs $srcds
-    build mapfix_fof $srcds
-    build navfile_blocker $srcds
-    build randomize_teams_fof $srcds
-    build resize_players $srcds
+    build mapfix-fof $srcds
+    build navfile-blocker $srcds
+    build randomize-teams-fof $srcds
+    build resize-players $srcds
     build sourcebans-pp/game $srcds
-    build super_kick_fof $srcds
-    build voice_warn $srcds
-    build weapon_only_fof $srcds
-    build word_filter $srcds
+    build super-kick-fof $srcds
+    build voice-warn $srcds
+    build weapon-only-fof $srcds
+    build word-filter $srcds
 
     remove_disabled $srcds
 }
@@ -73,24 +73,24 @@ build_fof_gg(){
     local srcds=$HOME/steamcmd/fof_gg/fof
     build_server $srcds
 
-    build admin_support $srcds
-    build advanced_ads $srcds
+    build admin-support $srcds
+    build advanced-ads $srcds
     build analytics $srcds
     build autoupdater $srcds
-    build death_chance_fof $srcds
+    build death-chance-fof $srcds
     build dmr $srcds
-    build fashion_fof $srcds
-    build gungame_fof $srcds
-    build killer_info_display $srcds
+    build fashion-fof $srcds
+    build gungame-fof $srcds
+    build killer-info-display $srcds
     build mapconfigs $srcds
-    build navfile_blocker $srcds
-    build mapfix_fof $srcds
-    build randomize_teams_fof $srcds
-    build resize_players $srcds
+    build navfile-blocker $srcds
+    build mapfix-fof $srcds
+    build randomize-teams-fof $srcds
+    build resize-players $srcds
     build sourcebans-pp/game $srcds
-    build super_kick_fof $srcds
-    build voice_warn $srcds
-    build word_filter $srcds
+    build super-kick-fof $srcds
+    build voice-warn $srcds
+    build word-filter $srcds
 
     remove_disabled $srcds
 }
@@ -100,25 +100,25 @@ build_fof_gg2(){
     local srcds=$HOME/steamcmd/fof_gg2/fof
     build_server $srcds
 
-    build admin_support $srcds
-    build advanced_ads $srcds
+    build admin-support $srcds
+    build advanced-ads $srcds
     build analytics $srcds
     build autoupdater $srcds
-    build death_chance_fof $srcds
+    build death-chance-fof $srcds
     build dmr $srcds
-    build fashion_fof $srcds
-    build gungame_fof $srcds
-    build killer_info_display $srcds
+    build fashion-fof $srcds
+    build gungame-fof $srcds
+    build killer-info-display $srcds
     build mapconfigs $srcds
-    build navfile_blocker $srcds
-    build mapfix_fof $srcds
-    build randomize_teams_fof $srcds
-    build resize_players $srcds
+    build navfile-blocker $srcds
+    build mapfix-fof $srcds
+    build randomize-teams-fof $srcds
+    build resize-players $srcds
     build sourcebans-pp/game $srcds
-    build super_kick_fof $srcds
-    build voice_warn $srcds
-    build weapon_only_fof $srcds
-    build word_filter $srcds
+    build super-kick-fof $srcds
+    build voice-warn $srcds
+    build weapon-only-fof $srcds
+    build word-filter $srcds
 
     remove_disabled $srcds
 }
@@ -128,24 +128,24 @@ build_fof_foz(){
     local srcds=$HOME/steamcmd/fof_foz/fof
     build_server $srcds
 
-    build admin_support $srcds
-    build advanced_ads $srcds
+    build admin-support $srcds
+    build advanced-ads $srcds
     build analytics $srcds
-    build death_chance_fof $srcds
+    build death-chance-fof $srcds
     build dmr $srcds
-    build fashion_fof $srcds
+    build fashion-fof $srcds
     build foz $srcds
-    build killer_info_display $srcds
+    build killer-info-display $srcds
     build mapconfigs $srcds
-    build mapfix_fof $srcds
-    build navfile_blocker $srcds
-    build randomize_teams_fof $srcds
+    build mapfix-fof $srcds
+    build navfile-blocker $srcds
+    build randomize-teams-fof $srcds
     build sourcebans-pp/game $srcds
-    build super_kick_fof $srcds
-    build voice_warn $srcds
-    build weapon_mod $srcds
-    build weapon_only_fof $srcds
-    build word_filter $srcds
+    build super-kick-fof $srcds
+    build voice-warn $srcds
+    build weapon-mod $srcds
+    build weapon-only-fof $srcds
+    build word-filter $srcds
 
     remove_disabled $srcds
 }
@@ -156,25 +156,25 @@ build_fof_mk(){
     local srcds=$HOME/steamcmd/fof_mk/fof
     build_server $srcds
 
-    build admin_support $srcds
-    build advanced_ads $srcds
+    build admin-support $srcds
+    build advanced-ads $srcds
     build analytics $srcds
     build autoupdater $srcds
-    build death_chance_fof $srcds
+    build death-chance-fof $srcds
     build dmr $srcds
-    build fashion_fof $srcds
-    build killer_info_display $srcds
+    build fashion-fof $srcds
+    build killer-info-display $srcds
     build mapconfigs $srcds
-    build mapfix_fof $srcds
-    build navfile_blocker $srcds
-    build near_map_end_fof $srcds
-    build randomize_teams_fof $srcds
-    build resize_players $srcds
+    build mapfix-fof $srcds
+    build navfile-blocker $srcds
+    build near-map-end-fof $srcds
+    build randomize-teams-fof $srcds
+    build resize-players $srcds
     build sourcebans-pp/game $srcds
-    build super_kick_fof $srcds
-    build voice_warn $srcds
-    build weapon_only_fof $srcds
-    build word_filter $srcds
+    build super-kick-fof $srcds
+    build voice-warn $srcds
+    build weapon-only-fof $srcds
+    build word-filter $srcds
 
     remove_disabled $srcds
 }
