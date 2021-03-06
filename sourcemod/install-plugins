@@ -1,6 +1,6 @@
 #!/bin/bash
 
-spcomp=$SOURCEMOD_DIR/scripting/spcomp
+spcomp=$SOURCEMOD_DIR/addons/sourcemod/scripting/spcomp
 failed=()
 
 build_server(){
@@ -80,7 +80,7 @@ build_fof_gg(){
     build death-chance-fof $srcds
     build dmr $srcds
     build fashion-fof $srcds
-    build gungame-fof $srcds
+    build ggf $srcds
     build killer-info-display $srcds
     build mapconfigs $srcds
     build navfile-blocker $srcds
@@ -107,7 +107,7 @@ build_fof_gg2(){
     build death-chance-fof $srcds
     build dmr $srcds
     build fashion-fof $srcds
-    build gungame-fof $srcds
+    build ggf $srcds
     build killer-info-display $srcds
     build mapconfigs $srcds
     build navfile-blocker $srcds
