@@ -48,7 +48,6 @@ map_groups
         fof_loothill {}
         fof_colt {}
         fof_complex {}
-        fof_rialto {}
     }
 
     pulled
@@ -93,6 +92,7 @@ map_groups
 
         ew_hudsonferry {}
         fof_cliff_bridge {}
+        fof_rialto {}
     }
 
     doubles

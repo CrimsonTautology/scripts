@@ -49,16 +49,15 @@ build_fof_main(){
     build admin-support $srcds
     build advanced-ads $srcds
     build analytics $srcds
-    build autoupdater $srcds
     build death-chance-fof $srcds
     build dmr $srcds
     build fashion-fof $srcds
+    build geoip-ext $srcds
     build killer-info-display $srcds
     build mapconfigs $srcds
     build mapfix-fof $srcds
-    build navfile-blocker $srcds
+    build navfile-blocker-ext $srcds
     build randomize-teams-fof $srcds
-    build resize-players $srcds
     build sourcebans-pp/game $srcds
     build super-kick-fof $srcds
     build voice-warn $srcds
@@ -76,17 +75,16 @@ build_fof_gg(){
     build admin-support $srcds
     build advanced-ads $srcds
     build analytics $srcds
-    build autoupdater $srcds
     build death-chance-fof $srcds
     build dmr $srcds
     build fashion-fof $srcds
+    build geoip-ext $srcds
     build ggf $srcds
     build killer-info-display $srcds
     build mapconfigs $srcds
-    build navfile-blocker $srcds
+    build navfile-blocker-ext $srcds
     build mapfix-fof $srcds
     build randomize-teams-fof $srcds
-    build resize-players $srcds
     build sourcebans-pp/game $srcds
     build super-kick-fof $srcds
     build voice-warn $srcds
@@ -103,17 +101,16 @@ build_fof_gg2(){
     build admin-support $srcds
     build advanced-ads $srcds
     build analytics $srcds
-    build autoupdater $srcds
     build death-chance-fof $srcds
     build dmr $srcds
     build fashion-fof $srcds
+    build geoip-ext $srcds
     build ggf $srcds
     build killer-info-display $srcds
     build mapconfigs $srcds
-    build navfile-blocker $srcds
+    build navfile-blocker-ext $srcds
     build mapfix-fof $srcds
     build randomize-teams-fof $srcds
-    build resize-players $srcds
     build sourcebans-pp/game $srcds
     build super-kick-fof $srcds
     build voice-warn $srcds
@@ -135,15 +132,15 @@ build_fof_foz(){
     build dmr $srcds
     build fashion-fof $srcds
     build foz $srcds
+    build geoip-ext $srcds
     build killer-info-display $srcds
     build mapconfigs $srcds
     build mapfix-fof $srcds
-    build navfile-blocker $srcds
+    build navfile-blocker-ext $srcds
     build randomize-teams-fof $srcds
     build sourcebans-pp/game $srcds
     build super-kick-fof $srcds
     build voice-warn $srcds
-    build weapon-mod $srcds
     build weapon-only-fof $srcds
     build word-filter $srcds
 
@@ -159,17 +156,16 @@ build_fof_mk(){
     build admin-support $srcds
     build advanced-ads $srcds
     build analytics $srcds
-    build autoupdater $srcds
     build death-chance-fof $srcds
     build dmr $srcds
     build fashion-fof $srcds
+    build geoip-ext $srcds
     build killer-info-display $srcds
     build mapconfigs $srcds
     build mapfix-fof $srcds
-    build navfile-blocker $srcds
+    build navfile-blocker-ext $srcds
     build near-map-end-fof $srcds
     build randomize-teams-fof $srcds
-    build resize-players $srcds
     build sourcebans-pp/game $srcds
     build super-kick-fof $srcds
     build voice-warn $srcds
