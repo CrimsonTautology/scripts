@@ -43,10 +43,8 @@ map_groups
         fof_old_fistful_b2 {}
         fof_lumber_a2 {}
         fof_museum_r3 {}
-        fof_dust2 {}
         fof_floodrock_1_5 {}
         fof_loothill {}
-        fof_colt {}
         fof_complex {}
     }
 
@@ -93,6 +91,8 @@ map_groups
         ew_hudsonferry {}
         fof_cliff_bridge {}
         fof_rialto {}
+        fof_dust2 {}
+        fof_colt {}
     }
 
     doubles
