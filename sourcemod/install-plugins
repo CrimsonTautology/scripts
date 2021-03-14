@@ -43,7 +43,7 @@ remove_disabled(){
 
 # fistful of frags - main
 build_fof_main(){
-    local srcds=$HOME/steamcmd/fof_main/fof
+    local srcds=$FOF
     build_server $srcds
 
     build admin-support $srcds
@@ -69,7 +69,7 @@ build_fof_main(){
 
 # fistful of frags - gun game
 build_fof_gg(){
-    local srcds=$HOME/steamcmd/fof_gg/fof
+    local srcds=$GGF
     build_server $srcds
 
     build admin-support $srcds
@@ -95,7 +95,7 @@ build_fof_gg(){
 
 # fistful of frags - gun game (12 man)
 build_fof_gg2(){
-    local srcds=$HOME/steamcmd/fof_gg2/fof
+    local srcds=$GGF2
     build_server $srcds
 
     build admin-support $srcds
@@ -122,7 +122,7 @@ build_fof_gg2(){
 
 # fistful of frags - zombies
 build_fof_foz(){
-    local srcds=$HOME/steamcmd/fof_foz/fof
+    local srcds=$FOZ
     build_server $srcds
 
     build admin-support $srcds
@@ -150,7 +150,7 @@ build_fof_foz(){
 
 # fistful of frags - mario kart
 build_fof_mk(){
-    local srcds=$HOME/steamcmd/fof_mk/fof
+    local srcds=$MKF
     build_server $srcds
 
     build admin-support $srcds

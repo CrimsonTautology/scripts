@@ -2,16 +2,16 @@
 # https://github.com/bcserv/sourcemod-updater
 
 # dev repos
-~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.10/ --install --dontask --snapshot-stable
-~/bin/sourcemod-updater/update.sh ~/sourcemod/sm-1.11/ --install --dontask --snapshot-dev
+~/bin/sourcemod-updater/update.sh $SOURCEMOD_DIR_1_10 --install --dontask --snapshot-stable
+~/bin/sourcemod-updater/update.sh $SOURCEMOD_DIR_1_11 --install --dontask --snapshot-dev
 
 # game servers
-~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_main/fof/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_gg/fof/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_gg2/fof/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_foz/fof/ --snapshot-stable --dontask
-~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh $FOF --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh $FOZ --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh $GGF --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh $GGF2 --snapshot-stable --dontask
+~/bin/sourcemod-updater/update.sh $MKF --snapshot-stable --dontask
 
 # NOTE to update manually to a specific version use:
-# ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ "http://www.sourcemod.net/smdrop/1.10/sourcemod-1.10.0-git6502-linux.tar.gz"
-# ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof/ "http://www.sourcemod.net/smdrop/1.8/sourcemod-1.8.0-git6050-linux.tar.gz"
+# ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof "http://www.sourcemod.net/smdrop/1.10/sourcemod-1.10.0-git6502-linux.tar.gz"
+# ~/bin/sourcemod-updater/update.sh ~/steamcmd/fof_mk/fof "http://www.sourcemod.net/smdrop/1.8/sourcemod-1.8.0-git6050-linux.tar.gz"
