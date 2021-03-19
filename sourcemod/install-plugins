@@ -177,11 +177,11 @@ build_fof_mk(){
 
 # build plugins for servers
 
-#build_fof_main
-#build_fof_gg
-#build_fof_gg2
+build_fof_main
+build_fof_gg
+build_fof_gg2
 build_fof_mk
-#build_fof_foz
+build_fof_foz
 
 echo ""
 echo "install complete"
