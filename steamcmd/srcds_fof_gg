@@ -16,7 +16,7 @@ IP="$(ifconfig | grep -A 1 'eth0' | tail -1 | cut -d ':' -f 2 | cut -d ' ' -f 1)
 PORT=27027
 CLIENTPORT=$((PORT + 1))
 TVPORT=$((PORT + 2))
-MAXPLAYERS=20
+MAXPLAYERS=16
 MAP=fof_desperados
 
 # Change all PARAMS to your needs.
