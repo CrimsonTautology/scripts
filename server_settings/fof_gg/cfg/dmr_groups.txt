@@ -46,6 +46,7 @@ map_groups
         fof_floodrock_1_5 {}
         fof_loothill {}
         fof_complex {}
+        fof_fall_castle {}
     }
 
     pulled

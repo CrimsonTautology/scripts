@@ -72,6 +72,7 @@ map_groups
         fof_complex {}
         fof_cliff_bridge {}
         fof_rialto {}
+        fof_fall_castle {}
     }
 
     // alternative versions of maps

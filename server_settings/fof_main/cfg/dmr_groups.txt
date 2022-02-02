@@ -40,6 +40,7 @@ map_groups
         fof_simpsons_x {}
         fof_slender_b3 {}
         fof_spacejam_b1 {}
+        fof_fall_castle {}
     }
 
     custom
