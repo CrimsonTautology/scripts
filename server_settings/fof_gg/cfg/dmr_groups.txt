@@ -47,6 +47,7 @@ map_groups
         fof_loothill {}
         fof_complex {}
         fof_fall_castle {}
+        fof_convoy {}
     }
 
     pulled
